@@ -1,0 +1,20 @@
+/* Source scanning */
+@import "tailwindcss";
+@source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
+@source '../../storage/framework/views/*.php';
+@source '../**/*.blade.php';
+@source '../**/*.js';
+
+@theme {
+    --color-base: rgb(255 255 255);
+    --color-surface: rgb(251 251 251);
+    --color-brand: var(--color-blue-600);
+}
+
+  .btn-primary {
+    background-color: var(--color-brand);
+  }
+
+  .btn-disabled {
+    background-color: var(--color-surface);
+  }
