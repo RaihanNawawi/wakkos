@@ -6,7 +6,7 @@
             <div class="px-1 mb-6">
                 <p class="text-sm sm:text-md text-gray-600 mb-1">Hai.</p>
                 <h2 class="text-xl sm:text-2xl font-bold text-gray-900">Lagi cari kos di <span
-                        class="text-blue-600">Siak</span>?
+                        class="text-brand">Siak</span>?
                 </h2>
             </div>
             <!-- Greeting Section END -->
@@ -312,13 +312,13 @@
     </section>
     <!-- Rekomendasi Kos END -->
 
- {{-- Sesuaikan Budget Kos START --}}
+    {{-- Sesuaikan Budget Kos START --}}
     <section class="py-5">
         <div class="max-w-4xl mx-auto px-4">
             <!-- Header -->
             <div class="flex items-center justify-between mb-4">
                 <h2 class="px-1 text-md sm:text-xl font-semibold text-gray-900">
-                    Sesuaikan Budget Kos-mu di <span class="text-blue-600">Siak</span>
+                    Sesuaikan Budget Kos-mu di <span class="text-brand">Siak</span>
                 </h2>
 
                 <a href="#"
@@ -328,9 +328,9 @@
                 </a>
             </div>
             {{-- Filter Harga --}}
-<div id="priceTabs" class="flex border rounded-lg overflow-hidden mb-4">
+            <div id="priceTabs" class="flex border rounded-lg overflow-hidden mb-4">
                 <!-- Active -->
-                <button class="tab-btn flex-1 px-3 py-1.5 text-sm sm:text-md font-medium text-white bg-blue-600">
+                <button class="tab-btn flex-1 px-3 py-1.5 text-sm sm:text-md font-medium text-white btn-primary">
                     &lt; 500k
                 </button>
 
@@ -355,13 +355,13 @@
 
                             // reset semua tab
                             tabs.forEach(btn => {
-                                btn.classList.remove("bg-blue-600", "text-white");
+                                btn.classList.remove("btn-primary", "text-white");
                                 btn.classList.add("text-gray-700", "hover:bg-gray-200");
                             });
 
                             // set active
                             this.classList.remove("text-gray-700", "hover:bg-gray-200");
-                            this.classList.add("bg-blue-600", "text-white");
+                            this.classList.add("btn-primary", "text-white");
                         });
                     });
                 });
@@ -371,7 +371,8 @@
             <div class="relative">
                 <div class="flex gap-3 overflow-x-auto pb-2 snap-x snap-proximity scrollbar-hide">
                     <!-- CARD -->
-                    <a wire:navigate href="/detailpage" class="group snap-start shrink-0 w-[240px] sm:w-[260px] focus:outline-none">
+                    <a wire:navigate href="/detailpage"
+                        class="group snap-start shrink-0 w-[240px] sm:w-[260px] focus:outline-none">
 
                         <!-- IMAGE -->
                         <div class="relative aspect-[4/3] rounded-2xl overflow-hidden bg-gray-200">
@@ -419,7 +420,8 @@
                             </p>
                         </div>
                     </a>
-                    <a wire:navigate href="/detailpage" class="group snap-start shrink-0 w-[240px] sm:w-[260px] focus:outline-none">
+                    <a wire:navigate href="/detailpage"
+                        class="group snap-start shrink-0 w-[240px] sm:w-[260px] focus:outline-none">
 
                         <!-- IMAGE -->
                         <div class="relative aspect-[4/3] rounded-2xl overflow-hidden bg-gray-200">
@@ -467,7 +469,8 @@
                             </p>
                         </div>
                     </a>
-                    <a wire:navigate href="/detailpage" class="group snap-start shrink-0 w-[240px] sm:w-[260px] focus:outline-none">
+                    <a wire:navigate href="/detailpage"
+                        class="group snap-start shrink-0 w-[240px] sm:w-[260px] focus:outline-none">
 
                         <!-- IMAGE -->
                         <div class="relative aspect-[4/3] rounded-2xl overflow-hidden bg-gray-200">
@@ -515,7 +518,8 @@
                             </p>
                         </div>
                     </a>
-                    <a wire:navigate href="/detailpage" class="group snap-start shrink-0 w-[240px] sm:w-[260px] focus:outline-none">
+                    <a wire:navigate href="/detailpage"
+                        class="group snap-start shrink-0 w-[240px] sm:w-[260px] focus:outline-none">
 
                         <!-- IMAGE -->
                         <div class="relative aspect-[4/3] rounded-2xl overflow-hidden bg-gray-200">
@@ -563,7 +567,8 @@
                             </p>
                         </div>
                     </a>
-                    <a wire:navigate href="/detailpage" class="group snap-start shrink-0 w-[240px] sm:w-[260px] focus:outline-none">
+                    <a wire:navigate href="/detailpage"
+                        class="group snap-start shrink-0 w-[240px] sm:w-[260px] focus:outline-none">
 
                         <!-- IMAGE -->
                         <div class="relative aspect-[4/3] rounded-2xl overflow-hidden bg-gray-200">
@@ -650,7 +655,7 @@
             <div class="flex items-start justify-between mb-4">
                 <div class="flex items-center justify-between">
                     <h2 class="px-1 text-md sm:text-xl font-semibold text-gray-900">
-                        Area Kos Populer di <span class="text-blue-600">Siak</span>
+                        Area Kos Populer di <span class="text-brand">Siak</span>
                     </h2>
                 </div>
             </div>
@@ -713,7 +718,7 @@
             <!-- Header -->
             <div class="flex items-center justify-between mb-4">
                 <h2 class="px-1 text-md sm:text-xl font-semibold text-gray-900">
-                    Baru Ditambahkan di <span class="text-blue-600">Siak</span>
+                    Baru Ditambahkan di <span class="text-brand">Siak</span>
                 </h2>
 
                 <a wire:navigate href="#"
@@ -1020,7 +1025,7 @@
         <div class="mx-auto max-w-4xl px-4">
             <!-- Header START -->
             <div class="text-center mb-6">
-                <h2 class="text-xl sm:text-2xl font-bold text-blue-600 mb-2">
+                <h2 class="text-xl sm:text-2xl font-bold text-brand mb-2">
                     WakKos — Cari Kos di Kabupaten Siak
                 </h2>
             </div>

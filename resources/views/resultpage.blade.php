@@ -273,8 +273,7 @@
 
                     <!-- Apply button (Primary) -->
                     <button id="applyFiltersBtn"
-                        class="px-5 py-3 bg-blue-600 text-white rounded-lg text-md font-semibold
-               hover:bg-blue-700 active:scale-[0.98] transition">
+                        class="px-5 py-3 btn-primary text-white rounded-lg text-md font-semibold active:scale-[0.98] transition">
                         Terapkan Filter (1)
                     </button>
                 </div>

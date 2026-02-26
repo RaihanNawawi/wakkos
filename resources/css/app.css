@@ -6,15 +6,19 @@
 @source '../**/*.js';
 
 @theme {
-    --color-base: rgb(255 255 255);
-    --color-surface: rgb(251 251 251);
+    /* Brand Token */
     --color-brand: var(--color-blue-600);
+    --color-brand-hover: var(--color-blue-700);
 }
 
-  .btn-primary {
-    background-color: var(--color-brand);
-  }
+.text-brand {
+    color: var(--color-brand);
+}
 
-  .btn-disabled {
-    background-color: var(--color-surface);
-  }
+.btn-primary {
+    background-color: var(--color-brand);
+}
+
+.btn-primary:hover {
+    background-color: var(--color-brand-hover);
+}

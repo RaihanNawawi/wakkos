@@ -741,7 +741,7 @@
                             <a wire:navigate
                                 href="https://wa.me/6281995421795?text=Halo%20WakKos%2C%0A%0ASaya%20tertarik%20dengan%20kos%20ini.%0ABoleh%20dibantu%20untuk%20info%20ketersediaan%2C%20harga%2C%20dan%20fasilitasnya%3F%0A%0ATerima%20kasih."
                                 target="_blank"
-                                class="w-full flex items-center justify-center gap-2 py-3 rounded-xl bg-blue-600 text-white font-semibold hover:bg-blue-700 transition shadow-md">
+                                class="w-full flex items-center justify-center gap-2 py-3 rounded-xl btn-primary text-white font-semibold transition shadow-md">
                                 <i class="fa-brands fa-whatsapp text-green-400 text-lg"></i>
                                 Chat WakKos
                             </a>

@@ -3,7 +3,7 @@
             <!-- Logo (Hidden on Mobile) -->
             <div class="hidden md:flex items-center">
                 <a href="/homepage">
-                    <span class="text-2xl font-bold text-blue-600">WakKos</span>
+                    <span class="text-2xl font-bold text-brand">WakKos</span>
                 </a>
             </div>
 
