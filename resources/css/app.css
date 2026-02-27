@@ -9,6 +9,14 @@
     /* Brand Token */
     --color-brand: var(--color-blue-600);
     --color-brand-hover: var(--color-blue-700);
+
+    /* Background Token */
+    --color-base: var(--color-white);
+    --color-secondary: var(--color-gray-50);
+    --color-tertiary: var(--color-gray-100);
+    --color-muted: var(--color-gray-200);
+
+
 }
 
 .text-brand {
@@ -21,4 +29,12 @@
 
 .btn-primary:hover {
     background-color: var(--color-brand-hover);
+}
+
+.btn-secondary {
+    background-color: var(--color-tertiary);
+}
+
+.btn-secondary:hover {
+    background-color: var(--color-muted);
 }
