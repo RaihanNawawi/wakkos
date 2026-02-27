@@ -703,16 +703,9 @@
                 <!-- Prev -->
                 <li>
                     <a wire:navigate href="?page=1" aria-label="Halaman sebelumnya"
-                        class="flex items-center justify-center
-                  w-11 h-11 rounded-full
-                  bg-white
-                  text-gray-500
-                  shadow-sm
-                  hover:bg-gray-100 hover:shadow-md
-                  active:scale-95
-                  transition-all duration-200">
+                        class="flex items-center justify-center mr-3">
 
-                        <i class="fa-solid fa-chevron-left text-base"></i>
+                        <i class="fa-solid fa-chevron-left text-black"></i>
                     </a>
                 </li>
 
@@ -762,16 +755,9 @@
                 <!-- Next -->
                 <li>
                     <a wire:navigate href="?page=2" aria-label="Halaman selanjutnya"
-                        class="flex items-center justify-center
-                  w-11 h-11 rounded-full
-                  bg-white
-                  text-gray-600
-                  shadow-sm
-                  hover:bg-gray-100 hover:shadow-md
-                  active:scale-95
-                  transition-all duration-200">
+                        class="flex items-center justify-center ml-3">
 
-                        <i class="fa-solid fa-chevron-right text-base"></i>
+                        <i class="fa-solid fa-chevron-right text-black"></i>
                     </a>
                 </li>
 

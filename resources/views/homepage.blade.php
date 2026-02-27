@@ -18,8 +18,8 @@
                 </h2>
 
                 <a wire:navigate href="#"
-                    class="ml-2 w-8 h-8 sm:w-9 sm:h-9 flex items-center justify-center
-              rounded-full bg-gray-100 hover:bg-gray-200 transition">
+                    class="btn-secondary ml-2 w-8 h-8 sm:w-9 sm:h-9 flex items-center justify-center
+              rounded-full transition">
                     <i class="fa-solid fa-arrow-right text-sm text-gray-700"></i>
                 </a>
             </div>
@@ -322,8 +322,8 @@
                 </h2>
 
                 <a href="#"
-                    class="w-8 h-8 sm:w-9 sm:h-9 flex items-center justify-center
-        rounded-full bg-gray-100 hover:bg-gray-200 transition flex-shrink-0">
+                    class="btn-secondary w-8 h-8 sm:w-9 sm:h-9 flex items-center justify-center
+        rounded-full transition flex-shrink-0">
                     <i class="fa-solid fa-arrow-right text-sm text-gray-700"></i>
                 </a>
             </div>
@@ -722,8 +722,8 @@
                 </h2>
 
                 <a wire:navigate href="#"
-                    class="w-8 h-8 sm:w-9 sm:h-9 flex items-center justify-center
-        rounded-full bg-gray-100 hover:bg-gray-200 transition flex-shrink-0">
+                    class="btn-secondary w-8 h-8 sm:w-9 sm:h-9 flex items-center justify-center
+        rounded-full transition flex-shrink-0">
                     <i class="fa-solid fa-arrow-right text-sm text-gray-700"></i>
                 </a>
             </div>

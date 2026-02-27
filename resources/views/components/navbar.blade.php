@@ -22,7 +22,7 @@
 
             <!-- Hamburger Menu Button START -->
             <button id="hamburgerBtn"
-                class="flex items-center justify-center w-10 h-10 rounded-full bg-gray-100 hover:bg-gray-200 transition-colors duration-200 ml-1">
+                class="btn-secondary flex items-center justify-center w-10 h-10 rounded-full transition-colors duration-200 ml-1">
                 <i class="fas fa-bars text-gray-700 text-base"></i>
             </button>
             <!-- Hamburger Menu Button END -->

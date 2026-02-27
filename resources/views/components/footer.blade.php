@@ -1,5 +1,5 @@
         <!-- Footer START -->
-        <footer class="bg-surface text-gray-700 mt-5 py-10">
+        <footer class="bg-secondary text-gray-700 mt-5 py-10">
             <div class="max-w-4xl mx-auto px-4">
                 <div class="grid md:grid-cols-3 gap-8 mb-8">
                     <!-- Navigation Column -->
