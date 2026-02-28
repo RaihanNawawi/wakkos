@@ -16,8 +16,20 @@
     --color-tertiary: var(--color-gray-100);
     --color-muted: var(--color-gray-200);
 
-
+    /* Text */
+    --color-text-primary: var(--color-gray-900);
+    --color-text-secondary: var(--color-gray-600);
 }
+
+/* Text Class   */
+.text-primary {
+  color: var(--color-text-primary);
+}
+
+.text-secondary {
+  color: var(--color-text-secondary);
+}
+
 
 .text-brand {
     color: var(--color-brand);
