@@ -4,8 +4,8 @@
         <div class="max-w-4xl mx-auto px-4 mt-2">
             <!-- Greeting Section START -->
             <div class="px-1 mb-6">
-                <p class="text-sm sm:text-md text-gray-600 mb-1">Hai.</p>
-                <h2 class="text-xl sm:text-2xl font-bold text-gray-900">Lagi cari kos di <span
+                <p class="text-sm sm:text-md text-secondary mb-1">Hai.</p>
+                <h2 class="text-xl sm:text-2xl font-bold text-primary">Lagi cari kos di <span
                         class="text-brand">Siak</span>?
                 </h2>
             </div>
@@ -13,14 +13,14 @@
 
             <!-- Header -->
             <div class="flex items-center justify-between mb-4">
-                <h2 class="px-1 text-md sm:text-xl font-semibold text-gray-900">
+                <h2 class="px-1 text-md sm:text-xl font-semibold text-primary">
                     Ini Rekomendasi Kos untukmu!
                 </h2>
 
                 <a wire:navigate href="#"
                     class="btn-secondary ml-2 w-8 h-8 sm:w-9 sm:h-9 flex items-center justify-center
               rounded-full transition">
-                    <i class="fa-solid fa-arrow-right text-sm text-gray-700"></i>
+                    <i class="fa-solid fa-arrow-right text-sm text-secondary"></i>
                 </a>
             </div>
 
@@ -49,31 +49,31 @@
 
                             <!-- Title + Gender -->
                             <div class="flex justify-between items-start">
-                                <h3 class="text-sm font-semibold leading-tight line-clamp-1">
+                                <h3 class="text-sm font-semibold leading-tight line-clamp-1 text-primary">
                                     Kos Putri Melati
                                 </h3>
 
                                 <span
-                                    class="text-xs text-gray-500 flex items-center gap-1 border border-gray-300 px-2 py-0.5 rounded-md">
+                                    class="text-xs text-secondary flex items-center gap-1 border border-gray-300 px-2 py-0.5 rounded-md">
                                     <i class="fa-solid fa-venus text-[10px]"></i>
                                     Putri
                                 </span>
                             </div>
 
                             <!-- Location -->
-                            <p class="text-xs text-gray-500 truncate">
+                            <p class="text-xs text-secondary truncate">
                                 Kampung Dalam, Siak
                             </p>
 
                             <!-- Facilities -->
-                            <p class="text-[11px] text-gray-400 truncate">
-                                RSUD Siak - 100 m
+                            <p class="text-[11px] text-thirdary truncate">
+                                Kamar Mandi dalam · AC · Kasur
                             </p>
 
                             <!-- Price -->
                             <p class="text-sm">
-                                <span class="font-semibold">Rp462.683</span>
-                                <span class="text-gray-400 text-xs">/bulan</span>
+                                <span class="font-semibold text-primary">Rp462.683</span>
+                                <span class="text-thirdary text-xs">/bulan</span>
                             </p>
                         </div>
                     </a>
@@ -98,31 +98,31 @@
 
                             <!-- Title + Gender -->
                             <div class="flex justify-between items-start">
-                                <h3 class="text-sm font-semibold leading-tight line-clamp-1">
+                                <h3 class="text-sm font-semibold leading-tight line-clamp-1 text-primary">
                                     Kos Putri Melati
                                 </h3>
 
                                 <span
-                                    class="text-xs text-gray-500 flex items-center gap-1 border border-gray-300 px-2 py-0.5 rounded-md">
+                                    class="text-xs text-secondary flex items-center gap-1 border border-gray-300 px-2 py-0.5 rounded-md">
                                     <i class="fa-solid fa-venus text-[10px]"></i>
                                     Putri
                                 </span>
                             </div>
 
                             <!-- Location -->
-                            <p class="text-xs text-gray-500 truncate">
+                            <p class="text-xs text-secondary truncate">
                                 Kampung Dalam, Siak
                             </p>
 
                             <!-- Facilities -->
-                            <p class="text-[11px] text-gray-400 truncate">
+                            <p class="text-[11px] text-thirdary truncate">
                                 Kamar Mandi dalam · AC · Kasur
                             </p>
 
                             <!-- Price -->
                             <p class="text-sm">
-                                <span class="font-semibold">Rp462.683</span>
-                                <span class="text-gray-400 text-xs">/bulan</span>
+                                <span class="font-semibold text-primary">Rp462.683</span>
+                                <span class="text-thirdary text-xs">/bulan</span>
                             </p>
                         </div>
                     </a>
@@ -147,31 +147,31 @@
 
                             <!-- Title + Gender -->
                             <div class="flex justify-between items-start">
-                                <h3 class="text-sm font-semibold leading-tight line-clamp-1">
+                                <h3 class="text-sm font-semibold leading-tight line-clamp-1 text-primary">
                                     Kos Putri Melati
                                 </h3>
 
                                 <span
-                                    class="text-xs text-gray-500 flex items-center gap-1 border border-gray-300 px-2 py-0.5 rounded-md">
+                                    class="text-xs text-secondary flex items-center gap-1 border border-gray-300 px-2 py-0.5 rounded-md">
                                     <i class="fa-solid fa-venus text-[10px]"></i>
                                     Putri
                                 </span>
                             </div>
 
                             <!-- Location -->
-                            <p class="text-xs text-gray-500 truncate">
+                            <p class="text-xs text-secondary truncate">
                                 Kampung Dalam, Siak
                             </p>
 
                             <!-- Facilities -->
-                            <p class="text-[11px] text-gray-400 truncate">
+                            <p class="text-[11px] text-thirdary truncate">
                                 Kamar Mandi dalam · AC · Kasur
                             </p>
 
                             <!-- Price -->
                             <p class="text-sm">
-                                <span class="font-semibold">Rp462.683</span>
-                                <span class="text-gray-400 text-xs">/bulan</span>
+                                <span class="font-semibold text-primary">Rp462.683</span>
+                                <span class="text-thirdary text-xs">/bulan</span>
                             </p>
                         </div>
                     </a>
@@ -196,31 +196,31 @@
 
                             <!-- Title + Gender -->
                             <div class="flex justify-between items-start">
-                                <h3 class="text-sm font-semibold leading-tight line-clamp-1">
+                                <h3 class="text-sm font-semibold leading-tight line-clamp-1 text-primary">
                                     Kos Putri Melati
                                 </h3>
 
                                 <span
-                                    class="text-xs text-gray-500 flex items-center gap-1 border border-gray-300 px-2 py-0.5 rounded-md">
+                                    class="text-xs text-secondary flex items-center gap-1 border border-gray-300 px-2 py-0.5 rounded-md">
                                     <i class="fa-solid fa-venus text-[10px]"></i>
                                     Putri
                                 </span>
                             </div>
 
                             <!-- Location -->
-                            <p class="text-xs text-gray-500 truncate">
+                            <p class="text-xs text-secondary truncate">
                                 Kampung Dalam, Siak
                             </p>
 
                             <!-- Facilities -->
-                            <p class="text-[11px] text-gray-400 truncate">
+                            <p class="text-[11px] text-thirdary truncate">
                                 Kamar Mandi dalam · AC · Kasur
                             </p>
 
                             <!-- Price -->
                             <p class="text-sm">
-                                <span class="font-semibold">Rp462.683</span>
-                                <span class="text-gray-400 text-xs">/bulan</span>
+                                <span class="font-semibold text-primary">Rp462.683</span>
+                                <span class="text-thirdary text-xs">/bulan</span>
                             </p>
                         </div>
                     </a>
@@ -245,31 +245,31 @@
 
                             <!-- Title + Gender -->
                             <div class="flex justify-between items-start">
-                                <h3 class="text-sm font-semibold leading-tight line-clamp-1">
+                                <h3 class="text-sm font-semibold leading-tight line-clamp-1 text-primary">
                                     Kos Putri Melati
                                 </h3>
 
                                 <span
-                                    class="text-xs text-gray-500 flex items-center gap-1 border border-gray-300 px-2 py-0.5 rounded-md">
+                                    class="text-xs text-secondary flex items-center gap-1 border border-gray-300 px-2 py-0.5 rounded-md">
                                     <i class="fa-solid fa-venus text-[10px]"></i>
                                     Putri
                                 </span>
                             </div>
 
                             <!-- Location -->
-                            <p class="text-xs text-gray-500 truncate">
+                            <p class="text-xs text-secondary truncate">
                                 Kampung Dalam, Siak
                             </p>
 
                             <!-- Facilities -->
-                            <p class="text-[11px] text-gray-400 truncate">
+                            <p class="text-[11px] text-thirdary truncate">
                                 Kamar Mandi dalam · AC · Kasur
                             </p>
 
                             <!-- Price -->
                             <p class="text-sm">
-                                <span class="font-semibold">Rp462.683</span>
-                                <span class="text-gray-400 text-xs">/bulan</span>
+                                <span class="font-semibold text-primary">Rp462.683</span>
+                                <span class="text-thirdary text-xs">/bulan</span>
                             </p>
                         </div>
                     </a>
@@ -289,7 +289,7 @@
                             </div>
 
                             <!-- Text -->
-                            <p class="text-sm font-semibold text-gray-800 text-center">
+                            <p class="text-primary text-sm font-semibold text- text-center">
                                 Lihat Semua
                             </p>
                         </a>
@@ -317,14 +317,14 @@
         <div class="max-w-4xl mx-auto px-4">
             <!-- Header -->
             <div class="flex items-center justify-between mb-4">
-                <h2 class="px-1 text-md sm:text-xl font-semibold text-gray-900">
+                <h2 class="px-1 text-md sm:text-xl font-semibold text-primary">
                     Sesuaikan Budget Kos-mu di <span class="text-brand">Siak</span>
                 </h2>
 
                 <a href="#"
                     class="btn-secondary w-8 h-8 sm:w-9 sm:h-9 flex items-center justify-center
         rounded-full transition flex-shrink-0">
-                    <i class="fa-solid fa-arrow-right text-sm text-gray-700"></i>
+                    <i class="fa-solid fa-arrow-right text-sm text-secondary"></i>
                 </a>
             </div>
             {{-- Filter Harga --}}
@@ -336,12 +336,12 @@
 
                 <!-- Inactive -->
                 <button
-                    class="tab-btn border-l border-gray-300 flex-1 px-3 py-1.5 text-sm sm:text-md font-medium text-gray-700 hover:bg-gray-200">
+                    class="tab-btn border-l border-gray-300 flex-1 px-3 py-1.5 text-sm sm:text-md font-medium text-secondary hover:bg-gray-200">
                     500k – 1jt
                 </button>
 
                 <button
-                    class="tab-btn border-l border-gray-300 flex-1 px-3 py-1.5 sm:py-2.5 text-sm sm:text-md font-medium text-gray-700 hover:bg-gray-200">
+                    class="tab-btn border-l border-gray-300 flex-1 px-3 py-1.5 sm:py-2.5 text-sm sm:text-md font-medium text-secondary hover:bg-gray-200">
                     &gt; 1jt
                 </button>
             </div>
@@ -356,11 +356,11 @@
                             // reset semua tab
                             tabs.forEach(btn => {
                                 btn.classList.remove("btn-primary", "text-white");
-                                btn.classList.add("text-gray-700", "hover:bg-gray-200");
+                                btn.classList.add("text-secondary", "hover:bg-gray-200");
                             });
 
                             // set active
-                            this.classList.remove("text-gray-700", "hover:bg-gray-200");
+                            this.classList.remove("text-secondary", "hover:bg-gray-200");
                             this.classList.add("btn-primary", "text-white");
                         });
                     });
@@ -392,31 +392,31 @@
 
                             <!-- Title + Gender -->
                             <div class="flex justify-between items-start">
-                                <h3 class="text-sm font-semibold leading-tight line-clamp-1">
+                                <h3 class="text-sm font-semibold leading-tight line-clamp-1 text-primary">
                                     Kos Putri Melati
                                 </h3>
 
                                 <span
-                                    class="text-xs text-gray-500 flex items-center gap-1 border border-gray-300 px-2 py-0.5 rounded-md">
+                                    class="text-xs text-secondary flex items-center gap-1 border border-gray-300 px-2 py-0.5 rounded-md">
                                     <i class="fa-solid fa-venus text-[10px]"></i>
                                     Putri
                                 </span>
                             </div>
 
                             <!-- Location -->
-                            <p class="text-xs text-gray-500 truncate">
+                            <p class="text-xs text-secondary truncate">
                                 Kampung Dalam, Siak
                             </p>
 
                             <!-- Facilities -->
-                            <p class="text-[11px] text-gray-400 truncate">
+                            <p class="text-[11px] text-thirdary truncate">
                                 RSUD Siak - 100 m
                             </p>
 
                             <!-- Price -->
                             <p class="text-sm">
-                                <span class="font-semibold">Rp462.683</span>
-                                <span class="text-gray-400 text-xs">/bulan</span>
+                                <span class="font-semibold text-primary">Rp462.683</span>
+                                <span class="text-thirdary text-xs">/bulan</span>
                             </p>
                         </div>
                     </a>
@@ -441,31 +441,31 @@
 
                             <!-- Title + Gender -->
                             <div class="flex justify-between items-start">
-                                <h3 class="text-sm font-semibold leading-tight line-clamp-1">
+                                <h3 class="text-sm font-semibold leading-tight line-clamp-1 text-primary">
                                     Kos Putri Melati
                                 </h3>
 
                                 <span
-                                    class="text-xs text-gray-500 flex items-center gap-1 border border-gray-300 px-2 py-0.5 rounded-md">
+                                    class="text-xs text-secondary flex items-center gap-1 border border-gray-300 px-2 py-0.5 rounded-md">
                                     <i class="fa-solid fa-venus text-[10px]"></i>
                                     Putri
                                 </span>
                             </div>
 
                             <!-- Location -->
-                            <p class="text-xs text-gray-500 truncate">
+                            <p class="text-xs text-secondary truncate">
                                 Kampung Dalam, Siak
                             </p>
 
                             <!-- Facilities -->
-                            <p class="text-[11px] text-gray-400 truncate">
+                            <p class="text-[11px] text-thirdary truncate">
                                 Kamar Mandi dalam · AC · Kasur
                             </p>
 
                             <!-- Price -->
                             <p class="text-sm">
-                                <span class="font-semibold">Rp462.683</span>
-                                <span class="text-gray-400 text-xs">/bulan</span>
+                                <span class="font-semibold text-primary">Rp462.683</span>
+                                <span class="text-thirdary text-xs">/bulan</span>
                             </p>
                         </div>
                     </a>
@@ -490,31 +490,31 @@
 
                             <!-- Title + Gender -->
                             <div class="flex justify-between items-start">
-                                <h3 class="text-sm font-semibold leading-tight line-clamp-1">
+                                <h3 class="text-sm font-semibold leading-tight line-clamp-1 text-primary">
                                     Kos Putri Melati
                                 </h3>
 
                                 <span
-                                    class="text-xs text-gray-500 flex items-center gap-1 border border-gray-300 px-2 py-0.5 rounded-md">
+                                    class="text-xs text-secondary flex items-center gap-1 border border-gray-300 px-2 py-0.5 rounded-md">
                                     <i class="fa-solid fa-venus text-[10px]"></i>
                                     Putri
                                 </span>
                             </div>
 
                             <!-- Location -->
-                            <p class="text-xs text-gray-500 truncate">
+                            <p class="text-xs text-secondary truncate">
                                 Kampung Dalam, Siak
                             </p>
 
                             <!-- Facilities -->
-                            <p class="text-[11px] text-gray-400 truncate">
+                            <p class="text-[11px] text-thirdary truncate">
                                 Kamar Mandi dalam · AC · Kasur
                             </p>
 
                             <!-- Price -->
                             <p class="text-sm">
-                                <span class="font-semibold">Rp462.683</span>
-                                <span class="text-gray-400 text-xs">/bulan</span>
+                                <span class="font-semibold text-primary">Rp462.683</span>
+                                <span class="text-thirdary text-xs">/bulan</span>
                             </p>
                         </div>
                     </a>
@@ -539,31 +539,31 @@
 
                             <!-- Title + Gender -->
                             <div class="flex justify-between items-start">
-                                <h3 class="text-sm font-semibold leading-tight line-clamp-1">
+                                <h3 class="text-sm font-semibold leading-tight line-clamp-1 text-primary">
                                     Kos Putri Melati
                                 </h3>
 
                                 <span
-                                    class="text-xs text-gray-500 flex items-center gap-1 border border-gray-300 px-2 py-0.5 rounded-md">
+                                    class="text-xs text-secondary flex items-center gap-1 border border-gray-300 px-2 py-0.5 rounded-md">
                                     <i class="fa-solid fa-venus text-[10px]"></i>
                                     Putri
                                 </span>
                             </div>
 
                             <!-- Location -->
-                            <p class="text-xs text-gray-500 truncate">
+                            <p class="text-xs text-secondary truncate">
                                 Kampung Dalam, Siak
                             </p>
 
                             <!-- Facilities -->
-                            <p class="text-[11px] text-gray-400 truncate">
+                            <p class="text-[11px] text-thirdary truncate">
                                 Kamar Mandi dalam · AC · Kasur
                             </p>
 
                             <!-- Price -->
                             <p class="text-sm">
-                                <span class="font-semibold">Rp462.683</span>
-                                <span class="text-gray-400 text-xs">/bulan</span>
+                                <span class="font-semibold text-primary">Rp462.683</span>
+                                <span class="text-thirdary text-xs">/bulan</span>
                             </p>
                         </div>
                     </a>
@@ -588,31 +588,31 @@
 
                             <!-- Title + Gender -->
                             <div class="flex justify-between items-start">
-                                <h3 class="text-sm font-semibold leading-tight line-clamp-1">
+                                <h3 class="text-sm font-semibold leading-tight line-clamp-1 text-primary">
                                     Kos Putri Melati
                                 </h3>
 
                                 <span
-                                    class="text-xs text-gray-500 flex items-center gap-1 border border-gray-300 px-2 py-0.5 rounded-md">
+                                    class="text-xs text-secondary flex items-center gap-1 border border-gray-300 px-2 py-0.5 rounded-md">
                                     <i class="fa-solid fa-venus text-[10px]"></i>
                                     Putri
                                 </span>
                             </div>
 
                             <!-- Location -->
-                            <p class="text-xs text-gray-500 truncate">
+                            <p class="text-xs text-secondary truncate">
                                 Kampung Dalam, Siak
                             </p>
 
                             <!-- Facilities -->
-                            <p class="text-[11px] text-gray-400 truncate">
+                            <p class="text-[11px] text-thirdary truncate">
                                 Kamar Mandi dalam · AC · Kasur
                             </p>
 
                             <!-- Price -->
                             <p class="text-sm">
-                                <span class="font-semibold">Rp462.683</span>
-                                <span class="text-gray-400 text-xs">/bulan</span>
+                                <span class="font-semibold text-primary">Rp462.683</span>
+                                <span class="text-thirdary text-xs">/bulan</span>
                             </p>
                         </div>
                     </a>
@@ -632,7 +632,7 @@
                             </div>
 
                             <!-- Text -->
-                            <p class="text-sm font-semibold text-gray-800 text-center">
+                            <p class="text-primary text-sm font-semibold text- text-center">
                                 Lihat Semua
                             </p>
                         </a>
@@ -654,7 +654,7 @@
             <!-- Header -->
             <div class="flex items-start justify-between mb-4">
                 <div class="flex items-center justify-between">
-                    <h2 class="px-1 text-md sm:text-xl font-semibold text-gray-900">
+                    <h2 class="px-1 text-md sm:text-xl font-semibold text-primary">
                         Area Kos Populer di <span class="text-brand">Siak</span>
                     </h2>
                 </div>
@@ -676,7 +676,7 @@
                     <!-- Text Info -->
                     <div class="flex flex-col">
                         <span class="font-semibold text-gray-800">Kampung Dalam</span>
-                        <span class="text-sm text-gray-500">24 kos tersedia</span>
+                        <span class="text-sm text-secondary">24 kos tersedia</span>
                     </div>
 
                 </a>
@@ -690,7 +690,7 @@
                     </div>
                     <div class="flex flex-col">
                         <span class="font-semibold text-gray-800">Kampung Rempak</span>
-                        <span class="text-sm text-gray-500">18 kos tersedia</span>
+                        <span class="text-sm text-secondary">18 kos tersedia</span>
                     </div>
                 </a>
 
@@ -703,7 +703,7 @@
                     </div>
                     <div class="flex flex-col">
                         <span class="font-semibold text-gray-800">Suak Lanjut</span>
-                        <span class="text-sm text-gray-500">11 kos tersedia</span>
+                        <span class="text-sm text-secondary">11 kos tersedia</span>
                     </div>
                 </a>
 
@@ -717,14 +717,14 @@
         <div class="max-w-4xl mx-auto px-4">
             <!-- Header -->
             <div class="flex items-center justify-between mb-4">
-                <h2 class="px-1 text-md sm:text-xl font-semibold text-gray-900">
+                <h2 class="px-1 text-md sm:text-xl font-semibold text-primary">
                     Baru Ditambahkan di <span class="text-brand">Siak</span>
                 </h2>
 
                 <a wire:navigate href="#"
                     class="btn-secondary w-8 h-8 sm:w-9 sm:h-9 flex items-center justify-center
         rounded-full transition flex-shrink-0">
-                    <i class="fa-solid fa-arrow-right text-sm text-gray-700"></i>
+                    <i class="fa-solid fa-arrow-right text-sm text-secondary"></i>
                 </a>
             </div>
 
@@ -755,31 +755,31 @@
 
                             <!-- Title + Gender -->
                             <div class="flex justify-between items-start">
-                                <h3 class="text-sm font-semibold leading-tight line-clamp-1">
+                                <h3 class="text-sm font-semibold leading-tight line-clamp-1 text-primary">
                                     Kos Putri Melati
                                 </h3>
 
                                 <span
-                                    class="text-xs text-gray-500 flex items-center gap-1 border border-gray-300 px-2 py-0.5 rounded-md">
+                                    class="text-xs text-secondary flex items-center gap-1 border border-gray-300 px-2 py-0.5 rounded-md">
                                     <i class="fa-solid fa-venus text-[10px]"></i>
                                     Putri
                                 </span>
                             </div>
 
                             <!-- Location -->
-                            <p class="text-xs text-gray-500 truncate">
+                            <p class="text-xs text-secondary truncate">
                                 Kampung Dalam, Siak
                             </p>
 
                             <!-- Facilities -->
-                            <p class="text-[11px] text-gray-400 truncate">
+                            <p class="text-[11px] text-thirdary truncate">
                                 RSUD Siak - 100 m
                             </p>
 
                             <!-- Price -->
                             <p class="text-sm">
-                                <span class="font-semibold">Rp462.683</span>
-                                <span class="text-gray-400 text-xs">/bulan</span>
+                                <span class="font-semibold text-primary">Rp462.683</span>
+                                <span class="text-thirdary text-xs">/bulan</span>
                             </p>
                         </div>
                     </a>
@@ -804,31 +804,31 @@
 
                             <!-- Title + Gender -->
                             <div class="flex justify-between items-start">
-                                <h3 class="text-sm font-semibold leading-tight line-clamp-1">
+                                <h3 class="text-sm font-semibold leading-tight line-clamp-1 text-primary">
                                     Kos Putri Melati
                                 </h3>
 
                                 <span
-                                    class="text-xs text-gray-500 flex items-center gap-1 border border-gray-300 px-2 py-0.5 rounded-md">
+                                    class="text-xs text-secondary flex items-center gap-1 border border-gray-300 px-2 py-0.5 rounded-md">
                                     <i class="fa-solid fa-venus text-[10px]"></i>
                                     Putri
                                 </span>
                             </div>
 
                             <!-- Location -->
-                            <p class="text-xs text-gray-500 truncate">
+                            <p class="text-xs text-secondary truncate">
                                 Kampung Dalam, Siak
                             </p>
 
                             <!-- Facilities -->
-                            <p class="text-[11px] text-gray-400 truncate">
+                            <p class="text-[11px] text-thirdary truncate">
                                 Kamar Mandi dalam · AC · Kasur
                             </p>
 
                             <!-- Price -->
                             <p class="text-sm">
-                                <span class="font-semibold">Rp462.683</span>
-                                <span class="text-gray-400 text-xs">/bulan</span>
+                                <span class="font-semibold text-primary">Rp462.683</span>
+                                <span class="text-thirdary text-xs">/bulan</span>
                             </p>
                         </div>
                     </a>
@@ -853,31 +853,31 @@
 
                             <!-- Title + Gender -->
                             <div class="flex justify-between items-start">
-                                <h3 class="text-sm font-semibold leading-tight line-clamp-1">
+                                <h3 class="text-sm font-semibold leading-tight line-clamp-1 text-primary">
                                     Kos Putri Melati
                                 </h3>
 
                                 <span
-                                    class="text-xs text-gray-500 flex items-center gap-1 border border-gray-300 px-2 py-0.5 rounded-md">
+                                    class="text-xs text-secondary flex items-center gap-1 border border-gray-300 px-2 py-0.5 rounded-md">
                                     <i class="fa-solid fa-venus text-[10px]"></i>
                                     Putri
                                 </span>
                             </div>
 
                             <!-- Location -->
-                            <p class="text-xs text-gray-500 truncate">
+                            <p class="text-xs text-secondary truncate">
                                 Kampung Dalam, Siak
                             </p>
 
                             <!-- Facilities -->
-                            <p class="text-[11px] text-gray-400 truncate">
+                            <p class="text-[11px] text-thirdary truncate">
                                 Kamar Mandi dalam · AC · Kasur
                             </p>
 
                             <!-- Price -->
                             <p class="text-sm">
-                                <span class="font-semibold">Rp462.683</span>
-                                <span class="text-gray-400 text-xs">/bulan</span>
+                                <span class="font-semibold text-primary">Rp462.683</span>
+                                <span class="text-thirdary text-xs">/bulan</span>
                             </p>
                         </div>
                     </a>
@@ -902,31 +902,31 @@
 
                             <!-- Title + Gender -->
                             <div class="flex justify-between items-start">
-                                <h3 class="text-sm font-semibold leading-tight line-clamp-1">
+                                <h3 class="text-sm font-semibold leading-tight line-clamp-1 text-primary">
                                     Kos Putri Melati
                                 </h3>
 
                                 <span
-                                    class="text-xs text-gray-500 flex items-center gap-1 border border-gray-300 px-2 py-0.5 rounded-md">
+                                    class="text-xs text-secondary flex items-center gap-1 border border-gray-300 px-2 py-0.5 rounded-md">
                                     <i class="fa-solid fa-venus text-[10px]"></i>
                                     Putri
                                 </span>
                             </div>
 
                             <!-- Location -->
-                            <p class="text-xs text-gray-500 truncate">
+                            <p class="text-xs text-secondary truncate">
                                 Kampung Dalam, Siak
                             </p>
 
                             <!-- Facilities -->
-                            <p class="text-[11px] text-gray-400 truncate">
+                            <p class="text-[11px] text-thirdary truncate">
                                 Kamar Mandi dalam · AC · Kasur
                             </p>
 
                             <!-- Price -->
                             <p class="text-sm">
-                                <span class="font-semibold">Rp462.683</span>
-                                <span class="text-gray-400 text-xs">/bulan</span>
+                                <span class="font-semibold text-primary">Rp462.683</span>
+                                <span class="text-thirdary text-xs">/bulan</span>
                             </p>
                         </div>
                     </a>
@@ -951,31 +951,31 @@
 
                             <!-- Title + Gender -->
                             <div class="flex justify-between items-start">
-                                <h3 class="text-sm font-semibold leading-tight line-clamp-1">
+                                <h3 class="text-sm font-semibold leading-tight line-clamp-1 text-primary">
                                     Kos Putri Melati
                                 </h3>
 
                                 <span
-                                    class="text-xs text-gray-500 flex items-center gap-1 border border-gray-300 px-2 py-0.5 rounded-md">
+                                    class="text-xs text-secondary flex items-center gap-1 border border-gray-300 px-2 py-0.5 rounded-md">
                                     <i class="fa-solid fa-venus text-[10px]"></i>
                                     Putri
                                 </span>
                             </div>
 
                             <!-- Location -->
-                            <p class="text-xs text-gray-500 truncate">
+                            <p class="text-xs text-secondary truncate">
                                 Kampung Dalam, Siak
                             </p>
 
                             <!-- Facilities -->
-                            <p class="text-[11px] text-gray-400 truncate">
+                            <p class="text-[11px] text-thirdary truncate">
                                 Kamar Mandi dalam · AC · Kasur
                             </p>
 
                             <!-- Price -->
                             <p class="text-sm">
-                                <span class="font-semibold">Rp462.683</span>
-                                <span class="text-gray-400 text-xs">/bulan</span>
+                                <span class="font-semibold text-primary">Rp462.683</span>
+                                <span class="text-thirdary text-xs">/bulan</span>
                             </p>
                         </div>
                     </a>
@@ -995,7 +995,7 @@
                             </div>
 
                             <!-- Text -->
-                            <p class="text-sm font-semibold text-gray-800 text-center">
+                            <p class="text-primary text-sm font-semibold text- text-center">
                                 Lihat Semua
                             </p>
                         </a>
@@ -1040,14 +1040,14 @@
                         class="accordion-trigger w-full px-5 py-3 flex items-center justify-between hover:bg-gray-50 focus:outline-none"
                         onclick="toggleAccordion(this)">
 
-                        <span class="text-left font-semibold text-gray-900">
+                        <span class="text-left font-semibold text-primary">
                             Kenapa WakKos?
                         </span>
 
-                        <i class="accordion-chevron fa-solid fa-chevron-down text-gray-500"></i>
+                        <i class="accordion-chevron fa-solid fa-chevron-down text-secondary"></i>
                     </button>
                     <div class="accordion-content">
-                        <div class="px-6 py-4 border-t border-gray-100 bg-gray-50 text-gray-700 leading-relaxed">
+                        <div class="px-6 py-4 border-t border-gray-100 bg-gray-50 text-secondary leading-relaxed">
                             <p>WakKos adalah aplikasi mobile dan web terpercaya untuk mencari, menyewa, dan mengelola
                                 kos di Indonesia. Dengan teknologi terdepan, kami menghubungkan penyewa dan pemilik kos
                                 dalam satu platform yang aman, mudah digunakan, dan transparan. Misi kami adalah membuat
@@ -1063,14 +1063,14 @@
                         class="accordion-trigger w-full px-5 py-3 flex items-center justify-between hover:bg-gray-50 focus:outline-none"
                         onclick="toggleAccordion(this)">
 
-                        <span class="text-left font-semibold text-gray-900">
+                        <span class="text-left font-semibold text-primary">
                             Cara Menyewa Kos
                         </span>
 
-                        <i class="accordion-chevron fa-solid fa-chevron-down text-gray-500"></i>
+                        <i class="accordion-chevron fa-solid fa-chevron-down text-secondary"></i>
                     </button>
                     <div class="accordion-content">
-                        <div class="px-6 py-4 border-t border-gray-100 bg-gray-50 text-gray-700 leading-relaxed">
+                        <div class="px-6 py-4 border-t border-gray-100 bg-gray-50 text-secondary leading-relaxed">
                             <ol class="list-decimal list-inside space-y-3">
                                 <li><strong>Buka Aplikasi WakKos</strong> - Unduh dan buka aplikasi WakKos di smartphone
                                     atau akses website</li>
@@ -1095,14 +1095,14 @@
                         class="accordion-trigger w-full px-5 py-3 flex items-center justify-between hover:bg-gray-50 focus:outline-none"
                         onclick="toggleAccordion(this)">
 
-                        <span class="text-left font-semibold text-gray-900">
+                        <span class="text-left font-semibold text-primary">
                             Cara Mendaftarkan Kos
                         </span>
 
-                        <i class="accordion-chevron fa-solid fa-chevron-down text-gray-500"></i>
+                        <i class="accordion-chevron fa-solid fa-chevron-down text-secondary"></i>
                     </button>
                     <div class="accordion-content">
-                        <div class="px-6 py-4 border-t border-gray-100 bg-gray-50 text-gray-700 leading-relaxed">
+                        <div class="px-6 py-4 border-t border-gray-100 bg-gray-50 text-secondary leading-relaxed">
                             <ol class="list-decimal list-inside space-y-3">
                                 <li><strong>Daftar Akun</strong> - Buat akun pemilik kos dengan email atau nomor telepon
                                 </li>

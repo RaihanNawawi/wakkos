@@ -19,6 +19,7 @@
     /* Text */
     --color-text-primary: var(--color-gray-900);
     --color-text-secondary: var(--color-gray-600);
+    --color-text-thirdary: var(--color-gray-400);
 }
 
 /* Text Class   */
@@ -28,6 +29,10 @@
 
 .text-secondary {
   color: var(--color-text-secondary);
+}
+
+.text-thirdary {
+  color: var(--color-text-thirdary);
 }
 
 
