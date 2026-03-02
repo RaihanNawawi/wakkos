@@ -12,10 +12,10 @@
                 class="flex-1 flex items-center gap-2 rounded-full border border-gray-200 bg-white py-3 px-4 shadow-sm active:scale-[0.99] transition sm:ml-0.5 md:mx-6 md:my-2">
 
                 <!-- Search Icon -->
-                <i class="fa-solid fa-magnifying-glass text-gray-500"></i>
+                <i class="fa-solid fa-magnifying-glass text-secondary"></i>
 
                 <!-- Placeholder Text -->
-                <span class="text-sm font-medium text-gray-800 truncate">
+                <span class="text-sm font-medium text-secondary truncate">
                     Cari kos di Dayun, Siak
                 </span>
             </button>
@@ -23,7 +23,7 @@
             <!-- Hamburger Menu Button START -->
             <button id="hamburgerBtn"
                 class="btn-secondary flex items-center justify-center w-10 h-10 rounded-full transition-colors duration-200 ml-1">
-                <i class="fas fa-bars text-gray-700 text-base"></i>
+                <i class="fas fa-bars text-secondary text-base"></i>
             </button>
             <!-- Hamburger Menu Button END -->
 
@@ -45,7 +45,7 @@
                         <button onclick="closeSearch()"
                             class="p-2 -ml-1 rounded-md hover:bg-gray-100 transition flex-shrink-0"
                             aria-label="Kembali">
-                            <i class="fa-solid fa-arrow-left text-gray-600 text-xl"></i>
+                            <i class="fa-solid fa-arrow-left text-secondary text-xl"></i>
                         </button>
 
                         <!-- Search Bar -->
@@ -63,20 +63,20 @@
 
                     <!-- Recent -->
                     <div class="px-3 sm:px-4 py-.5" id="recent-search">
-                        <p class="text-sm font-semibold mb-1.5 text-gray-500">
+                        <p class="text-sm font-semibold mb-1.5 text-secondary">
                             Pencarian Terakhir
                         </p>
                         <!-- Location Item -->
                         <button class="w-full flex gap-3 pt-2 rounded-md pb-2 hover:bg-gray-50 transition text-left">
                             <div class="w-10 h-10 flex items-center justify-center flex-shrink-0">
-                                <i class="fa-solid fa-location-dot text-xl text-gray-500"></i>
+                                <i class="fa-solid fa-location-dot text-xl text-thirdary"></i>
                             </div>
 
                             <a href="/resultpage" class="flex-1">
-                                <p class="text-sm font-medium text-gray-800">
+                                <p class="text-sm font-semibold text-primary">
                                     Kampung Dalam
                                 </p>
-                                <p class="text-xs text-gray-500">
+                                <p class="text-xs text-secondary mt-0.5">
                                     Siak, Riau
                                 </p>
                             </a>
@@ -87,31 +87,31 @@
 
                             <!-- Icon / Thumbnail -->
                             <div class="w-10 h-10 flex items-center justify-center flex-shrink-0">
-                                <i class="fa-solid fa-house text-gray-500 text-xl"></i>
+                                <i class="fa-solid fa-house text-xl text-thirdary"></i>
                             </div>
 
 
                             <!-- Konten Utama -->
                             <div class="flex-1 min-w-0">
                                 <!-- Title -->
-                                <p class="text-sm font-medium text-gray-800 leading-tight">
+                                <p class="text-sm font-semibold text-primary leading-tight">
                                     Kos Putri Balai Kayang 2
                                 </p>
 
                                 <!-- Location -->
-                                <p class="text-xs text-gray-500 mt-0.5">
+                                <p class="text-xs text-secondary mt-0.5">
                                     Kampung Dalam, Siak, Riau
                                 </p>
 
                                 <!-- ===== Mobile Meta (default) ===== -->
                                 <div class="mt-1 flex items-center gap-2 text-xs md:hidden">
-                                    <span class="px-2 py-0.5 rounded-md border border-gray-200 text-gray-600">
+                                    <span class="px-2 py-0.5 rounded-md border border-gray-200 text-secondary">
                                         Putri
                                     </span>
-                                    <span class="font-semibold text-gray-800">
+                                    <span class="font-semibold text-primary">
                                         Rp700rb
                                     </span>
-                                    <span class="text-gray-400">
+                                    <span class="text-thirdary">
                                         /bulan
                                     </span>
                                 </div>
@@ -119,13 +119,13 @@
 
                             <!-- ===== Desktop Meta (md+) ===== -->
                             <div class="hidden md:flex flex-col items-end flex-shrink-0">
-                                <span class="text-xs px-2 py-0.5 rounded-md border border-gray-200 text-gray-600">
+                                <span class="text-xs px-2 py-0.5 rounded-md border border-gray-200 text-secondary">
                                     Putri
                                 </span>
 
-                                <div class="text-right text-xs font-semibold text-gray-800">
+                                <div class="text-right text-xs font-semibold text-primary">
                                     Rp700rb
-                                    <span class="text-xs font-normal text-gray-400">
+                                    <span class="text-xs font-normal text-thirdary">
                                         /bulan
                                     </span>
                                 </div>
@@ -147,14 +147,14 @@
                                 <button
                                     class="w-full flex gap-3 pt-2 rounded-md pb-2 hover:bg-gray-50 transition text-left">
                                     <div class="w-10 h-10 flex items-center justify-center flex-shrink-0">
-                                        <i class="fa-solid fa-location-dot text-xl text-gray-500"></i>
+                                        <i class="fa-solid fa-location-dot text-xl text-thirdary"></i>
                                     </div>
 
                                     <div class="flex-1">
-                                        <p class="text-sm font-medium text-gray-800">
+                                        <p class="text-sm font-semibold text-primary">
                                             Kampung Dalam
                                         </p>
-                                        <p class="text-xs text-gray-500">
+                                        <p class="text-xs text-secondary">
                                             Siak, Riau
                                         </p>
                                     </div>
@@ -163,14 +163,14 @@
                                 <button
                                     class="w-full flex gap-3 pt-2 rounded-md pb-2 hover:bg-gray-50 transition text-left">
                                     <div class="w-10 h-10 flex items-center justify-center flex-shrink-0">
-                                        <i class="fa-solid fa-location-dot text-xl text-gray-500"></i>
+                                        <i class="fa-solid fa-location-dot text-xl text-thirdary"></i>
                                     </div>
 
                                     <div class="flex-1">
-                                        <p class="text-sm font-medium text-gray-800">
+                                        <p class="text-sm font-semibold text-primary">
                                             Kampung Rempak
                                         </p>
-                                        <p class="text-xs text-gray-500">
+                                        <p class="text-xs text-secondary">
                                             Siak, Riau
                                         </p>
                                     </div>
@@ -179,14 +179,14 @@
                                 <button
                                     class="w-full flex gap-3 pt-2 rounded-md pb-2 hover:bg-gray-50 transition text-left">
                                     <div class="w-10 h-10 flex items-center justify-center flex-shrink-0">
-                                        <i class="fa-solid fa-location-dot text-xl text-gray-500"></i>
+                                        <i class="fa-solid fa-location-dot text-xl text-thirdary"></i>
                                     </div>
 
                                     <div class="flex-1">
-                                        <p class="text-sm font-medium text-gray-800">
+                                        <p class="text-sm font-semibold text-primary">
                                             Suak Lanjut
                                         </p>
-                                        <p class="text-xs text-gray-500">
+                                        <p class="text-xs text-secondary">
                                             Siak, Riau
                                         </p>
                                     </div>
@@ -200,7 +200,7 @@
                             <!-- Kos Recommendation -->
                             <!-- ===================== -->
                             <div>
-                                <p class="mb-2 text-sm font-semibold text-gray-500">
+                                <p class="mb-2 text-sm font-semibold text-secondary">
                                     Rekomendasi Kos
                                 </p>
 
@@ -212,32 +212,32 @@
 
                                         <!-- Icon / Thumbnail -->
                                         <div class="w-10 h-10 flex items-center justify-center flex-shrink-0">
-                                            <i class="fa-solid fa-house text-gray-500 text-xl"></i>
+                                            <i class="fa-solid fa-house text-thirdary text-xl"></i>
                                         </div>
 
                                         <!-- Konten Utama -->
                                         <div class="flex-1 min-w-0">
 
                                             <!-- Title -->
-                                            <p class="text-sm font-medium text-gray-800 leading-tight">
+                                            <p class="text-sm font-semibold text-primary leading-tight">
                                                 Kos Putri Balai Kayang 2
                                             </p>
 
                                             <!-- Location -->
-                                            <p class="text-xs text-gray-500 mt-0.5">
+                                            <p class="text-xs text-secondary mt-0.5">
                                                 Kampung Dalam, Siak, Riau
                                             </p>
 
                                             <!-- ===== Mobile Meta (default) ===== -->
                                             <div class="mt-1 flex items-center gap-2 text-xs md:hidden">
                                                 <span
-                                                    class="px-2 py-0.5 rounded-md border border-gray-200 text-gray-600">
+                                                    class="px-2 py-0.5 rounded-md border border-gray-200 text-secondary">
                                                     Putri
                                                 </span>
-                                                <span class="font-semibold text-gray-800">
+                                                <span class="font-semibold text-primary">
                                                     Rp700rb
-                                                </span>
-                                                <span class="text-gray-400">
+                                            </span>
+                                                <span class="text-thirdary">
                                                     /bulan
                                                 </span>
                                             </div>
@@ -250,9 +250,9 @@
                                                 Putri
                                             </span>
 
-                                            <div class="text-right text-xs font-semibold text-gray-800">
+                                            <div class="text-right text-xs font-semibold text-primary">
                                                 Rp700rb
-                                                <span class="text-xs font-normal text-gray-400">
+                                                <span class="text-xs font-normal text-thirdary">
                                                     /bulan
                                                 </span>
                                             </div>
@@ -266,7 +266,7 @@
 
                 </div>
                 <!-- Footer Hint -->
-                <div class="border-t px-3 sm:px-4 mt-1.5 text-xs text-gray-400">
+                <div class="border-t px-3 sm:px-4 mt-1.5 text-xs text-thirdary">
                     <span>Klik Hasil untuk mencari</span>
                 </div>
             </div>
@@ -315,17 +315,18 @@
     <div id="menuOverlay" class="hidden fixed inset-0 bg-black/30 z-50 transition-opacity duration-300"
         onclick="closeMenu()"></div>
     <!-- Menu Overlay (Backdrop) END -->
+
     <!-- Hamburger Menu Drawer START -->
     <div id="menuDrawer"
         class="hidden fixed top-0 right-0 h-screen w-80 bg-white shadow-2xl z-50 transform translate-x-full transition-transform duration-300 ease-in-out overflow-y-auto">
 
         <!-- Menu Header START -->
         <div class="flex items-center justify-between p-5 border-b border-gray-200">
-            <h2 class="text-xl font-semibold text-gray-900">Menu</h2>
+            <h2 class="text-xl font-semibold text-primary">Menu</h2>
             <button id="closeMenuBtn"
                 class="flex items-center justify-center w-8 h-8 rounded-full bg-gray-100 hover:bg-gray-200 transition-colors duration-200"
                 onclick="closeMenu()">
-                <i class="fas fa-times text-gray-700"></i>
+                <i class="fas fa-times text-secondary"></i>
             </button>
         </div>
         <!-- Menu Header END -->
@@ -337,7 +338,7 @@
             <!-- CTA Daftarkan Kos -->
             <a href="https://wa.me/6281234567890?text=Halo%20Admin%20WakKos%20%F0%9F%91%8B%0A%0ASaya%20ingin%20mendaftarkan%20kos%20saya%20di%20WakKos.%20Mohon%20informasi%20lebih%20lanjut.%0A%0ATerima%20kasih%20%F0%9F%98%8A"
                 target="_blank"
-                class="px-6 py-4 font-semibold text-gray-800 hover:bg-gray-50 transition flex items-center gap-3">
+                class="px-6 py-4 font-semibold text-primary hover:bg-gray-50 transition flex items-center gap-3">
                 <i class="fab fa-whatsapp text-green-500 text-lg"></i>
                 Daftarkan Kos
             </a>
@@ -345,16 +346,16 @@
             <!-- Cari Kos -->
             <!-- Cari Kos -->
             <a href="/homepage"
-                class="px-6 py-4 text-gray-800 hover:bg-gray-50 transition flex items-center justify-between w-full">
+                class="px-6 py-4 text-primary hover:bg-gray-50 transition flex items-center justify-between w-full">
                 <span>Cari Kos</span>
-                <i class="fas fa-chevron-right text-gray-400 text-xs"></i>
+                <i class="fas fa-chevron-right text-secondary text-xs"></i>
             </a>
 
             <!-- Pusat Bantuan -->
             <a href="#"
-                class="px-6 py-4 text-gray-800 hover:bg-gray-50 transition flex items-center justify-between">
+                class="px-6 py-4 text-primary hover:bg-gray-50 transition flex items-center justify-between">
                 <span>Pusat Bantuan</span>
-                <i class="fas fa-chevron-right text-gray-400 text-xs"></i>
+                <i class="fas fa-chevron-right text-secondary text-xs"></i>
             </a>
 
         </div>
