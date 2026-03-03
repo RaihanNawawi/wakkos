@@ -2,61 +2,6 @@
     <!-- Hero Section (Quick Fit Check) START -->
     <section>
         <div class="max-w-4xl mx-auto px-4 mt-2">
-            <!-- SHARE FEATURES Modal Overlay START -->
-            <div id="modalOverlay"
-                class="fixed inset-0 bg-black/50 backdrop-blur-sm hidden items-center justify-center z-50 p-4">
-
-                <!-- Modal Container START -->
-                <div class="bg-white rounded-2xl shadow-2xl w-full max-w-md relative animate-fade-in">
-
-                    <!-- Close Button START -->
-                    <button id="closeModalBtn"
-                        class="absolute top-4 right-4 text-gray-400 hover:text-gray-600 transition-colors z-10">
-                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M6 18L18 6M6 6l12 12" />
-                        </svg>
-                    </button>
-                    <!-- Close Button END -->
-
-                    <!-- Overlay Screen Share START -->
-                    <div id="shareOption" class="px-8 py-8">
-
-                        <!-- Share Header START -->
-                        <div class="text-center mb-8">
-                            <h2 class="text-2xl font-bold text-gray-900">Bagikan Profil Kos</h2>
-                        </div>
-                        <!-- Share Header END -->
-
-                        <!-- Share Option START -->
-
-                        <!-- Copy Link START -->
-                        <div class="flex items-center gap-2 border border-gray-200 rounded-xl p-2 bg-gray-50 w-full">
-
-                            <input type="text" readonly value="https://example.com/prof"
-                                class="flex-1 min-w-0 bg-transparent text-sm text-gray-700 outline-none px-3 truncate" />
-
-                            <button onclick="copyLink()"
-                                class="shrink-0 px-3 py-2 rounded-lg bg-gray-900 text-white text-sm font-medium hover:bg-gray-800 transition">
-                                Copy
-                            </button>
-
-                        </div>
-                        <!-- Copy Link END -->
-
-                        <!-- Share Icons Row END -->
-
-                        <!-- Share Option END -->
-
-                    </div>
-                    <!-- Overlay Screen Share END -->
-
-                </div>
-                <!-- Modal Container END -->
-            </div>
-            <!-- Modal Overlay END -->
-
-
             <!-- Photo Gallery -->
             <div class="mb-8 relative">
                 <div class="grid grid-cols-1 lg:grid-cols-3 gap-4 aspect-[4/3] lg:aspect-auto lg:h-[420px]">
@@ -82,8 +27,8 @@
                 </div>
 
                 <button onclick="openGallery()"
-                    class="absolute bottom-4 right-4 z-10 flex items-center gap-2 rounded-lg bg-white/90 px-4 py-2 text-sm font-semibold text-gray-900 shadow hover:bg-white">
-                    <i class="fa-regular fa-images"></i>
+                    class="absolute bottom-4 right-4 z-10 flex items-center gap-2 rounded-lg bg-white/90 px-4 py-2 text-sm font-semibold text-primary shadow hover:bg-white">
+                    <i class="text-secondary fa-regular fa-images"></i>
                     Lihat semua foto
                 </button>
             </div>
@@ -195,7 +140,7 @@
                 <div class="relative mx-auto h-full flex flex-col sm:px-4 sm:py-6 sm:max-w-3xl">
                     <!-- Header -->
                     <div class="absolute top-0 inset-x-0 h-14 flex items-center px-4 text-white z-10">
-                        <div class="absolute left-4 text-lg font-semibold">Semua Foto</div>
+                        <div class="absolute left-4 text-md md:text-lg font-semibold">Semua Foto</div>
                         <div id="counter" class="absolute left-1/2 -translate-x-1/2 text-md">1 / 1</div>
                         <button onclick="closeLightbox()" class="absolute right-4 text-3xl">&times;</button>
                     </div>
@@ -379,7 +324,7 @@
                 <div>
                     <!-- Property Title Section START -->
                     <div class="mb-8">
-                        <h1 class="text-3xl font-bold text-gray-900 mb-3">Kos Putri Melati</h1>
+                        <h1 class="text-3xl font-bold text-primary mb-3">Kos Putri Melati</h1>
                         <!-- Property info row: type, location, share button -->
                         <!-- Property info row -->
                         <div class="flex flex-wrap items-center gap-3 mb-6 pb-4 border-b border-gray-200">
@@ -387,15 +332,15 @@
                             <!-- LEFT GROUP -->
                             <div class="flex flex-wrap items-center gap-3">
                                 <span
-                                    class="inline-flex items-center gap-1.5 text-sm font-medium bg-white text-gray-600 px-2.5 py-1 rounded-lg border border-gray-300">
-                                    <i class="fa-solid fa-venus text-xs"></i>
+                                    class="inline-flex items-center gap-1.5 text-sm font-medium bg-white text-secondary px-2.5 py-1 rounded-lg border border-gray-300">
+                                    <i class="text-secondary fa-solid fa-venus text-xs"></i>
                                     Kos Putri
                                 </span>
 
-                                <span class="text-gray-400">·</span>
+                                <span class="text-secondary">·</span>
 
-                                <span class="flex items-center gap-2 text-md text-gray-700">
-                                    <i class="fa-solid fa-location-dot text-gray-500 text-md shrink-0"></i>
+                                <span class="flex items-center gap-2 text-md text-secondary">
+                                    <i class="text-secondary fa-solid fa-location-dot text-secondary text-md shrink-0"></i>
                                     <span>Kecamatan Siak</span>
                                 </span>
                             </div>
@@ -408,16 +353,16 @@
                         <!-- Ketersediaan Kamar START -->
                         <div class="flex items-center justify-between">
                             <div class="flex items-center gap-2">
-                                <i class="fa-solid fa-door-open text-gray-500 text-lg shrink-0"></i>
-                                <span class="text-gray-700">
+                                <i class="text-secondary fa-solid fa-door-open text-secondary text-lg shrink-0"></i>
+                                <span class="text-secondary">
                                     Tersisa <span class="text-red-600 font-semibold">3 kamar</span>
                                 </span>
                             </div>
                             <div class="ml-auto relative inline-block">
                                 <button id="shareBtn"
-                                    class="border border-gray-200 rounded-xl open-share-btn inline-flex items-center gap-2 bg-white px-3 py-2 text-sm font-medium text-gray-900">
-                                    <i class="fa-solid fa-arrow-up-from-bracket text-gray-600 text-sm"></i>
-                                    <span class="hidden md:inline">Share</span>
+                                    class="border border-gray-200 rounded-xl open-share-btn inline-flex items-center gap-2 bg-white px-3 py-2 text-sm font-medium text-primary">
+                                    <i class="text-secondary fa-solid fa-arrow-up-from-bracket text-secondary text-sm"></i>
+                                    <span class="hidden md:inline text-secondary">Share</span>
                                 </button>
                                 <script>
                                     document.getElementById('shareBtn').addEventListener('click', async () => {
@@ -451,8 +396,8 @@
                                 class="w-12 h-12 bg-gradient-to-br from-pink-500 to-purple-500 rounded-full flex items-center justify-center text-white text-xl font-bold">
                                 AK</div>
                             <div>
-                                <h3 class="text-lg font-semibold text-gray-900">Anas Karim</h3>
-                                <p class="text-sm text-gray-600">Pemilik Kos</p>
+                                <h3 class="text-lg font-semibold text-primary">Anas Karim</h3>
+                                <p class="text-sm text-secondary">Pemilik Kos</p>
                             </div>
                         </div>
                     </div>
@@ -460,50 +405,50 @@
                     {{-- Identity & Kos Information: Header END --}}
                     <!-- Facilities -->
                     <div class="pt-8">
-                        <h3 class="text-2xl font-semibold text-gray-900 mb-6 flex items-center gap-2">
+                        <h3 class="text-2xl font-semibold text-primary mb-6 flex items-center gap-2">
                             Fasilitas Tersedia
                         </h3>
                         <div class="space-y-3">
                             <div class="flex items-center gap-3 mb-2">
                                 <div class="w-10 h-10 flex items-center justify-center flex-shrink-0">
-                                    <i class="fa-solid fa-wifi text-gray-500 text-lg"></i>
+                                    <i class="text-secondary fa-solid fa-wifi  text-lg"></i>
                                 </div>
-                                <span class="text-gray-700">WiFi 50 Mbps</span>
+                                <span class="text-secondary">WiFi 50 Mbps</span>
                             </div>
 
                             <div class="flex items-center gap-3 mb-2">
                                 <div class="w-10 h-10 flex items-center justify-center flex-shrink-0">
-                                    <i class="fa-solid fa-snowflake text-gray-500 text-lg"></i>
+                                    <i class="text-secondary fa-solid fa-snowflake text-lg"></i>
                                 </div>
-                                <span class="text-gray-700">Air Conditioner</span>
+                                <span class="text-secondary">Air Conditioner</span>
                             </div>
 
                             <div class="flex items-center gap-3 mb-2">
                                 <div class="w-10 h-10 flex items-center justify-center flex-shrink-0">
-                                    <i class="fa-solid fa-bed text-gray-500 text-lg"></i>
+                                    <i class="text-secondary fa-solid fa-bed text-lg"></i>
                                 </div>
-                                <span class="text-gray-700">Kasur + Lemari + Meja Belajar</span>
+                                <span class="text-secondary">Kasur + Lemari + Meja Belajar</span>
                             </div>
 
                             <div class="flex items-center gap-3 mb-2">
                                 <div class="w-10 h-10 flex items-center justify-center flex-shrink-0">
-                                    <i class="fa-solid fa-bolt text-gray-500 text-lg"></i>
+                                    <i class="text-secondary fa-solid fa-bolt text-lg"></i>
                                 </div>
-                                <span class="text-gray-700">Listrik Termasuk (Batas 100 kWh)</span>
+                                <span class="text-secondary">Listrik Termasuk (Batas 100 kWh)</span>
                             </div>
 
                             <div class="flex items-center gap-3 mb-2">
                                 <div class="w-10 h-10 flex items-center justify-center flex-shrink-0">
-                                    <i class="fa-solid fa-video text-gray-500 text-lg"></i>
+                                    <i class="text-secondary fa-solid fa-video text-lg"></i>
                                 </div>
-                                <span class="text-gray-700">CCTV 24 Jam</span>
+                                <span class="text-secondary">CCTV 24 Jam</span>
                             </div>
 
                             <div class="flex items-center gap-3 mb-2">
                                 <div class="w-10 h-10 flex items-center justify-center flex-shrink-0">
-                                    <i class="fa-solid fa-kitchen-set text-gray-500 text-lg"></i>
+                                    <i class="text-secondary fa-solid fa-kitchen-set text-lg"></i>
                                 </div>
-                                <span class="text-gray-700">Dapur Bersama</span>
+                                <span class="text-secondary">Dapur Bersama</span>
                             </div>
                         </div>
 
@@ -511,57 +456,57 @@
                     <div class="border-b border-gray-200 mt-4"></div>
                     <!-- Rules -->
                     <div class="pt-8">
-                        <h3 class="text-2xl font-semibold text-gray-900 mb-6 flex items-center gap-2">
+                        <h3 class="text-2xl font-semibold text-primary mb-6 flex items-center gap-2">
                             Peraturan Kos
                         </h3>
                         <div class="space-y-3">
                             <div class="flex items-start gap-3 mb-4">
                                 <div class="w-10 h-10 flex items-center justify-center flex-shrink-0">
-                                    <i class="fa-solid fa-clock text-gray-500 text-lg"></i>
+                                    <i class="text-secondary fa-solid fa-clock text-lg"></i>
                                 </div>
                                 <div>
-                                    <p class="font-medium text-gray-900">Jam Malam 23.00 WIB</p>
-                                    <p class="text-sm text-gray-600">Pintu utama dikunci setelah jam malam</p>
+                                    <p class="font-medium text-primary">Jam Malam 23.00 WIB</p>
+                                    <p class="text-sm text-secondary">Pintu utama dikunci setelah jam malam</p>
                                 </div>
                             </div>
 
                             <div class="flex items-start gap-3 mb-4">
                                 <div class="w-10 h-10 flex items-center justify-center flex-shrink-0">
-                                    <i class="fa-solid fa-user text-gray-500 text-lg"></i>
+                                    <i class="text-secondary fa-solid fa-user text-lg"></i>
                                 </div>
                                 <div>
-                                    <p class="font-medium text-gray-900">Khusus Putri</p>
-                                    <p class="text-sm text-gray-600">Tidak diperbolehkan tamu laki-laki masuk kamar</p>
+                                    <p class="font-medium text-primary">Khusus Putri</p>
+                                    <p class="text-sm text-secondary">Tidak diperbolehkan tamu laki-laki masuk kamar</p>
                                 </div>
                             </div>
 
                             <div class="flex items-start gap-3 mb-4">
                                 <div class="w-10 h-10 flex items-center justify-center flex-shrink-0">
-                                    <i class="fa-solid fa-ban-smoking text-gray-500 text-lg"></i>
+                                    <i class="text-secondary fa-solid fa-ban-smoking text-lg"></i>
                                 </div>
                                 <div>
-                                    <p class="font-medium text-gray-900">Dilarang Merokok</p>
-                                    <p class="text-sm text-gray-600">Merokok hanya di area yang telah ditentukan</p>
+                                    <p class="font-medium text-primary">Dilarang Merokok</p>
+                                    <p class="text-sm text-secondary">Merokok hanya di area yang telah ditentukan</p>
                                 </div>
                             </div>
 
                             <div class="flex items-start gap-3 mb-4">
                                 <div class="w-10 h-10 flex items-center justify-center flex-shrink-0">
-                                    <i class="fa-solid fa-file-invoice text-gray-500 text-lg"></i>
+                                    <i class="text-secondary fa-solid fa-file-invoice text-lg"></i>
                                 </div>
                                 <div>
-                                    <p class="font-medium text-gray-900">Bayar Tepat Waktu</p>
-                                    <p class="text-sm text-gray-600">Maksimal tanggal 5 setiap bulan</p>
+                                    <p class="font-medium text-primary">Bayar Tepat Waktu</p>
+                                    <p class="text-sm text-secondary">Maksimal tanggal 5 setiap bulan</p>
                                 </div>
                             </div>
 
                             <div class="flex items-start gap-3 mb-4">
                                 <div class="w-10 h-10 flex items-center justify-center flex-shrink-0">
-                                    <i class="fa-solid fa-calendar-check text-gray-500 text-lg"></i>
+                                    <i class="text-secondary fa-solid fa-calendar-check text-lg"></i>
                                 </div>
                                 <div>
-                                    <p class="font-medium text-gray-900">Kontrak Minimal 3 Bulan</p>
-                                    <p class="text-sm text-gray-600">Deposit 1 bulan dikembalikan saat keluar</p>
+                                    <p class="font-medium text-primary">Kontrak Minimal 3 Bulan</p>
+                                    <p class="text-sm text-secondary">Deposit 1 bulan dikembalikan saat keluar</p>
                                 </div>
                             </div>
                         </div>
@@ -572,7 +517,7 @@
 
                     <!-- Lokasi dan Tempat Sekitar START -->
                     <div class="pt-8 mb-2">
-                        <h2 class="text-2xl font-semibold text-gray-900 mb-6 flex items-center gap-2">Lokasi & Tempat
+                        <h2 class="text-2xl font-semibold text-primary mb-6 flex items-center gap-2">Lokasi & Tempat
                             Sekitar</h2>
                         <!-- Map Container -->
                         <!-- Map Container -->
@@ -599,21 +544,21 @@
                                     <button onclick="switchTab(event,'kampus')"
                                         class="tab-btn px-3 py-1.5 text-sm border rounded-full whitespace-nowrap
                transition-all duration-200
-               bg-white border-gray-900 text-gray-900">
+               bg-white border-gray-900 text-primary">
                                         Kampus / Sekolah
                                     </button>
 
                                     <button onclick="switchTab(event,'ibadah')"
                                         class="tab-btn px-3 py-1.5 text-sm border rounded-full whitespace-nowrap
                transition-all duration-200
-               bg-gray-50 border-gray-300 text-gray-600">
+               bg-gray-50 border-gray-300 text-secondary">
                                         Tempat Ibadah
                                     </button>
 
                                     <button onclick="switchTab(event,'fasilitas')"
                                         class="tab-btn px-3 py-1.5 text-sm border rounded-full whitespace-nowrap
                transition-all duration-200
-               bg-gray-50 border-gray-300 text-gray-600">
+               bg-gray-50 border-gray-300 text-secondary">
                                         Fasilitas Umum
                                     </button>
 
@@ -638,11 +583,11 @@
                                 <div id="kampus" class="tab-content space-y-3">
                                     <div class="flex items-start gap-3">
                                         <div class="w-10 h-10 flex items-center justify-center flex-shrink-0">
-                                            <i class="fa-solid fa-location-dot text-gray-500 text-lg"></i>
+                                            <i class="text-secondary fa-solid fa-location-dot text-lg"></i>
                                         </div>
                                         <div>
-                                            <p class="font-medium text-gray-900">Universitas Negeri</p>
-                                            <p class="text-sm text-gray-600">1.2 Km</p>
+                                            <p class="font-medium text-primary">Universitas Negeri</p>
+                                            <p class="text-sm text-secondary">1.2 Km</p>
                                         </div>
                                     </div>
                                 </div>
@@ -651,11 +596,11 @@
                                 <div id="ibadah" class="tab-content space-y-3 hidden">
                                     <div class="flex items-start gap-3">
                                         <div class="w-10 h-10 flex items-center justify-center flex-shrink-0">
-                                            <i class="fa-solid fa-location-dot text-gray-500 text-lg"></i>
+                                            <i class="text-secondary fa-solid fa-location-dot text-lg"></i>
                                         </div>
                                         <div>
-                                            <p class="font-medium text-gray-900">Masjid Al Fath</p>
-                                            <p class="text-sm text-gray-600">0,5 Km</p>
+                                            <p class="font-medium text-primary">Masjid Al Fath</p>
+                                            <p class="text-sm text-secondary">0,5 Km</p>
                                         </div>
                                     </div>
                                 </div>
@@ -664,11 +609,11 @@
                                 <div id="fasilitas" class="tab-content space-y-3 hidden">
                                     <div class="flex items-start gap-3">
                                         <div class="w-10 h-10 flex items-center justify-center flex-shrink-0">
-                                            <i class="fa-solid fa-location-dot text-gray-500 text-lg"></i>
+                                            <i class="text-secondary fa-solid fa-location-dot text-lg"></i>
                                         </div>
                                         <div>
-                                            <p class="font-medium text-gray-900">Indomaret</p>
-                                            <p class="text-sm text-gray-600">300 m</p>
+                                            <p class="font-medium text-primary">Indomaret</p>
+                                            <p class="text-sm text-secondary">300 m</p>
                                         </div>
                                     </div>
                                 </div>
@@ -684,15 +629,15 @@
                                 });
 
                                 document.querySelectorAll(".tab-btn").forEach(btn => {
-                                    btn.classList.remove("bg-white", "border-gray-900", "text-gray-900");
-                                    btn.classList.add("bg-gray-50", "border-gray-300", "text-gray-600");
+                                    btn.classList.remove("bg-white", "border-gray-900", "text-primary");
+                                    btn.classList.add("bg-gray-50", "border-gray-300", "text-secondary");
                                 });
 
                                 document.getElementById(tabId).classList.remove("hidden");
 
                                 const activeBtn = event.currentTarget;
-                                activeBtn.classList.remove("bg-gray-50", "border-gray-300", "text-gray-600");
-                                activeBtn.classList.add("bg-white", "border-gray-900", "text-gray-900");
+                                activeBtn.classList.remove("bg-gray-50", "border-gray-300", "text-secondary");
+                                activeBtn.classList.add("bg-white", "border-gray-900", "text-primary");
                             }
                         </script>
 
@@ -703,8 +648,8 @@
                     <div class="border-b border-gray-200 mt-4"></div>
                     <!-- Description Section START -->
                     <div class="pt-8 mb-2">
-                        <h2 class="text-2xl font-semibold text-gray-900 mb-4">Tentang Kos ini</h2>
-                        <p class="text-gray-700 leading-relaxed mb-4">
+                        <h2 class="text-2xl font-semibold text-primary mb-4">Tentang Kos ini</h2>
+                        <p class="text-secondary leading-relaxed mb-4">
                             Welcome to our modern studio apartment located in the heart of downtown Jakarta. This
                             beautifully designed space combines comfort and style, perfect for both short-term and
                             long-term stays.
@@ -721,19 +666,19 @@
                     <div class="flex flex-col gap-4">
                         <!-- Price -->
                         <div>
-                            <p class="text-sm text-gray-500 mb-1">Mulai dari</p>
+                            <p class="text-sm text-secondary mb-1">Mulai dari</p>
                             <div class="flex items-baseline gap-1">
-                                <span class="text-2xl font-bold text-gray-900">
+                                <span class="text-2xl font-bold text-primary">
                                     Rp 1.500.000
                                 </span>
-                                <span class="text-sm text-gray-500">/bulan</span>
+                                <span class="text-sm text-secondary">/bulan</span>
                             </div>
                         </div>
 
                         <!-- CTA -->
                         <div class="pt-4 border-t border-gray-200">
                             <!-- Microcopy -->
-                            <p class="text-sm text-gray-600 mb-3 text-center">
+                            <p class="text-xs text-thirdary mb-3 text-center">
                                 Tanya kos atau ajukan sewa
                             </p>
 
@@ -761,14 +706,14 @@
                     <div class="grid grid-cols-2 gap-3 p-4 items-center">
                         <!-- Price -->
                         <div>
-                            <p class="text-[11px] text-gray-500 leading-none mb-1">
+                            <p class="text-[11px] text-secondary leading-none mb-1">
                                 Mulai dari
                             </p>
                             <div class="flex items-baseline gap-1">
-                                <span class="text-sm font-bold text-gray-900">
+                                <span class="text-sm font-bold text-primary">
                                     Rp 1.500.000
                                 </span>
-                                <span class="text-xs text-gray-500">
+                                <span class="text-xs text-secondary">
                                     /bulan
                                 </span>
                             </div>
@@ -802,21 +747,20 @@
 
     <!-- Decision Evidence Section END -->
     <div class="border-b border-gray-200 mt-4"></div>
-    <!-- Recommended Kos Section START -->
-    <section class="py-8">
-        <div class="max-w-4xl mx-auto px-4">
 
-            <!-- Header -->
+        <!-- Rekomendasi Kos START -->
+    <section class="py-5">
+        <div class="max-w-4xl mx-auto px-4 mt-2">
             <!-- Header -->
             <div class="flex items-center justify-between mb-4">
-                <h2 class="px-1 text-lg font-semibold text-gray-900">
-                    Rekomendasi Kos untukmu!
+                <h2 class="px-1 text-md sm:text-xl font-semibold text-primary">
+                    Rekomendasi Kos Lainnya
                 </h2>
 
                 <a wire:navigate href="#"
-                    class="ml-2 w-8 h-8 sm:w-9 sm:h-9 flex items-center justify-center
-              rounded-full bg-gray-100 hover:bg-gray-200 transition">
-                    <i class="fa-solid fa-arrow-right text-sm text-gray-700"></i>
+                    class="btn-secondary ml-2 w-8 h-8 sm:w-9 sm:h-9 flex items-center justify-center
+              rounded-full transition">
+                    <i class="fa-solid fa-arrow-right text-sm text-secondary"></i>
                 </a>
             </div>
 
@@ -845,31 +789,31 @@
 
                             <!-- Title + Gender -->
                             <div class="flex justify-between items-start">
-                                <h3 class="text-sm font-semibold leading-tight line-clamp-1">
+                                <h3 class="text-sm font-semibold leading-tight line-clamp-1 text-primary">
                                     Kos Putri Melati
                                 </h3>
 
                                 <span
-                                    class="text-xs text-gray-500 flex items-center gap-1 border border-gray-300 px-2 py-0.5 rounded-md">
+                                    class="text-xs text-secondary flex items-center gap-1 border border-gray-300 px-2 py-0.5 rounded-md">
                                     <i class="fa-solid fa-venus text-[10px]"></i>
                                     Putri
                                 </span>
                             </div>
 
                             <!-- Location -->
-                            <p class="text-xs text-gray-500 truncate">
+                            <p class="text-xs text-secondary truncate">
                                 Kampung Dalam, Siak
                             </p>
 
                             <!-- Facilities -->
-                            <p class="text-[11px] text-gray-400 truncate">
-                                RSUD Siak - 100 m
+                            <p class="text-[11px] text-thirdary truncate">
+                                Kamar Mandi dalam · AC · Kasur
                             </p>
 
                             <!-- Price -->
                             <p class="text-sm">
-                                <span class="font-semibold">Rp462.683</span>
-                                <span class="text-gray-400 text-xs">/bulan</span>
+                                <span class="font-semibold text-primary">Rp462.683</span>
+                                <span class="text-thirdary text-xs">/bulan</span>
                             </p>
                         </div>
                     </a>
@@ -894,39 +838,38 @@
 
                             <!-- Title + Gender -->
                             <div class="flex justify-between items-start">
-                                <h3 class="text-sm font-semibold leading-tight line-clamp-1">
+                                <h3 class="text-sm font-semibold leading-tight line-clamp-1 text-primary">
                                     Kos Putri Melati
                                 </h3>
 
                                 <span
-                                    class="text-xs text-gray-500 flex items-center gap-1 border border-gray-300 px-2 py-0.5 rounded-md">
+                                    class="text-xs text-secondary flex items-center gap-1 border border-gray-300 px-2 py-0.5 rounded-md">
                                     <i class="fa-solid fa-venus text-[10px]"></i>
                                     Putri
                                 </span>
                             </div>
 
                             <!-- Location -->
-                            <p class="text-xs text-gray-500 truncate">
+                            <p class="text-xs text-secondary truncate">
                                 Kampung Dalam, Siak
                             </p>
 
                             <!-- Facilities -->
-                            <p class="text-[11px] text-gray-400 truncate">
+                            <p class="text-[11px] text-thirdary truncate">
                                 Kamar Mandi dalam · AC · Kasur
                             </p>
 
                             <!-- Price -->
                             <p class="text-sm">
-                                <span class="font-semibold">Rp462.683</span>
-                                <span class="text-gray-400 text-xs">/bulan</span>
+                                <span class="font-semibold text-primary">Rp462.683</span>
+                                <span class="text-thirdary text-xs">/bulan</span>
                             </p>
                         </div>
                     </a>
                     <!-- Salin card di atas untuk kos lainnya -->
                     {{-- Lihat Selengkapnya CTA --}}
                     <div class="snap-start shrink-0 w-[200px] sm:w-[220px]">
-                        <a wire:navigate href="/resultpage"
-                            class="block bg-white rounded-2xl shadow-md transition p-3 mt-3">
+                        <a wire:navigate href="/resultpage" class="block rounded-2xl shadow-md transition p-3 mt-6">
 
                             <!-- Preview mini cards (simulasi listing) -->
                             <div class="relative h-24 mb-2">
@@ -939,7 +882,7 @@
                             </div>
 
                             <!-- Text -->
-                            <p class="text-sm font-semibold text-gray-800 text-center">
+                            <p class="text-primary text-sm font-semibold text- text-center">
                                 Lihat Semua
                             </p>
                         </a>
@@ -958,8 +901,9 @@
                 }
             </style>
 
+        </div>
     </section>
-    <!-- Recommended Kos Section END -->
+    <!-- Rekomendasi Kos END -->
 
     <script>
         const closeModalBtn = document.getElementById('closeModalBtn');
