@@ -3,13 +3,13 @@
     <section class="py-4 max-w-4xl px-4 mx-auto mt-2">
         <!-- Listings Header -->
         <div class="mb-4 flex items-center justify-between">
-            <p class="text-sm md:text-base font-semibold text-gray-900">
+            <p class="text-sm md:text-base text-secondary">
                 10+ kos ditemukan
             </p>
 
             <button id="filtersBtn"
-                class="flex items-center gap-2 rounded-lg border border-gray-300 px-4 py-2 text-sm font-medium text-gray-900 hover:shadow-sm transition">
-                <i class="fa-solid fa-sliders text-sm"></i>
+                class="flex items-center gap-2 rounded-lg border border-gray-300 px-4 py-2 text-sm text-primary hover:shadow-sm transition">
+                <i class="fa-solid fa-sliders text-sm text-primary"></i>
                 Filter
             </button>
         </div>
@@ -28,12 +28,9 @@
 
                 <!-- Modal Header START -->
                 <div class="sticky top-0 bg-white border-b border-gray-200 px-6 py-4 flex justify-between items-center">
-                    <h2 class="text-xl font-semibold text-gray-900">Filter Pencarianmu</h2>
-                    <button id="closeFiltersBtn" class="text-gray-500 hover:text-gray-700 transition-colors">
-                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M6 18L18 6M6 6l12 12"></path>
-                        </svg>
+                    <h2 class="text-lg font-semibold text-primary">Filter Pencarianmu</h2>
+                    <button id="closeFiltersBtn" class="text-secondary">
+                        <i class="fa-solid fa-xmark text-xl"></i>
                     </button>
                 </div>
                 <!-- Modal Header END -->
@@ -43,19 +40,22 @@
 
                     <!-- Housing Type Section START -->
                     <div>
-                        <h3 class="text-lg font-bold mb-4">Tipe Kos</h3>
+                        <h3 class="text-primary font-bold text-lg mb-4">Tipe Kos</h3>
                         <div class="space-y-3">
                             <label class="flex items-center gap-3 cursor-pointer">
-                                <input type="radio" name="housingType" value="men" class="w-5 h-5 accent-blue-500">
-                                <span class="text-gray-700 font-medium">Khusus Putra</span>
+                                <input type="radio" name="housingType" value="men"
+                                    class="w-5 h-5 accent-[color:var(--color-brand)]">
+                                <span class="text-secondary font-medium">Khusus Putra</span>
                             </label>
                             <label class="flex items-center gap-3 cursor-pointer">
-                                <input type="radio" name="housingType" value="women" class="w-5 h-5 accent-blue-500">
-                                <span class="text-gray-700 font-medium">Khusus Putri</span>
+                                <input type="radio" name="housingType" value="women"
+                                    class="w-5 h-5 accent-[color:var(--color-brand)]">
+                                <span class="text-secondary font-medium">Khusus Putri</span>
                             </label>
                             <label class="flex items-center gap-3 cursor-pointer">
-                                <input type="radio" name="housingType" value="mix" class="w-5 h-5 accent-blue-500">
-                                <span class="text-gray-700 font-medium">Campur</span>
+                                <input type="radio" name="housingType" value="mix"
+                                    class="w-5 h-5 accent-[color:var(--color-brand)]">
+                                <span class="text-secondary font-medium">Campur</span>
                             </label>
                         </div>
                     </div>
@@ -68,14 +68,14 @@
                         <h3 class="text-lg font-bold mb-4">Rentang Harga</h3>
                         <div class="grid grid-cols-2 gap-4">
                             <div>
-                                <label class="block text-sm font-medium text-gray-700 mb-2">Minimal</label>
+                                <label class="block text-sm font-medium text-secondary mb-2">Minimal</label>
                                 <input type="text" inputmode="numeric" placeholder="Rp250.000"
-                                    class="price-input w-full px-4 py-3 border border-gray-300 rounded-lg focus:border-blue-500 focus:ring-1 focus:ring-blue-500 outline-none transition">
+                                    class="price-input w-full px-4 py-3 border border-gray-300 rounded-lg focus:border-[color:var(--color-brand)] focus:ring-1 focus:ring-[color:var(--color-brand)] outline-none transition">
                             </div>
                             <div>
-                                <label class="block text-sm font-medium text-gray-700 mb-2">Maksimal</label>
+                                <label class="block text-sm font-medium text-secondary mb-2">Maksimal</label>
                                 <input type="text" inputmode="numeric" placeholder="Rp1.000.000"
-                                    class="price-input w-full px-4 py-3 border border-gray-300 rounded-lg focus:border-blue-500 focus:ring-1 focus:ring-blue-500 outline-none transition">
+                                    class="price-input w-full px-4 py-3 border border-gray-300 rounded-lg focus:border-[color:var(--color-brand)] focus:ring-1 focus:ring-[color:var(--color-brand)] outline-none transition">
                             </div>
                         </div>
                     </div>
@@ -115,42 +115,42 @@
                         <div class="space-y-3" id="facility-list">
                             <!-- Visible by default -->
                             <label class="flex items-center gap-3 cursor-pointer">
-                                <input type="checkbox" class="w-5 h-5 accent-blue-500 rounded">
-                                <span class="text-gray-700">AC / Pendingin Ruangan</span>
+                                <input type="checkbox" class="w-5 h-5 accent-[color:var(--color-brand)] rounded">
+                                <span class="text-secondary">AC / Pendingin Ruangan</span>
                             </label>
                             <label class="flex items-center gap-3 cursor-pointer">
-                                <input type="checkbox" class="w-5 h-5 accent-blue-500 rounded">
-                                <span class="text-gray-700">WiFi / Internet</span>
+                                <input type="checkbox" class="w-5 h-5 accent-[color:var(--color-brand)] rounded">
+                                <span class="text-secondary">WiFi / Internet</span>
                             </label>
                             <label class="flex items-center gap-3 cursor-pointer">
-                                <input type="checkbox" class="w-5 h-5 accent-blue-500 rounded">
-                                <span class="text-gray-700">Kasur dan Seprai</span>
+                                <input type="checkbox" class="w-5 h-5 accent-[color:var(--color-brand)] rounded">
+                                <span class="text-secondary">Kasur dan Seprai</span>
                             </label>
 
                             <!-- Hidden items -->
                             <div class="space-y-3 hidden" id="facility-more">
                                 <label class="flex items-center gap-3 cursor-pointer">
-                                    <input type="checkbox" class="w-5 h-5 accent-blue-500 rounded">
-                                    <span class="text-gray-700">Kamar Mandi Pribadi</span>
+                                    <input type="checkbox" class="w-5 h-5 accent-[color:var(--color-brand)] rounded">
+                                    <span class="text-secondary">Kamar Mandi Pribadi</span>
                                 </label>
                                 <label class="flex items-center gap-3 cursor-pointer">
-                                    <input type="checkbox" class="w-5 h-5 accent-blue-500 rounded">
-                                    <span class="text-gray-700">Lemari / Tempat Penyimpanan</span>
+                                    <input type="checkbox" class="w-5 h-5 accent-[color:var(--color-brand)] rounded">
+                                    <span class="text-secondary">Lemari / Tempat Penyimpanan</span>
                                 </label>
                                 <label class="flex items-center gap-3 cursor-pointer">
-                                    <input type="checkbox" class="w-5 h-5 accent-blue-500 rounded">
-                                    <span class="text-gray-700">TV</span>
+                                    <input type="checkbox" class="w-5 h-5 accent-[color:var(--color-brand)] rounded">
+                                    <span class="text-secondary">TV</span>
                                 </label>
                                 <label class="flex items-center gap-3 cursor-pointer">
-                                    <input type="checkbox" class="w-5 h-5 accent-blue-500 rounded">
-                                    <span class="text-gray-700">Dapur</span>
+                                    <input type="checkbox" class="w-5 h-5 accent-[color:var(--color-brand)] rounded">
+                                    <span class="text-secondary">Dapur</span>
                                 </label>
                             </div>
                         </div>
 
                         <!-- Toggle Button -->
                         <button type="button" onclick="toggleMore('facility-more', this)"
-                            class="mt-4 flex items-center gap-2 text-sm font-semibold text-gray-800 underline">
+                            class="mt-4 flex items-center gap-2 text-sm font-semibold text-secondary underline">
                             <span>Tampilkan lainnya</span>
                             <svg class="w-4 h-4 transition-transform" fill="none" stroke="currentColor"
                                 stroke-width="2" viewBox="0 0 24 24">
@@ -172,34 +172,34 @@
                         <div class="space-y-3">
                             <!-- Visible -->
                             <label class="flex items-center gap-3 cursor-pointer">
-                                <input type="checkbox" class="w-5 h-5 accent-blue-500 rounded">
-                                <span class="text-gray-700">Tidak ada Tamu Menginap</span>
+                                <input type="checkbox" class="w-5 h-5 accent-[color:var(--color-brand)] rounded">
+                                <span class="text-secondary">Tidak ada Tamu Menginap</span>
                             </label>
                             <label class="flex items-center gap-3 cursor-pointer">
-                                <input type="checkbox" class="w-5 h-5 accent-blue-500 rounded">
-                                <span class="text-gray-700">Tidak Boleh Merokok</span>
+                                <input type="checkbox" class="w-5 h-5 accent-[color:var(--color-brand)] rounded">
+                                <span class="text-secondary">Tidak Boleh Merokok</span>
                             </label>
                             <label class="flex items-center gap-3 cursor-pointer">
-                                <input type="checkbox" class="w-5 h-5 accent-blue-500 rounded">
-                                <span class="text-gray-700">Tidak Boleh Bising</span>
+                                <input type="checkbox" class="w-5 h-5 accent-[color:var(--color-brand)] rounded">
+                                <span class="text-secondary">Tidak Boleh Bising</span>
                             </label>
 
                             <!-- Hidden -->
                             <div class="space-y-3 hidden" id="rules-more">
                                 <label class="flex items-center gap-3 cursor-pointer">
-                                    <input type="checkbox" class="w-5 h-5 accent-blue-500 rounded">
-                                    <span class="text-gray-700">Jam Malam Berlaku</span>
+                                    <input type="checkbox" class="w-5 h-5 accent-[color:var(--color-brand)] rounded">
+                                    <span class="text-secondary">Jam Malam Berlaku</span>
                                 </label>
                                 <label class="flex items-center gap-3 cursor-pointer">
-                                    <input type="checkbox" class="w-5 h-5 accent-blue-500 rounded">
-                                    <span class="text-gray-700">Dilarang Membawa Hewan Peliharaan</span>
+                                    <input type="checkbox" class="w-5 h-5 accent-[color:var(--color-brand)] rounded">
+                                    <span class="text-secondary">Dilarang Membawa Hewan Peliharaan</span>
                                 </label>
                             </div>
                         </div>
 
                         <!-- Toggle Button -->
                         <button type="button" onclick="toggleMore('rules-more', this)"
-                            class="mt-4 flex items-center gap-2 text-sm font-semibold text-gray-800 underline">
+                            class="mt-4 flex items-center gap-2 text-sm font-semibold text-secondary underline">
                             <span>Tampilkan lainnya</span>
                             <svg class="w-4 h-4 transition-transform" fill="none" stroke="currentColor"
                                 stroke-width="2" viewBox="0 0 24 24">
@@ -232,18 +232,18 @@
                         <div class="space-y-3">
                             <label class="flex items-center gap-3 cursor-pointer">
                                 <input type="radio" name="sortBy" value="available"
-                                    class="w-5 h-5 accent-blue-500">
-                                <span class="text-gray-700 font-medium">Kamar Kos Tersedia</span>
+                                    class="w-5 h-5 accent-[color:var(--color-brand)]">
+                                <span class="text-secondary font-medium">Kamar Kos Tersedia</span>
                             </label>
                             <label class="flex items-center gap-3 cursor-pointer">
                                 <input type="radio" name="sortBy" value="cheapest"
-                                    class="w-5 h-5 accent-blue-500">
-                                <span class="text-gray-700 font-medium">Harga Terendah</span>
+                                    class="w-5 h-5 accent-[color:var(--color-brand)]">
+                                <span class="text-secondary font-medium">Harga Terendah</span>
                             </label>
                             <label class="flex items-center gap-3 cursor-pointer">
                                 <input type="radio" name="sortBy" value="expensive"
-                                    class="w-5 h-5 accent-blue-500">
-                                <span class="text-gray-700 font-medium">Harga Tertinggi</span>
+                                    class="w-5 h-5 accent-[color:var(--color-brand)]">
+                                <span class="text-secondary font-medium">Harga Tertinggi</span>
                             </label>
                         </div>
                     </div>
@@ -262,8 +262,8 @@
            shadow-[0_-8px_24px_rgba(0,0,0,0.12)]">
                     <!-- Clear all (Airbnb-style) -->
                     <button id="clearFiltersBtn"
-                        class="text-sm sm:text-base font-semibold text-gray-600
-           hover:underline active:text-gray-900 transition">
+                        class="text-sm sm:text-base font-semibold text-secondary
+           hover:underline transition">
                         Hapus Semua
                     </button>
 
@@ -350,24 +350,24 @@
                     <div class="flex justify-between items-start gap-2 min-h-[28px] text-md font-semibold">
                         <span>Kos Putri Melati</span>
                         <span
-                            class="inline-flex items-center gap-1.5 text-xs font-medium bg-white text-gray-600 px-2.5 py-1 rounded-lg border border-gray-300">
+                            class="inline-flex items-center gap-1.5 text-xs font-medium bg-white text-secondary px-2.5 py-1 rounded-lg border border-gray-300">
                             <i class="fa-solid fa-venus text-xs"></i>
                             Putri
                         </span>
 
                     </div>
 
-                    <p class="text-sm text-gray-600 truncate">
+                    <p class="text-sm text-secondary truncate">
                         Kampung Dalam, Siak, Riau
                     </p>
 
-                    <p class="text-xs text-gray-500">
+                    <p class="text-xs text-thirdary">
                         Kamar mandi dalam · Kasur · AC
                     </p>
 
                     <p class="text-sm">
                         <span class="font-semibold underline">Rp462.683</span>
-                        <span class="text-gray-500"> / bulan</span>
+                        <span class="text-thirdary"> / bulan</span>
                     </p>
                 </div>
 
@@ -387,27 +387,27 @@
                 </div>
                 <!-- Content -->
                 <div class="mt-3 space-y-1">
-                    <div class="flex justify-between items-start gap-2 min-h-[28px] text-md font-semibold">
+                    <div class="flex justify-between items-start gap-2 min-h-[28px] text-primary font-semibold">
                         <span>Kos Putra Siak</span>
                         <span
-                            class="inline-flex items-center gap-1.5 text-xs font-medium bg-white text-gray-600 px-2.5 py-1 rounded-lg border border-gray-300">
+                            class="inline-flex items-center gap-1.5 text-xs font-medium bg-white text-secondary px-2.5 py-1 rounded-lg border border-gray-300">
                             <i class="fa-solid fa-mars text-xs"></i>
                             Putra
                         </span>
 
                     </div>
 
-                    <p class="text-sm text-gray-600 truncate">
+                    <p class="text-sm text-secondary truncate">
                         Kampung Dalam, Siak, Riau
                     </p>
 
-                    <p class="text-xs text-gray-500">
+                    <p class="text-xs text-thirdary">
                         Kamar mandi dalam · Kasur
                     </p>
 
                     <p class="text-sm">
                         <span class="font-semibold underline">Rp462.683</span>
-                        <span class="text-gray-500"> / bulan</span>
+                        <span class="text-thirdary"> / bulan</span>
                     </p>
                 </div>
 
@@ -430,24 +430,24 @@
                     <div class="flex justify-between items-start gap-2 min-h-[28px] text-md font-semibold">
                         <span>Kos Campur</span>
                         <span
-                            class="inline-flex items-center gap-1.5 text-xs font-medium bg-white text-gray-600 px-2.5 py-1 rounded-lg border border-gray-300">
+                            class="inline-flex items-center gap-1.5 text-xs font-medium bg-white text-secondary px-2.5 py-1 rounded-lg border border-gray-300">
                             <i class="fa-solid fa-venus-mars text-xs"></i>
                             Campuran
                         </span>
 
                     </div>
 
-                    <p class="text-sm text-gray-600 truncate">
+                    <p class="text-sm text-secondary truncate">
                         Kampung Dalam, Siak, Riau
                     </p>
 
-                    <p class="text-xs text-gray-500">
+                    <p class="text-xs text-thirdary">
                         Kamar mandi dalam · Kasur
                     </p>
 
                     <p class="text-sm">
                         <span class="font-semibold underline">Rp462.683</span>
-                        <span class="text-gray-500"> / bulan</span>
+                        <span class="text-thirdary"> / bulan</span>
                     </p>
                 </div>
 
@@ -470,24 +470,24 @@
                     <div class="flex justify-between items-start gap-2 min-h-[28px] text-md font-semibold">
                         <span>Kos Putri Melati</span>
                         <span
-                            class="inline-flex items-center gap-1.5 text-xs font-medium bg-white text-gray-600 px-2.5 py-1 rounded-lg border border-gray-300">
+                            class="inline-flex items-center gap-1.5 text-xs font-medium bg-white text-secondary px-2.5 py-1 rounded-lg border border-gray-300">
                             <i class="fa-solid fa-venus text-xs"></i>
                             Putri
                         </span>
 
                     </div>
 
-                    <p class="text-sm text-gray-600 truncate">
+                    <p class="text-sm text-secondary truncate">
                         Kampung Dalam, Siak, Riau
                     </p>
 
-                    <p class="text-xs text-gray-500">
+                    <p class="text-xs text-thirdary">
                         Kamar mandi dalam · Kasur · AC
                     </p>
 
                     <p class="text-sm">
                         <span class="font-semibold underline">Rp462.683</span>
-                        <span class="text-gray-500"> / bulan</span>
+                        <span class="text-thirdary"> / bulan</span>
                     </p>
                 </div>
 
@@ -510,24 +510,24 @@
                     <div class="flex justify-between items-start gap-2 min-h-[28px] text-md font-semibold">
                         <span>Kos Putra Siak</span>
                         <span
-                            class="inline-flex items-center gap-1.5 text-xs font-medium bg-white text-gray-600 px-2.5 py-1 rounded-lg border border-gray-300">
+                            class="inline-flex items-center gap-1.5 text-xs font-medium bg-white text-secondary px-2.5 py-1 rounded-lg border border-gray-300">
                             <i class="fa-solid fa-mars text-xs"></i>
                             Putra
                         </span>
 
                     </div>
 
-                    <p class="text-sm text-gray-600 truncate">
+                    <p class="text-sm text-secondary truncate">
                         Kampung Dalam, Siak, Riau
                     </p>
 
-                    <p class="text-xs text-gray-500">
+                    <p class="text-xs text-thirdary">
                         Kamar mandi dalam · Kasur
                     </p>
 
                     <p class="text-sm">
                         <span class="font-semibold underline">Rp462.683</span>
-                        <span class="text-gray-500"> / bulan</span>
+                        <span class="text-thirdary"> / bulan</span>
                     </p>
                 </div>
 
@@ -550,24 +550,24 @@
                     <div class="flex justify-between items-start gap-2 min-h-[28px] text-md font-semibold">
                         <span>Kos Campur</span>
                         <span
-                            class="inline-flex items-center gap-1.5 text-xs font-medium bg-white text-gray-600 px-2.5 py-1 rounded-lg border border-gray-300">
+                            class="inline-flex items-center gap-1.5 text-xs font-medium bg-white text-secondary px-2.5 py-1 rounded-lg border border-gray-300">
                             <i class="fa-solid fa-venus-mars text-xs"></i>
                             Campuran
                         </span>
 
                     </div>
 
-                    <p class="text-sm text-gray-600 truncate">
+                    <p class="text-sm text-secondary truncate">
                         Kampung Dalam, Siak, Riau
                     </p>
 
-                    <p class="text-xs text-gray-500">
+                    <p class="text-xs text-thirdary">
                         Kamar mandi dalam · Kasur
                     </p>
 
                     <p class="text-sm">
                         <span class="font-semibold underline">Rp462.683</span>
-                        <span class="text-gray-500"> / bulan</span>
+                        <span class="text-thirdary"> / bulan</span>
                     </p>
                 </div>
 
@@ -590,24 +590,24 @@
                     <div class="flex justify-between items-start gap-2 min-h-[28px] text-md font-semibold">
                         <span>Kos Putri Melati</span>
                         <span
-                            class="inline-flex items-center gap-1.5 text-xs font-medium bg-white text-gray-600 px-2.5 py-1 rounded-lg border border-gray-300">
+                            class="inline-flex items-center gap-1.5 text-xs font-medium bg-white text-secondary px-2.5 py-1 rounded-lg border border-gray-300">
                             <i class="fa-solid fa-venus text-xs"></i>
                             Putri
                         </span>
 
                     </div>
 
-                    <p class="text-sm text-gray-600 truncate">
+                    <p class="text-sm text-secondary truncate">
                         Kampung Dalam, Siak, Riau
                     </p>
 
-                    <p class="text-xs text-gray-500">
+                    <p class="text-xs text-thirdary">
                         Kamar mandi dalam · Kasur · AC
                     </p>
 
                     <p class="text-sm">
                         <span class="font-semibold underline">Rp462.683</span>
-                        <span class="text-gray-500"> / bulan</span>
+                        <span class="text-thirdary"> / bulan</span>
                     </p>
                 </div>
 
@@ -630,24 +630,24 @@
                     <div class="flex justify-between items-start gap-2 min-h-[28px] text-md font-semibold">
                         <span>Kos Putra Siak</span>
                         <span
-                            class="inline-flex items-center gap-1.5 text-xs font-medium bg-white text-gray-600 px-2.5 py-1 rounded-lg border border-gray-300">
+                            class="inline-flex items-center gap-1.5 text-xs font-medium bg-white text-secondary px-2.5 py-1 rounded-lg border border-gray-300">
                             <i class="fa-solid fa-mars text-xs"></i>
                             Putra
                         </span>
 
                     </div>
 
-                    <p class="text-sm text-gray-600 truncate">
+                    <p class="text-sm text-secondary truncate">
                         Kampung Dalam, Siak, Riau
                     </p>
 
-                    <p class="text-xs text-gray-500">
+                    <p class="text-xs text-thirdary">
                         Kamar mandi dalam · Kasur
                     </p>
 
                     <p class="text-sm">
                         <span class="font-semibold underline">Rp462.683</span>
-                        <span class="text-gray-500"> / bulan</span>
+                        <span class="text-thirdary"> / bulan</span>
                     </p>
                 </div>
 
@@ -670,24 +670,24 @@
                     <div class="flex justify-between items-start gap-2 min-h-[28px] text-md font-semibold">
                         <span>Kos Campur</span>
                         <span
-                            class="inline-flex items-center gap-1.5 text-xs font-medium bg-white text-gray-600 px-2.5 py-1 rounded-lg border border-gray-300">
+                            class="inline-flex items-center gap-1.5 text-xs font-medium bg-white text-secondary px-2.5 py-1 rounded-lg border border-gray-300">
                             <i class="fa-solid fa-venus-mars text-xs"></i>
                             Campuran
                         </span>
 
                     </div>
 
-                    <p class="text-sm text-gray-600 truncate">
+                    <p class="text-sm text-secondary truncate">
                         Kampung Dalam, Siak, Riau
                     </p>
 
-                    <p class="text-xs text-gray-500">
+                    <p class="text-xs text-thirdary">
                         Kamar mandi dalam · Kasur
                     </p>
 
                     <p class="text-sm">
                         <span class="font-semibold underline">Rp462.683</span>
-                        <span class="text-gray-500"> / bulan</span>
+                        <span class="text-thirdary"> / bulan</span>
                     </p>
                 </div>
 
@@ -698,7 +698,7 @@
         <!-- Pagination START -->
         <nav class="mt-12 mb-6 flex justify-center" aria-label="Pagination">
             {{-- Desktop Pagination Start --}}
-            <ul class="hidden sm:flex items-center gap-3 text-sm font-medium text-gray-700">
+            <ul class="hidden sm:flex items-center gap-3 text-sm font-medium text-secondary">
 
                 <!-- Prev -->
                 <li>
@@ -742,7 +742,7 @@
                 </li>
 
                 <!-- Dots -->
-                <li class="px-2 text-gray-400">…</li>
+                <li class="px-2">…</li>
 
                 <!-- Last Page -->
                 <li>
@@ -776,7 +776,7 @@
                   shadow-[0_6px_16px_rgba(0,0,0,0.15)]">
 
 
-                        <i class="fa-solid fa-chevron-left text-sm text-gray-700"></i>
+                        <i class="fa-solid fa-chevron-left text-sm text-secondary"></i>
                     </a>
                 </li>
 
@@ -793,7 +793,7 @@
                   shadow-[0_6px_16px_rgba(0,0,0,0.15)]">
 
 
-                        <i class="fa-solid fa-chevron-right text-sm text-gray-700"></i>
+                        <i class="fa-solid fa-chevron-right text-sm text-secondary"></i>
                     </a>
                 </li>
 
