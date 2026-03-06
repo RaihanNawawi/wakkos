@@ -1,7 +1,6 @@
 <x-layouts.app>
     <!-- Rekomendasi Kos START -->
-    <section class="py-5">
-        <div class="max-w-4xl mx-auto px-4 mt-2">
+    <section class="wrapper">
             <!-- Greeting Section START -->
             <div class="px-1 mb-6">
                 <p class="text-sm sm:text-md text-secondary mb-1">Hai.</p>
@@ -25,208 +24,10 @@
             </div>
 
             <!-- HORIZONTAL KOS CAROUSEL -->
-            <div class="relative">
-                <div class="flex gap-3 overflow-x-auto pb-2 snap-x snap-proximity scrollbar-hide">
+            <div class="carousel">
                     <!-- CARD -->
                     <a wire:navigate href="/detailpage"
-                        class="group snap-start shrink-0 w-[240px] sm:w-[260px] focus:outline-none">
-
-                        <!-- IMAGE -->
-                        <div class="relative aspect-[4/3] rounded-2xl overflow-hidden bg-gray-200">
-                            <img src="https://www.simplyhomy.com/wp-content/uploads/2017/01/bisnis-kos-kosan.jpg"
-                                class="w-full h-full object-cover transition duration-300 group-hover:scale-105" />
-
-                            <!-- Badge -->
-                            <span
-                                class="absolute top-2 left-2 text-[11px] font-semibold bg-rose-500/90 text-white px-2 py-1 rounded-full shadow">
-                                Sisa 2 kamar
-                            </span>
-
-                        </div>
-
-                        <!-- CONTENT -->
-                        <div class="px-1 mt-2 space-y-1">
-
-                            <!-- Title + Gender -->
-                            <div class="flex justify-between items-start">
-                                <h3 class="text-sm font-semibold leading-tight line-clamp-1 text-primary">
-                                    Kos Putri Melati
-                                </h3>
-
-                                <span
-                                    class="text-xs text-secondary flex items-center gap-1 border border-gray-300 px-2 py-0.5 rounded-md">
-                                    <i class="fa-solid fa-venus text-[10px]"></i>
-                                    Putri
-                                </span>
-                            </div>
-
-                            <!-- Location -->
-                            <p class="text-xs text-secondary truncate">
-                                Kampung Dalam, Siak
-                            </p>
-
-                            <!-- Facilities -->
-                            <p class="text-[11px] text-thirdary truncate">
-                                Kamar Mandi dalam · AC · Kasur
-                            </p>
-
-                            <!-- Price -->
-                            <p class="text-sm">
-                                <span class="font-semibold text-primary">Rp462.683</span>
-                                <span class="text-thirdary text-xs">/bulan</span>
-                            </p>
-                        </div>
-                    </a>
-                    <a wire:navigate href="/detailpage"
-                        class="group snap-start shrink-0 w-[240px] sm:w-[260px] focus:outline-none">
-
-                        <!-- IMAGE -->
-                        <div class="relative aspect-[4/3] rounded-2xl overflow-hidden bg-gray-200">
-                            <img src="https://www.simplyhomy.com/wp-content/uploads/2017/01/bisnis-kos-kosan.jpg"
-                                class="w-full h-full object-cover transition duration-300 group-hover:scale-105" />
-
-                            <!-- Badge -->
-                            <span
-                                class="absolute top-2 left-2 text-[11px] font-semibold bg-rose-500/90 text-white px-2 py-1 rounded-full shadow">
-                                Sisa 2 kamar
-                            </span>
-
-                        </div>
-
-                        <!-- CONTENT -->
-                        <div class="px-1 mt-2 space-y-1">
-
-                            <!-- Title + Gender -->
-                            <div class="flex justify-between items-start">
-                                <h3 class="text-sm font-semibold leading-tight line-clamp-1 text-primary">
-                                    Kos Putri Melati
-                                </h3>
-
-                                <span
-                                    class="text-xs text-secondary flex items-center gap-1 border border-gray-300 px-2 py-0.5 rounded-md">
-                                    <i class="fa-solid fa-venus text-[10px]"></i>
-                                    Putri
-                                </span>
-                            </div>
-
-                            <!-- Location -->
-                            <p class="text-xs text-secondary truncate">
-                                Kampung Dalam, Siak
-                            </p>
-
-                            <!-- Facilities -->
-                            <p class="text-[11px] text-thirdary truncate">
-                                Kamar Mandi dalam · AC · Kasur
-                            </p>
-
-                            <!-- Price -->
-                            <p class="text-sm">
-                                <span class="font-semibold text-primary">Rp462.683</span>
-                                <span class="text-thirdary text-xs">/bulan</span>
-                            </p>
-                        </div>
-                    </a>
-                    <a wire:navigate href="/detailpage"
-                        class="group snap-start shrink-0 w-[240px] sm:w-[260px] focus:outline-none">
-
-                        <!-- IMAGE -->
-                        <div class="relative aspect-[4/3] rounded-2xl overflow-hidden bg-gray-200">
-                            <img src="https://www.simplyhomy.com/wp-content/uploads/2017/01/bisnis-kos-kosan.jpg"
-                                class="w-full h-full object-cover transition duration-300 group-hover:scale-105" />
-
-                            <!-- Badge -->
-                            <span
-                                class="absolute top-2 left-2 text-[11px] font-semibold bg-rose-500/90 text-white px-2 py-1 rounded-full shadow">
-                                Sisa 2 kamar
-                            </span>
-
-                        </div>
-
-                        <!-- CONTENT -->
-                        <div class="px-1 mt-2 space-y-1">
-
-                            <!-- Title + Gender -->
-                            <div class="flex justify-between items-start">
-                                <h3 class="text-sm font-semibold leading-tight line-clamp-1 text-primary">
-                                    Kos Putri Melati
-                                </h3>
-
-                                <span
-                                    class="text-xs text-secondary flex items-center gap-1 border border-gray-300 px-2 py-0.5 rounded-md">
-                                    <i class="fa-solid fa-venus text-[10px]"></i>
-                                    Putri
-                                </span>
-                            </div>
-
-                            <!-- Location -->
-                            <p class="text-xs text-secondary truncate">
-                                Kampung Dalam, Siak
-                            </p>
-
-                            <!-- Facilities -->
-                            <p class="text-[11px] text-thirdary truncate">
-                                Kamar Mandi dalam · AC · Kasur
-                            </p>
-
-                            <!-- Price -->
-                            <p class="text-sm">
-                                <span class="font-semibold text-primary">Rp462.683</span>
-                                <span class="text-thirdary text-xs">/bulan</span>
-                            </p>
-                        </div>
-                    </a>
-                    <a wire:navigate href="/detailpage"
-                        class="group snap-start shrink-0 w-[240px] sm:w-[260px] focus:outline-none">
-
-                        <!-- IMAGE -->
-                        <div class="relative aspect-[4/3] rounded-2xl overflow-hidden bg-gray-200">
-                            <img src="https://www.simplyhomy.com/wp-content/uploads/2017/01/bisnis-kos-kosan.jpg"
-                                class="w-full h-full object-cover transition duration-300 group-hover:scale-105" />
-
-                            <!-- Badge -->
-                            <span
-                                class="absolute top-2 left-2 text-[11px] font-semibold bg-rose-500/90 text-white px-2 py-1 rounded-full shadow">
-                                Sisa 2 kamar
-                            </span>
-
-                        </div>
-
-                        <!-- CONTENT -->
-                        <div class="px-1 mt-2 space-y-1">
-
-                            <!-- Title + Gender -->
-                            <div class="flex justify-between items-start">
-                                <h3 class="text-sm font-semibold leading-tight line-clamp-1 text-primary">
-                                    Kos Putri Melati
-                                </h3>
-
-                                <span
-                                    class="text-xs text-secondary flex items-center gap-1 border border-gray-300 px-2 py-0.5 rounded-md">
-                                    <i class="fa-solid fa-venus text-[10px]"></i>
-                                    Putri
-                                </span>
-                            </div>
-
-                            <!-- Location -->
-                            <p class="text-xs text-secondary truncate">
-                                Kampung Dalam, Siak
-                            </p>
-
-                            <!-- Facilities -->
-                            <p class="text-[11px] text-thirdary truncate">
-                                Kamar Mandi dalam · AC · Kasur
-                            </p>
-
-                            <!-- Price -->
-                            <p class="text-sm">
-                                <span class="font-semibold text-primary">Rp462.683</span>
-                                <span class="text-thirdary text-xs">/bulan</span>
-                            </p>
-                        </div>
-                    </a>
-                    <a wire:navigate href="/detailpage"
-                        class="group snap-start shrink-0 w-[240px] sm:w-[260px] focus:outline-none">
-
+                        class="card-horizontal">
                         <!-- IMAGE -->
                         <div class="relative aspect-[4/3] rounded-2xl overflow-hidden bg-gray-200">
                             <img src="https://www.simplyhomy.com/wp-content/uploads/2017/01/bisnis-kos-kosan.jpg"
@@ -294,21 +95,7 @@
                             </p>
                         </a>
                     </div>
-
-                </div>
             </div>
-            <style>
-                .scrollbar-hide::-webkit-scrollbar {
-                    display: none;
-                }
-
-                .scrollbar-hide {
-                    -ms-overflow-style: none;
-                    scrollbar-width: none;
-                }
-            </style>
-
-        </div>
     </section>
     <!-- Rekomendasi Kos END -->
 

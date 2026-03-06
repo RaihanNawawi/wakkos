@@ -22,19 +22,50 @@
     --color-text-thirdary: var(--color-gray-400);
 }
 
+@layer utilities {
+    .scrollbar-hide {
+        -ms-overflow-style: none; /* IE & Edge lama */
+        scrollbar-width: none; /* Firefox */
+    }
+
+    .scrollbar-hide::-webkit-scrollbar {
+        display: none; /* Chrome, Safari, Edge */
+    }
+}
+
+@layer components {
+    /* Section */
+    .wrapper {
+        @apply py-5 max-w-4xl mx-auto px-4 mt-2;
+    }
+
+    /* Carousel */
+    .carousel {
+        @apply relative flex gap-3 overflow-x-auto pb-2;
+    }
+
+    .carousel::-webkit-scrollbar {
+        display: none;
+    }
+
+    /* card */
+    .card-horizontal {
+        @apply shrink-0 w-[240px] sm:w-[260px] focus:outline-none;
+    }
+}
+
 /* Text Class   */
 .text-primary {
-  color: var(--color-text-primary);
+    color: var(--color-text-primary);
 }
 
 .text-secondary {
-  color: var(--color-text-secondary);
+    color: var(--color-text-secondary);
 }
 
 .text-thirdary {
-  color: var(--color-text-thirdary);
+    color: var(--color-text-thirdary);
 }
-
 
 .text-brand {
     color: var(--color-brand);
