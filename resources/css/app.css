@@ -49,7 +49,7 @@
     }
 
     /* card */
-    .card-horizontal {
+    .carousel-card {
         @apply shrink-0 w-[240px] sm:w-[260px] focus:outline-none;
     }
 }

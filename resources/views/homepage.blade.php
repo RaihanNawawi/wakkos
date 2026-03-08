@@ -27,7 +27,7 @@
             <div class="carousel">
                     <!-- CARD -->
                     <a wire:navigate href="/detailpage"
-                        class="card-horizontal">
+                        class="carousel-card">
                         <!-- IMAGE -->
                         <div class="relative aspect-[4/3] rounded-2xl overflow-hidden bg-gray-200">
                             <img src="https://www.simplyhomy.com/wp-content/uploads/2017/01/bisnis-kos-kosan.jpg"
