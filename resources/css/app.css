@@ -50,7 +50,7 @@
 
     /* card */
     .carousel-card {
-        @apply shrink-0 w-[240px] sm:w-[260px] focus:outline-none;
+        @apply snap-start shrink-0 w-[200px] sm:w-[220px];
     }
 }
 

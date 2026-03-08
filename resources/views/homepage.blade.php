@@ -1,101 +1,97 @@
 <x-layouts.app>
     <!-- Rekomendasi Kos START -->
     <section class="wrapper">
-            <!-- Greeting Section START -->
-            <div class="px-1 mb-6">
-                <p class="text-sm sm:text-md text-secondary mb-1">Hai.</p>
-                <h2 class="text-xl sm:text-2xl font-bold text-primary">Lagi cari kos di <span
-                        class="text-brand">Siak</span>?
-                </h2>
-            </div>
-            <!-- Greeting Section END -->
+        <!-- Greeting Section START -->
+        <div class="px-1 mb-6">
+            <p class="text-sm sm:text-md text-secondary mb-1">Hai.</p>
+            <h2 class="text-xl sm:text-2xl font-bold text-primary">Lagi cari kos di <span class="text-brand">Siak</span>?
+            </h2>
+        </div>
+        <!-- Greeting Section END -->
 
-            <!-- Header -->
-            <div class="flex items-center justify-between mb-4">
-                <h2 class="px-1 text-md sm:text-xl font-semibold text-primary">
-                    Ini Rekomendasi Kos untukmu!
-                </h2>
+        <!-- Header -->
+        <div class="flex items-center justify-between mb-4">
+            <h2 class="px-1 text-md sm:text-xl font-semibold text-primary">
+                Ini Rekomendasi Kos untukmu!
+            </h2>
 
-                <a wire:navigate href="#"
-                    class="btn-secondary ml-2 w-8 h-8 sm:w-9 sm:h-9 flex items-center justify-center
+            <a wire:navigate href="#"
+                class="btn-secondary ml-2 w-8 h-8 sm:w-9 sm:h-9 flex items-center justify-center
               rounded-full transition">
-                    <i class="fa-solid fa-arrow-right text-sm text-secondary"></i>
+                <i class="fa-solid fa-arrow-right text-sm text-secondary"></i>
+            </a>
+        </div>
+
+        <!-- HORIZONTAL KOS CAROUSEL -->
+        <div class="carousel">
+            <!-- CARD -->
+            <a wire:navigate href="/detailpage" class="carousel-card">
+                <!-- IMAGE -->
+                <div class="relative aspect-[4/3] rounded-2xl overflow-hidden bg-gray-200">
+                    <img src="https://www.simplyhomy.com/wp-content/uploads/2017/01/bisnis-kos-kosan.jpg"
+                        class="w-full h-full object-cover transition duration-300 group-hover:scale-105" />
+
+                    <!-- Badge -->
+                    <span
+                        class="absolute top-2 left-2 text-[11px] font-semibold bg-rose-500/90 text-white px-2 py-1 rounded-full shadow">
+                        Sisa 2 kamar
+                    </span>
+
+                </div>
+
+                <!-- CONTENT -->
+                <div class="px-1 mt-2 space-y-1">
+
+                    <!-- Title + Gender -->
+                    <div class="flex justify-between items-start">
+                        <h3 class="text-sm font-semibold leading-tight line-clamp-1 text-primary">
+                            Kos Putri Melati
+                        </h3>
+
+                        <span
+                            class="text-xs text-secondary flex items-center gap-1 border border-gray-300 px-2 py-0.5 rounded-md">
+                            <i class="fa-solid fa-venus text-[10px]"></i>
+                            Putri
+                        </span>
+                    </div>
+
+                    <!-- Location -->
+                    <p class="text-xs text-secondary truncate">
+                        Kampung Dalam, Siak
+                    </p>
+
+                    <!-- Facilities -->
+                    <p class="text-[11px] text-thirdary truncate">
+                        Kamar Mandi dalam · AC · Kasur
+                    </p>
+
+                    <!-- Price -->
+                    <p class="text-sm">
+                        <span class="font-semibold text-primary">Rp462.683</span>
+                        <span class="text-thirdary text-xs">/bulan</span>
+                    </p>
+                </div>
+            </a>
+            <!-- Salin card di atas untuk kos lainnya -->
+            {{-- View All Component --}}
+            <div class="carousel-card">
+                <a wire:navigate href="/resultpage" class="block p-3 mt-6">
+                    <!-- Preview mini cards (simulasi listing) -->
+                    <div class="relative h-24 mb-2">
+                        <img src="https://awsimages.detik.net.id/visual/2021/09/10/ilustrasi-kos-kosan-cnbc-indonesiamuhammad-sabki-4_169.jpeg?w=650"
+                            class="absolute top-0 left-4 w-16 h-16 object-cover rounded-lg shadow-sm border border-white">
+                        <img src="https://www.pajak.com/storage/2022/08/indekos-758x490.png"
+                            class="absolute top-4 left-10 w-16 h-16 object-cover rounded-lg shadow-sm border border-white">
+                        <img src="https://www.shutterstock.com/image-photo/bogor-indonesia-december-3rd-2023-260nw-2400758873.jpg"
+                            class="absolute top-2 left-20 w-16 h-16 object-cover rounded-lg shadow-sm border border-white">
+                    </div>
+                    <!-- Text -->
+                    <p class="text-primary text-sm font-semibold text-center">
+                        Lihat Semua
+                    </p>
                 </a>
             </div>
-
-            <!-- HORIZONTAL KOS CAROUSEL -->
-            <div class="carousel">
-                    <!-- CARD -->
-                    <a wire:navigate href="/detailpage"
-                        class="carousel-card">
-                        <!-- IMAGE -->
-                        <div class="relative aspect-[4/3] rounded-2xl overflow-hidden bg-gray-200">
-                            <img src="https://www.simplyhomy.com/wp-content/uploads/2017/01/bisnis-kos-kosan.jpg"
-                                class="w-full h-full object-cover transition duration-300 group-hover:scale-105" />
-
-                            <!-- Badge -->
-                            <span
-                                class="absolute top-2 left-2 text-[11px] font-semibold bg-rose-500/90 text-white px-2 py-1 rounded-full shadow">
-                                Sisa 2 kamar
-                            </span>
-
-                        </div>
-
-                        <!-- CONTENT -->
-                        <div class="px-1 mt-2 space-y-1">
-
-                            <!-- Title + Gender -->
-                            <div class="flex justify-between items-start">
-                                <h3 class="text-sm font-semibold leading-tight line-clamp-1 text-primary">
-                                    Kos Putri Melati
-                                </h3>
-
-                                <span
-                                    class="text-xs text-secondary flex items-center gap-1 border border-gray-300 px-2 py-0.5 rounded-md">
-                                    <i class="fa-solid fa-venus text-[10px]"></i>
-                                    Putri
-                                </span>
-                            </div>
-
-                            <!-- Location -->
-                            <p class="text-xs text-secondary truncate">
-                                Kampung Dalam, Siak
-                            </p>
-
-                            <!-- Facilities -->
-                            <p class="text-[11px] text-thirdary truncate">
-                                Kamar Mandi dalam · AC · Kasur
-                            </p>
-
-                            <!-- Price -->
-                            <p class="text-sm">
-                                <span class="font-semibold text-primary">Rp462.683</span>
-                                <span class="text-thirdary text-xs">/bulan</span>
-                            </p>
-                        </div>
-                    </a>
-                    <!-- Salin card di atas untuk kos lainnya -->
-                    {{-- Lihat Selengkapnya CTA --}}
-                    <div class="snap-start shrink-0 w-[200px] sm:w-[220px]">
-                        <a wire:navigate href="/resultpage" class="block rounded-2xl shadow-md transition p-3 mt-6">
-
-                            <!-- Preview mini cards (simulasi listing) -->
-                            <div class="relative h-24 mb-2">
-                                <img src="https://awsimages.detik.net.id/visual/2021/09/10/ilustrasi-kos-kosan-cnbc-indonesiamuhammad-sabki-4_169.jpeg?w=650"
-                                    class="absolute top-0 left-4 w-16 h-16 object-cover rounded-lg shadow-sm border border-white">
-                                <img src="https://www.pajak.com/storage/2022/08/indekos-758x490.png"
-                                    class="absolute top-4 left-10 w-16 h-16 object-cover rounded-lg shadow-sm border border-white">
-                                <img src="https://www.shutterstock.com/image-photo/bogor-indonesia-december-3rd-2023-260nw-2400758873.jpg"
-                                    class="absolute top-2 left-20 w-16 h-16 object-cover rounded-lg shadow-sm border border-white">
-                            </div>
-
-                            <!-- Text -->
-                            <p class="text-primary text-sm font-semibold text- text-center">
-                                Lihat Semua
-                            </p>
-                        </a>
-                    </div>
-            </div>
+        </div>
     </section>
     <!-- Rekomendasi Kos END -->
 
