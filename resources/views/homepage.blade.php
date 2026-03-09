@@ -10,15 +10,14 @@
         <!-- Greeting Section END -->
 
         <!-- Header -->
-        <div class="flex items-center justify-between mb-4">
+        <div class="carousel-header">
             <h2 class="px-1 text-md sm:text-xl font-semibold text-primary">
                 Ini Rekomendasi Kos untukmu!
             </h2>
 
             <a wire:navigate href="#"
-                class="btn-secondary ml-2 w-8 h-8 sm:w-9 sm:h-9 flex items-center justify-center
-              rounded-full transition">
-                <i class="fa-solid fa-arrow-right text-sm text-secondary"></i>
+                class="carousel-arrow">
+                <i class="fa-solid fa-arrow-right carousel-arrow-icon"></i>
             </a>
         </div>
 
