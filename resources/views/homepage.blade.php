@@ -11,12 +11,11 @@
 
         <!-- Header -->
         <div class="carousel-header">
-            <h2 class="px-1 text-md sm:text-xl font-semibold text-primary">
+            <p class="carousel-header-label">
                 Ini Rekomendasi Kos untukmu!
-            </h2>
+            </p>
 
-            <a wire:navigate href="#"
-                class="carousel-arrow">
+            <a wire:navigate href="#" class="carousel-arrow">
                 <i class="fa-solid fa-arrow-right carousel-arrow-icon"></i>
             </a>
         </div>

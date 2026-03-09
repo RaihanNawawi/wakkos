@@ -11,26 +11,15 @@
     --color-brand-hover: var(--color-blue-700);
 
     /* Background Token */
-    --color-base: var(--color-white);
+    --color-primary: var(--color-white);
     --color-secondary: var(--color-gray-50);
     --color-tertiary: var(--color-gray-100);
     --color-muted: var(--color-gray-200);
 
     /* Text */
-    --color-text-primary: var(--color-gray-900);
+    --color-text-primary: var(--color-red-900);
     --color-text-secondary: var(--color-gray-600);
     --color-text-thirdary: var(--color-gray-400);
-}
-
-@layer utilities {
-    .scrollbar-hide {
-        -ms-overflow-style: none; /* IE & Edge lama */
-        scrollbar-width: none; /* Firefox */
-    }
-
-    .scrollbar-hide::-webkit-scrollbar {
-        display: none; /* Chrome, Safari, Edge */
-    }
 }
 
 @layer components {
@@ -42,6 +31,10 @@
     /* Carousel */
     .carousel-header {
         @apply flex items-center justify-between mb-4;
+    }
+
+    .carousel-header-label {
+        @apply px-1 text-base sm:text-xl font-semibold text-[var(--color-text-primary)];
     }
 
     .carousel-arrow {
@@ -70,6 +63,7 @@
 }
 
 /* Text Class   */
+
 .text-primary {
     color: var(--color-text-primary);
 }
