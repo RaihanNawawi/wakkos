@@ -16,11 +16,13 @@
 </head>
 
 <body class="bg-base">
-    <x-navbar />
+    @include('components.navbar')
 
-    {{ $slot }}
+    <main>
+        @yield('content')
+    </main>
 
-    <x-footer />
+    @include('components.footer')
 
     @livewireScripts
 </body>

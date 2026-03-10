@@ -1,4 +1,5 @@
-<x-layouts.app>
+@extends('layouts.app')
+@section('content')
     <!-- Rekomendasi Kos START -->
     <section class="wrapper">
         <!-- Greeting Section START -->
@@ -126,7 +127,6 @@
                     &gt; 1jt
                 </button>
             </div>
-
             <script>
                 document.addEventListener("DOMContentLoaded", function() {
                     const tabs = document.querySelectorAll("#priceTabs .tab-btn");
@@ -910,4 +910,4 @@
         <!-- Accordion Section END -->
     </section>
     <!-- Container END -->
-</x-layouts.app>
+@endsection

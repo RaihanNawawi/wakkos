@@ -1,4 +1,5 @@
-<x-layouts.app>
+@extends('layouts.app')
+@section('content')
     <!-- Hero Section (Quick Fit Check) START -->
     <section>
         <div class="max-w-4xl mx-auto px-4 mt-2">
@@ -928,4 +929,4 @@
             }
         });
     </script>
-</x-layouts.app>
+@endsection

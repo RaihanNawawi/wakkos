@@ -1,4 +1,5 @@
-<x-layouts.app>
+@extends('layouts.app')
+@section('content')
     <!-- Listings Grid START -->
     <section class="py-4 max-w-4xl px-4 mx-auto mt-2">
         <!-- Listings Header -->
@@ -605,4 +606,4 @@
         <!-- Pagination END -->
 
     </section>
-</x-layouts.app>
+@endsection
