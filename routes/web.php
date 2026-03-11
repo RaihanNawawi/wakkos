@@ -2,17 +2,14 @@
 
 use Illuminate\Support\Facades\Route;
 
-Route::view('/homepage', 'homepage');
+Route::view('/', 'pages.homepage');
 
-Route::view('/detailpage', 'detailpage');
+Route::view('/homepage', 'pages.homepage');
 
-Route::view('/resultpage', 'resultpage');
+Route::view('/detailpage', 'pages.detailpage');
 
+Route::view('/resultpage', 'pages.resultpage');
 
-Route::get('/testpage', function () {
-    return view('testpage');
-});
+Route::view('/testpage', 'pages.testpage');
 
-Route::get('/auth', function () {
-    return view('components.auth');
-});
+Route::view('/auth', 'components.auth');
