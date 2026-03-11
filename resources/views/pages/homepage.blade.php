@@ -1,7 +1,7 @@
 @extends('layouts.app')
 @section('content')
     <!-- Rekomendasi Kos START -->
-    <section class="wrapper">
+    <x-wrapper>
         <!-- Greeting Section START -->
         <div class="px-1 mb-6">
             <p class="text-sm sm:text-md text-secondary mb-1">Hai.</p>
@@ -91,7 +91,7 @@
                 </a>
             </div>
         </div>
-    </section>
+    </x-wrapper>
     <!-- Rekomendasi Kos END -->
 
     {{-- Sesuaikan Budget Kos START --}}
