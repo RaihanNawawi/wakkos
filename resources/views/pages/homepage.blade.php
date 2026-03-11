@@ -9,20 +9,7 @@
             </h2>
         </div>
         <!-- Greeting Section END -->
-
-        <!-- Header -->
-        <div class="carousel-header">
-            <p class="carousel-header-label">
-                Ini Rekomendasi Kos untukmu!
-            </p>
-
-            <a wire:navigate href="#" class="carousel-arrow">
-                <i class="fa-solid fa-arrow-right carousel-arrow-icon"></i>
-            </a>
-        </div>
-
-        <!-- HORIZONTAL KOS CAROUSEL -->
-        <div class="carousel">
+        <x-carousel-section title="Ini Rekomendasi untukmu" href="/resultpage">
             <!-- CARD -->
             <a wire:navigate href="/detailpage" class="carousel-card">
                 <!-- IMAGE -->
@@ -90,8 +77,9 @@
                     </p>
                 </a>
             </div>
-        </div>
+        </x-carousel-section>
     </x-wrapper>
+
     <!-- Rekomendasi Kos END -->
 
     {{-- Sesuaikan Budget Kos START --}}
