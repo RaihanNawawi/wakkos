@@ -9,7 +9,8 @@
             </h2>
         </div>
         <!-- Greeting Section END -->
-        <x-carousel-section title="Ini Rekomendasi untukmu" href="/resultpage">
+        <x-carousel-header title="Ini Rekomendasi untukmu" href="/resultpage" />
+        <x-carousel href="/resultpage">
             <!-- CARD -->
             <a wire:navigate href="/detailpage" class="carousel-card">
                 <!-- IMAGE -->
@@ -77,7 +78,7 @@
                     </p>
                 </a>
             </div>
-        </x-carousel-section>
+        </x-carousel>
     </x-wrapper>
 
     <!-- Rekomendasi Kos END -->

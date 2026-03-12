@@ -8,8 +8,3 @@
         <i class="fa-solid fa-arrow-right carousel-arrow-icon"></i>
     </a>
 </div>
-
-<!-- HORIZONTAL KOS CAROUSEL -->
-<div class="carousel">
-    {{ $slot }}
-</div>
