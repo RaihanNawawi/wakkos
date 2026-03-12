@@ -161,68 +161,23 @@
 
 
     {{-- Area Kos Populer di [Lokasi] START --}}
-    <section class="py-5">
-        <div class="max-w-4xl mx-auto px-4">
-
-            <!-- Header -->
-            <div class="flex items-start justify-between mb-4">
-                <div class="flex items-center justify-between">
-                    <h2 class="px-1 text-md sm:text-xl font-semibold text-primary">
-                        Area Kos Populer di <span class="text-brand">Siak</span>
-                    </h2>
-                </div>
-            </div>
-
-            <!-- Grid Area List -->
-            <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
-
-                <!-- Card -->
-                <a wire:navigate href="#"
-                    class="flex items-center gap-4 px-5 py-3 border rounded-xl hover:shadow-md hover:border-blue-500 transition">
-
-                    <!-- Icon Lokasi -->
-                    <div
-                        class="flex-shrink-0 w-12 h-12 flex items-center justify-center rounded-lg bg-blue-50 text-blue-600">
-                        <i class="fa-solid fa-location-dot text-lg"></i>
-                    </div>
-
-                    <!-- Text Info -->
-                    <div class="flex flex-col">
-                        <span class="font-semibold text-gray-800">Kampung Dalam</span>
-                        <span class="text-sm text-secondary">24 kos tersedia</span>
-                    </div>
-
-                </a>
-
-                <!-- Card -->
-                <a wire:navigate href="#"
-                    class="flex items-center gap-4 px-5 py-3 border rounded-xl hover:shadow-md hover:border-blue-500 transition">
-                    <div
-                        class="flex-shrink-0 w-12 h-12 flex items-center justify-center rounded-lg bg-blue-50 text-blue-600">
-                        <i class="fa-solid fa-location-dot text-lg"></i>
-                    </div>
-                    <div class="flex flex-col">
-                        <span class="font-semibold text-gray-800">Kampung Rempak</span>
-                        <span class="text-sm text-secondary">18 kos tersedia</span>
-                    </div>
-                </a>
-
-                <!-- Card -->
-                <a wire:navigate href="#"
-                    class="flex items-center gap-4 px-5 py-3 border rounded-xl hover:shadow-md hover:border-blue-500 transition">
-                    <div
-                        class="flex-shrink-0 w-12 h-12 flex items-center justify-center rounded-lg bg-blue-50 text-blue-600">
-                        <i class="fa-solid fa-location-dot text-lg"></i>
-                    </div>
-                    <div class="flex flex-col">
-                        <span class="font-semibold text-gray-800">Suak Lanjut</span>
-                        <span class="text-sm text-secondary">11 kos tersedia</span>
-                    </div>
-                </a>
-
+    <x-wrapper>
+        <!-- Header -->
+        <div class="flex items-start justify-between mb-4">
+            <div class="flex items-center justify-between">
+                <h2 class="px-1 text-md sm:text-xl font-semibold text-primary">
+                    Area Kos Populer di <span class="text-brand">Siak</span>
+                </h2>
             </div>
         </div>
-    </section>
+
+        <!-- Grid Area List -->
+        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+            <x-popular-area-card location="Kampung Dalam" count="24" />
+            <x-popular-area-card location="Kampung Rempak" count="18" />
+            <x-popular-area-card location="Suak Lanjut" count="32" />
+        </div>
+    </x-wrapper>
     {{-- Area Kos Populer di [Lokasi] END --}}
 
     <!-- Baru Ditambahkan di [Lokasi]  START -->
