@@ -53,25 +53,6 @@
     }
 </style>
 <script>
-    function toggleAccordion(button) {
-        const item = button.closest('.accordion-item');
-        const content = item.querySelector('.accordion-content');
-        const isActive = item.classList.contains('active');
-
-        // Close all other items
-        document.querySelectorAll('.accordion-item.active').forEach(activeItem => {
-            if (activeItem !== item) {
-                activeItem.classList.remove('active');
-                activeItem.querySelector('.accordion-content').classList.remove('active');
-            }
-        });
-
-        // Toggle current item
-        item.classList.toggle('active');
-        content.classList.toggle('active');
-    }
-</script>
-<script>
     // Search Layer Script START
     function openSearch() {
         const layer = document.getElementById('search-layer');

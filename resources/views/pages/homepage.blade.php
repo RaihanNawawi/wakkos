@@ -267,8 +267,7 @@
         <!-- Header END -->
 
         <!-- Accordion Wrapper START -->
-        <div class="space-y-3">
-
+        <x-accordion-wrapper>
             <!-- Accordion Item 1 START -->
             <div class="accordion-item border border-gray-200 rounded-xl overflow-hidden">
                 <button
@@ -290,6 +289,25 @@
                     </div>
                 </div>
             </div>
+            <script>
+                function toggleAccordion(button) {
+                    const item = button.closest('.accordion-item');
+                    const content = item.querySelector('.accordion-content');
+                    const isActive = item.classList.contains('active');
+
+                    // Close all other items
+                    document.querySelectorAll('.accordion-item.active').forEach(activeItem => {
+                        if (activeItem !== item) {
+                            activeItem.classList.remove('active');
+                            activeItem.querySelector('.accordion-content').classList.remove('active');
+                        }
+                    });
+
+                    // Toggle current item
+                    item.classList.toggle('active');
+                    content.classList.toggle('active');
+                }
+            </script>
             <!-- Accordion Item 1 END -->
 
             <!-- Accordion Item 2 START -->
@@ -357,7 +375,7 @@
             </div>
             <!-- Accordion Item 3 END -->
 
-        </div>
+        </x-accordion-wrapper>
         <!-- Accordion Wrapper END -->
     </x-wrapper>
     <!-- Container END -->
