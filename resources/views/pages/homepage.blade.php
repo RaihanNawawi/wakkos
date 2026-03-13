@@ -257,113 +257,108 @@
 
     {{-- Accordion Section START --}}
     <!-- Container START -->
-    <section class="py-5">
-        <!-- Accordion Section START -->
-        <div class="mx-auto max-w-4xl px-4">
-            <!-- Header START -->
-            <div class="text-center mb-6">
-                <h2 class="text-xl sm:text-2xl font-bold text-brand mb-2">
-                    WakKos — Cari Kos di Kabupaten Siak
-                </h2>
+    <x-wrapper>
+        <!-- Header START -->
+        <div class="text-center mb-6">
+            <h2 class="text-xl sm:text-2xl font-bold text-brand mb-2">
+                WakKos — Cari Kos di Kabupaten Siak
+            </h2>
+        </div>
+        <!-- Header END -->
+
+        <!-- Accordion Wrapper START -->
+        <div class="space-y-3">
+
+            <!-- Accordion Item 1 START -->
+            <div class="accordion-item border border-gray-200 rounded-xl overflow-hidden">
+                <button
+                    class="accordion-trigger w-full px-5 py-3 flex items-center justify-between hover:bg-gray-50 focus:outline-none"
+                    onclick="toggleAccordion(this)">
+
+                    <span class="text-left font-semibold text-primary">
+                        Kenapa WakKos?
+                    </span>
+
+                    <i class="accordion-chevron fa-solid fa-chevron-down text-secondary"></i>
+                </button>
+                <div class="accordion-content">
+                    <div class="px-6 py-4 border-t border-gray-100 bg-gray-50 text-secondary leading-relaxed">
+                        <p>WakKos adalah aplikasi mobile dan web terpercaya untuk mencari, menyewa, dan mengelola
+                            kos di Indonesia. Dengan teknologi terdepan, kami menghubungkan penyewa dan pemilik kos
+                            dalam satu platform yang aman, mudah digunakan, dan transparan. Misi kami adalah membuat
+                            pencarian kos menjadi lebih mudah dan efisien bagi semua kalangan.</p>
+                    </div>
+                </div>
             </div>
-            <!-- Header END -->
+            <!-- Accordion Item 1 END -->
 
-            <!-- Accordion Wrapper START -->
-            <div class="space-y-3">
+            <!-- Accordion Item 2 START -->
+            <div class="accordion-item border border-gray-200 rounded-xl overflow-hidden">
+                <button
+                    class="accordion-trigger w-full px-5 py-3 flex items-center justify-between hover:bg-gray-50 focus:outline-none"
+                    onclick="toggleAccordion(this)">
 
-                <!-- Accordion Item 1 START -->
-                <div class="accordion-item border border-gray-200 rounded-xl overflow-hidden">
-                    <button
-                        class="accordion-trigger w-full px-5 py-3 flex items-center justify-between hover:bg-gray-50 focus:outline-none"
-                        onclick="toggleAccordion(this)">
+                    <span class="text-left font-semibold text-primary">
+                        Cara Menyewa Kos
+                    </span>
 
-                        <span class="text-left font-semibold text-primary">
-                            Kenapa WakKos?
-                        </span>
-
-                        <i class="accordion-chevron fa-solid fa-chevron-down text-secondary"></i>
-                    </button>
-                    <div class="accordion-content">
-                        <div class="px-6 py-4 border-t border-gray-100 bg-gray-50 text-secondary leading-relaxed">
-                            <p>WakKos adalah aplikasi mobile dan web terpercaya untuk mencari, menyewa, dan mengelola
-                                kos di Indonesia. Dengan teknologi terdepan, kami menghubungkan penyewa dan pemilik kos
-                                dalam satu platform yang aman, mudah digunakan, dan transparan. Misi kami adalah membuat
-                                pencarian kos menjadi lebih mudah dan efisien bagi semua kalangan.</p>
-                        </div>
+                    <i class="accordion-chevron fa-solid fa-chevron-down text-secondary"></i>
+                </button>
+                <div class="accordion-content">
+                    <div class="px-6 py-4 border-t border-gray-100 bg-gray-50 text-secondary leading-relaxed">
+                        <ol class="list-decimal list-inside space-y-3">
+                            <li><strong>Buka Aplikasi WakKos</strong> - Unduh dan buka aplikasi WakKos di smartphone
+                                atau akses website</li>
+                            <li><strong>Cari Kos</strong> - Gunakan filter lokasi, harga, dan fasilitas sesuai
+                                preferensi Anda</li>
+                            <li><strong>Lihat Detail</strong> - Periksa foto, deskripsi, dan review dari penghuni
+                                sebelumnya</li>
+                            <li><strong>Hubungi Pemilik</strong> - Ajukan pertanyaan atau minta jadwal kunjungan
+                            </li>
+                            <li><strong>Pesan Kos</strong> - Lakukan booking dan ikuti proses pembayaran yang aman
+                            </li>
+                            <li><strong>Selesai</strong> - Terima konfirmasi dan nikmati kos baru Anda</li>
+                        </ol>
                     </div>
                 </div>
-                <!-- Accordion Item 1 END -->
-
-                <!-- Accordion Item 2 START -->
-                <div class="accordion-item border border-gray-200 rounded-xl overflow-hidden">
-                    <button
-                        class="accordion-trigger w-full px-5 py-3 flex items-center justify-between hover:bg-gray-50 focus:outline-none"
-                        onclick="toggleAccordion(this)">
-
-                        <span class="text-left font-semibold text-primary">
-                            Cara Menyewa Kos
-                        </span>
-
-                        <i class="accordion-chevron fa-solid fa-chevron-down text-secondary"></i>
-                    </button>
-                    <div class="accordion-content">
-                        <div class="px-6 py-4 border-t border-gray-100 bg-gray-50 text-secondary leading-relaxed">
-                            <ol class="list-decimal list-inside space-y-3">
-                                <li><strong>Buka Aplikasi WakKos</strong> - Unduh dan buka aplikasi WakKos di smartphone
-                                    atau akses website</li>
-                                <li><strong>Cari Kos</strong> - Gunakan filter lokasi, harga, dan fasilitas sesuai
-                                    preferensi Anda</li>
-                                <li><strong>Lihat Detail</strong> - Periksa foto, deskripsi, dan review dari penghuni
-                                    sebelumnya</li>
-                                <li><strong>Hubungi Pemilik</strong> - Ajukan pertanyaan atau minta jadwal kunjungan
-                                </li>
-                                <li><strong>Pesan Kos</strong> - Lakukan booking dan ikuti proses pembayaran yang aman
-                                </li>
-                                <li><strong>Selesai</strong> - Terima konfirmasi dan nikmati kos baru Anda</li>
-                            </ol>
-                        </div>
-                    </div>
-                </div>
-                <!-- Accordion Item 2 END -->
-
-                <!-- Accordion Item 3 START -->
-                <div class="accordion-item border border-gray-200 rounded-xl overflow-hidden">
-                    <button
-                        class="accordion-trigger w-full px-5 py-3 flex items-center justify-between hover:bg-gray-50 focus:outline-none"
-                        onclick="toggleAccordion(this)">
-
-                        <span class="text-left font-semibold text-primary">
-                            Cara Mendaftarkan Kos
-                        </span>
-
-                        <i class="accordion-chevron fa-solid fa-chevron-down text-secondary"></i>
-                    </button>
-                    <div class="accordion-content">
-                        <div class="px-6 py-4 border-t border-gray-100 bg-gray-50 text-secondary leading-relaxed">
-                            <ol class="list-decimal list-inside space-y-3">
-                                <li><strong>Daftar Akun</strong> - Buat akun pemilik kos dengan email atau nomor telepon
-                                </li>
-                                <li><strong>Verifikasi Data</strong> - Lengkapi profil dan verifikasi identitas Anda
-                                </li>
-                                <li><strong>Tambah Kos</strong> - Klik "Tambah Properti" dan isi data kos dengan lengkap
-                                </li>
-                                <li><strong>Upload Foto</strong> - Unggah foto berkualitas dari berbagai sudut ruangan
-                                </li>
-                                <li><strong>Atur Harga & Fasilitas</strong> - Tentukan harga sewa dan daftar fasilitas
-                                    yang tersedia</li>
-                                <li><strong>Terbitkan</strong> - Publikasikan kos Anda dan mulai terima calon penghuni
-                                </li>
-                            </ol>
-                        </div>
-                    </div>
-                </div>
-                <!-- Accordion Item 3 END -->
-
             </div>
-            <!-- Accordion Wrapper END -->
+            <!-- Accordion Item 2 END -->
+
+            <!-- Accordion Item 3 START -->
+            <div class="accordion-item border border-gray-200 rounded-xl overflow-hidden">
+                <button
+                    class="accordion-trigger w-full px-5 py-3 flex items-center justify-between hover:bg-gray-50 focus:outline-none"
+                    onclick="toggleAccordion(this)">
+
+                    <span class="text-left font-semibold text-primary">
+                        Cara Mendaftarkan Kos
+                    </span>
+
+                    <i class="accordion-chevron fa-solid fa-chevron-down text-secondary"></i>
+                </button>
+                <div class="accordion-content">
+                    <div class="px-6 py-4 border-t border-gray-100 bg-gray-50 text-secondary leading-relaxed">
+                        <ol class="list-decimal list-inside space-y-3">
+                            <li><strong>Daftar Akun</strong> - Buat akun pemilik kos dengan email atau nomor telepon
+                            </li>
+                            <li><strong>Verifikasi Data</strong> - Lengkapi profil dan verifikasi identitas Anda
+                            </li>
+                            <li><strong>Tambah Kos</strong> - Klik "Tambah Properti" dan isi data kos dengan lengkap
+                            </li>
+                            <li><strong>Upload Foto</strong> - Unggah foto berkualitas dari berbagai sudut ruangan
+                            </li>
+                            <li><strong>Atur Harga & Fasilitas</strong> - Tentukan harga sewa dan daftar fasilitas
+                                yang tersedia</li>
+                            <li><strong>Terbitkan</strong> - Publikasikan kos Anda dan mulai terima calon penghuni
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+            <!-- Accordion Item 3 END -->
 
         </div>
-        <!-- Accordion Section END -->
-    </section>
+        <!-- Accordion Wrapper END -->
+    </x-wrapper>
     <!-- Container END -->
 @endsection
