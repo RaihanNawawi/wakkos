@@ -269,45 +269,12 @@
         <!-- Accordion Wrapper START -->
         <x-accordion-wrapper>
             <!-- Accordion Item 1 START -->
-            <div class="accordion-item border border-gray-200 rounded-xl overflow-hidden">
-                <button
-                    class="accordion-trigger w-full px-5 py-3 flex items-center justify-between hover:bg-gray-50 focus:outline-none"
-                    onclick="toggleAccordion(this)">
-
-                    <span class="text-left font-semibold text-primary">
-                        Kenapa WakKos?
-                    </span>
-
-                    <i class="accordion-chevron fa-solid fa-chevron-down text-secondary"></i>
-                </button>
-                <div class="accordion-content">
-                    <div class="px-6 py-4 border-t border-gray-100 bg-gray-50 text-secondary leading-relaxed">
-                        <p>WakKos adalah aplikasi mobile dan web terpercaya untuk mencari, menyewa, dan mengelola
-                            kos di Indonesia. Dengan teknologi terdepan, kami menghubungkan penyewa dan pemilik kos
-                            dalam satu platform yang aman, mudah digunakan, dan transparan. Misi kami adalah membuat
-                            pencarian kos menjadi lebih mudah dan efisien bagi semua kalangan.</p>
-                    </div>
-                </div>
-            </div>
-            <script>
-                function toggleAccordion(button) {
-                    const item = button.closest('.accordion-item');
-                    const content = item.querySelector('.accordion-content');
-                    const isActive = item.classList.contains('active');
-
-                    // Close all other items
-                    document.querySelectorAll('.accordion-item.active').forEach(activeItem => {
-                        if (activeItem !== item) {
-                            activeItem.classList.remove('active');
-                            activeItem.querySelector('.accordion-content').classList.remove('active');
-                        }
-                    });
-
-                    // Toggle current item
-                    item.classList.toggle('active');
-                    content.classList.toggle('active');
-                }
-            </script>
+            <x-accordion-item title="Kenapa WakKos?">
+                <p>WakKos adalah aplikasi mobile dan web terpercaya untuk mencari, menyewa, dan mengelola
+                    kos di Indonesia. Dengan teknologi terdepan, kami menghubungkan penyewa dan pemilik kos
+                    dalam satu platform yang aman, mudah digunakan, dan transparan. Misi kami adalah membuat
+                    pencarian kos menjadi lebih mudah dan efisien bagi semua kalangan.</p>
+            </x-accordion-item>
             <!-- Accordion Item 1 END -->
 
             <!-- Accordion Item 2 START -->
