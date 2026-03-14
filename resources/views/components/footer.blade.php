@@ -1,6 +1,6 @@
         <!-- Footer START -->
-        <footer class="bg-secondary mt-5 py-10">
-            <div class="max-w-4xl mx-auto px-4">
+        <footer class="bg-secondary">
+            <x-wrapper variant="footer">
                 <div class="grid md:grid-cols-3 gap-8 mb-8">
                     <!-- Navigation Column -->
                     <div>
@@ -56,6 +56,6 @@
                 <div class="border-t border-gray-100 pt-8 text-center text-sm text-secondary">
                     <p>&copy; 2026 WakKos. All rights reserved.</p>
                 </div>
-            </div>
-        </footer>
+            </x-wrapper>
+            </footer>
         <!-- Footer END -->
