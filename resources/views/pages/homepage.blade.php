@@ -1,6 +1,7 @@
 @extends('layouts.app')
 @section('content')
     <!-- Rekomendasi Kos START -->
+    <x-wrapper>
         <!-- Greeting Section START -->
         <div class="px-1 mb-6">
             <p class="text-sm sm:text-md text-secondary mb-1">Hai.</p>
@@ -78,9 +79,11 @@
                 </a>
             </div>
         </x-carousel>
+    </x-wrapper>
     <!-- Rekomendasi Kos END -->
 
     {{-- Sesuaikan Budget Kos START --}}
+    <x-wrapper>
         <x-carousel-header title="Sesuaikan Budget Kos-mu di [Lokasi]" href="/resultpage" />
         <x-price-filter-tabs />
         <x-carousel href="/resultpage">
@@ -152,11 +155,13 @@
                 </a>
             </div>
         </x-carousel>
+    </x-wrapper>
     {{-- Sesuaikan Budget Kos END --}}
 
 
 
     {{-- Area Kos Populer di [Lokasi] START --}}
+    <x-wrapper>
         <!-- Header -->
         <div class="flex items-start justify-between mb-4">
             <div class="flex items-center justify-between">
@@ -172,9 +177,11 @@
             <x-popular-area-card location="Kampung Rempak" count="18" />
             <x-popular-area-card location="Suak Lanjut" count="32" />
         </div>
+    </x-wrapper>
     {{-- Area Kos Populer di [Lokasi] END --}}
 
     <!-- Baru Ditambahkan di [Lokasi]  START -->
+    <x-wrapper>
         <x-carousel-header title="Baru Ditambahkan di [Lokasi]" href="/resultpage" />
         <x-carousel href="/resultpage">
             <!-- CARD -->
@@ -245,10 +252,12 @@
                 </a>
             </div>
         </x-carousel>
+    </x-wrapper>
     <!-- Baru Ditambahkan di [Lokasi] END -->
 
     {{-- Accordion Section START --}}
     <!-- Container START -->
+    <x-wrapper>
         <!-- Header START -->
         <div class="text-center mb-6">
             <h2 class="text-xl sm:text-2xl font-bold text-brand mb-2">
@@ -307,5 +316,6 @@
 
         </x-accordion-wrapper>
         <!-- Accordion Wrapper END -->
+    </x-wrapper>
     <!-- Container END -->
 @endsection

@@ -1,6 +1,8 @@
 @extends('layouts.app')
 @section('content')
     <!-- Hero Section (Quick Fit Check) START -->
+    <section>
+        <div class="max-w-4xl mx-auto px-4 mt-2">
             <!-- Photo Gallery -->
             <div class="mb-8 relative">
                 <div class="grid grid-cols-1 lg:grid-cols-3 gap-4 aspect-[4/3] lg:aspect-auto lg:h-[420px]">
@@ -740,6 +742,8 @@
 
                 <!-- Right: Price & Main CTA (Floating Layer) Mobile END -->
             </div>
+        </div>
+    </section>
     <!-- Hero Section (Quick Fit Check) END -->
 
     <script>
