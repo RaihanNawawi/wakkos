@@ -18,9 +18,10 @@
 <body class="bg-base">
     @include('components.navbar')
 
-    <main>
+    <x-wrapper>
         @yield('content')
-    </main>
+    </x-wrapper>
+
 
     @include('components.footer')
 
