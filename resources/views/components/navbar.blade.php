@@ -1,5 +1,4 @@
-    <nav>
-        <x-wrapper variant="navbar">
+    <nav class="wrapper bg-primary sticky top-0 z-50 bg-base pt-3 pb-2">
         <div class="flex items-center gap-3 px-4 md:justify-between justify-center">
             <!-- Logo (Hidden on Mobile) -->
             <div class="hidden md:flex items-center">
@@ -29,7 +28,6 @@
             <!-- Hamburger Menu Button END -->
 
         </div>
-        </x-wrapper>
     </nav>
 
     <!-- SEARCH LAYER UI + Script START -->
