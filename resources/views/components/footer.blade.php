@@ -1,6 +1,6 @@
         <!-- Footer START -->
         <footer class="bg-secondary">
-            <x-wrapper variant="footer">
+            <div class="wrapper mt-5 py-10 px-4">
                 <div class="grid md:grid-cols-3 gap-8 mb-8">
                     <!-- Navigation Column -->
                     <div>
@@ -33,8 +33,7 @@
                             <li class="flex items-center gap-2">
                                 <i class="fa-solid fa-envelope text-secondary text-md"></i>
                                 <a href="https://mail.google.com/mail/?view=cm&fs=1&to=wakkosapp@gmail.com&su=Judul%20Pesan&body=Halo%20Admin%20WakKos"
-                                    target="_blank" rel="noopener"
-                                    class="flex items-center gap-2 hover:underline">
+                                    target="_blank" rel="noopener" class="flex items-center gap-2 hover:underline">
                                     <span>wakkosapp@gmail.com</span>
                                 </a>
                             </li>
@@ -43,8 +42,7 @@
                                 <!-- CTA Button -->
                                 <i class="fa-brands fa-whatsapp text-secondary text-md"></i>
                                 <a href="https://wa.me/6281995421795?text=Halo%20WakKos%2C%0A%0ASaya%20tertarik%20dengan%20kos%20ini.%0ABoleh%20dibantu%20untuk%20info%20ketersediaan%2C%20harga%2C%20dan%20fasilitasnya%3F%0A%0ATerima%20kasih."
-                                    target="_blank" rel="noopener"
-                                    class="flex items-center gap-2 hover:underline">
+                                    target="_blank" rel="noopener" class="flex items-center gap-2 hover:underline">
                                     <span>+62 819-9542-1795</span>
                                 </a>
                             </li>
@@ -56,6 +54,6 @@
                 <div class="border-t border-gray-100 pt-8 text-center text-sm text-secondary">
                     <p>&copy; 2026 WakKos. All rights reserved.</p>
                 </div>
-            </x-wrapper>
-            </footer>
+            </div>
+        </footer>
         <!-- Footer END -->
