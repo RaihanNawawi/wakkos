@@ -17,6 +17,7 @@
 
 <body class="bg-base">
     @include('components.navbar')
+    @include('components.search-layer')
 
     <main>
         @yield('content')
