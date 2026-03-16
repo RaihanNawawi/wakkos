@@ -24,14 +24,9 @@
             <!-- Kos Putri -->
             <a wire:navigate href="/detailpage">
                 {{-- Image --}}
-                <div class="relative aspect-[4/3] rounded-xl overflow-hidden bg-gray-200">
-                    <img src="https://www.simplyhomy.com/wp-content/uploads/2017/01/bisnis-kos-kosan.jpg" alt="Guesthouse"
-                        class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" />
-                    {{-- Availability Badge --}}
-                    <x-availability-badge />
-                </div>
+                <x-card-image src="https://www.simplyhomy.com/wp-content/uploads/2017/01/bisnis-kos-kosan.jpg" />
                 <!-- Content -->
-                <div class="mt-3 space-y-1">
+                <x-card-content>
                     <div class="flex justify-between items-start gap-2 min-h-[28px] text-md font-semibold">
                         <span>Kos Putri Melati</span>
                         <span
@@ -54,8 +49,7 @@
                         <span class="font-semibold underline">Rp462.683</span>
                         <span class="text-thirdary"> / bulan</span>
                     </p>
-                </div>
-
+                </x-card-content>
             </a>
             {{-- Kos Putra --}}
             <a wire:navigate href="/detailpage">

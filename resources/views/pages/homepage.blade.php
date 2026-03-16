@@ -14,18 +14,9 @@
             <!-- CARD -->
             <a wire:navigate href="/detailpage" class="carousel-card">
                 <!-- IMAGE -->
-                <div class="relative aspect-[4/3] rounded-2xl overflow-hidden bg-gray-200">
-                    <img src="https://www.simplyhomy.com/wp-content/uploads/2017/01/bisnis-kos-kosan.jpg"
-                        class="w-full h-full object-cover transition duration-300 group-hover:scale-105" />
-
-                    <!-- Badge -->
-                    <x-availability-badge />
-
-                </div>
-
+                <x-card-image src="https://www.simplyhomy.com/wp-content/uploads/2017/01/bisnis-kos-kosan.jpg" />
                 <!-- CONTENT -->
-                <div class="px-1 mt-2 space-y-1">
-
+                <x-card-content>
                     <!-- Title + Gender -->
                     <div class="flex justify-between items-start">
                         <h3 class="text-sm font-semibold leading-tight line-clamp-1 text-primary">
@@ -54,7 +45,7 @@
                         <span class="font-semibold text-primary">Rp462.683</span>
                         <span class="text-thirdary text-xs">/bulan</span>
                     </p>
-                </div>
+                </x-card-content>
             </a>
             <!-- Salin card di atas untuk kos lainnya -->
             {{-- View All Component --}}
