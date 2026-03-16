@@ -28,11 +28,8 @@
                 <div class="relative aspect-[4/3] rounded-xl overflow-hidden bg-gray-200">
                     <img src="https://www.simplyhomy.com/wp-content/uploads/2017/01/bisnis-kos-kosan.jpg" alt="Guesthouse"
                         class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" />
-
-                    <span
-                        class="absolute top-2 left-2 text-[11px] font-semibold bg-rose-500/90 text-white px-2 py-1 rounded-lg shadow">
-                        Sisa 2 kamar
-                    </span>
+                    {{-- Availability Badge --}}
+                    <x-availability-badge />
                 </div>
                 <!-- Content -->
                 <div class="mt-3 space-y-1">
@@ -69,10 +66,8 @@
                         alt="Guesthouse"
                         class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" />
 
-                    <span
-                        class="absolute top-2 left-2 text-[11px] font-semibold bg-rose-500/90 text-white px-2 py-1 rounded-lg shadow">
-                        Sisa 2 kamar
-                    </span>
+                    {{-- Availability Badge --}}
+                    <x-availability-badge />
                 </div>
                 <!-- Content -->
                 <div class="mt-3 space-y-1">
@@ -109,10 +104,8 @@
                         alt="Guesthouse"
                         class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" />
 
-                    <span
-                        class="absolute top-2 left-2 text-[11px] font-semibold bg-rose-500/90 text-white px-2 py-1 rounded-lg shadow">
-                        Sisa 2 kamar
-                    </span>
+                    {{-- Availability Badge --}}
+                    <x-availability-badge />
                 </div>
                 <!-- Content -->
                 <div class="mt-3 space-y-1">
@@ -148,10 +141,8 @@
                     <img src="https://www.simplyhomy.com/wp-content/uploads/2017/01/bisnis-kos-kosan.jpg" alt="Guesthouse"
                         class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" />
 
-                    <span
-                        class="absolute top-2 left-2 text-[11px] font-semibold bg-rose-500/90 text-white px-2 py-1 rounded-lg shadow">
-                        Sisa 2 kamar
-                    </span>
+                    {{-- Availability Badge --}}
+                    <x-availability-badge />
                 </div>
                 <!-- Content -->
                 <div class="mt-3 space-y-1">

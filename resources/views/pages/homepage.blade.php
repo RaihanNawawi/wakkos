@@ -19,10 +19,7 @@
                         class="w-full h-full object-cover transition duration-300 group-hover:scale-105" />
 
                     <!-- Badge -->
-                    <span
-                        class="absolute top-2 left-2 text-[11px] font-semibold bg-rose-500/90 text-white px-2 py-1 rounded-full shadow">
-                        Sisa 2 kamar
-                    </span>
+                    <x-availability-badge />
 
                 </div>
 
@@ -95,10 +92,7 @@
                         class="w-full h-full object-cover transition duration-300 group-hover:scale-105" />
 
                     <!-- Badge -->
-                    <span
-                        class="absolute top-2 left-2 text-[11px] font-semibold bg-rose-500/90 text-white px-2 py-1 rounded-full shadow">
-                        Sisa 2 kamar
-                    </span>
+                    <x-availability-badge />
 
                 </div>
 
@@ -192,10 +186,7 @@
                         class="w-full h-full object-cover transition duration-300 group-hover:scale-105" />
 
                     <!-- Badge -->
-                    <span
-                        class="absolute top-2 left-2 text-[11px] font-semibold bg-rose-500/90 text-white px-2 py-1 rounded-full shadow">
-                        Sisa 2 kamar
-                    </span>
+                    <x-availability-badge />
 
                 </div>
 
@@ -297,20 +288,20 @@
 
             <!-- Accordion Item 3 START -->
             <x-accordion-item title="Cara Mendaftarkan Kos">
-                        <ol class="list-decimal list-inside space-y-3">
-                            <li><strong>Daftar Akun</strong> - Buat akun pemilik kos dengan email atau nomor telepon
-                            </li>
-                            <li><strong>Verifikasi Data</strong> - Lengkapi profil dan verifikasi identitas Anda
-                            </li>
-                            <li><strong>Tambah Kos</strong> - Klik "Tambah Properti" dan isi data kos dengan lengkap
-                            </li>
-                            <li><strong>Upload Foto</strong> - Unggah foto berkualitas dari berbagai sudut ruangan
-                            </li>
-                            <li><strong>Atur Harga & Fasilitas</strong> - Tentukan harga sewa dan daftar fasilitas
-                                yang tersedia</li>
-                            <li><strong>Terbitkan</strong> - Publikasikan kos Anda dan mulai terima calon penghuni
-                            </li>
-                        </ol>
+                <ol class="list-decimal list-inside space-y-3">
+                    <li><strong>Daftar Akun</strong> - Buat akun pemilik kos dengan email atau nomor telepon
+                    </li>
+                    <li><strong>Verifikasi Data</strong> - Lengkapi profil dan verifikasi identitas Anda
+                    </li>
+                    <li><strong>Tambah Kos</strong> - Klik "Tambah Properti" dan isi data kos dengan lengkap
+                    </li>
+                    <li><strong>Upload Foto</strong> - Unggah foto berkualitas dari berbagai sudut ruangan
+                    </li>
+                    <li><strong>Atur Harga & Fasilitas</strong> - Tentukan harga sewa dan daftar fasilitas
+                        yang tersedia</li>
+                    <li><strong>Terbitkan</strong> - Publikasikan kos Anda dan mulai terima calon penghuni
+                    </li>
+                </ol>
             </x-accordion-item>
             <!-- Accordion Item 3 END -->
 
