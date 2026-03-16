@@ -1,7 +1,7 @@
 @extends('layouts.app')
 @section('content')
     <!-- Listings Grid START -->
-    <section class="py-4 max-w-4xl px-4 mx-auto mt-2">
+    <x-wrapper>
         <!-- Listings Header -->
         <div class="mb-4 flex items-center justify-between">
             <p class="text-sm md:text-base text-secondary">
@@ -153,8 +153,8 @@
                         <button type="button" onclick="toggleMore('facility-more', this)"
                             class="mt-4 flex items-center gap-2 text-sm font-semibold text-secondary underline">
                             <span>Tampilkan lainnya</span>
-                            <svg class="w-4 h-4 transition-transform" fill="none" stroke="currentColor"
-                                stroke-width="2" viewBox="0 0 24 24">
+                            <svg class="w-4 h-4 transition-transform" fill="none" stroke="currentColor" stroke-width="2"
+                                viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
                             </svg>
                         </button>
@@ -329,16 +329,13 @@
                 console.log('[v0] Filters cleared');
             });
         </script>
-
-
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 xl:grid-cols-4 gap-4 lg:gap-6">
 
             <!-- Kos Putri -->
             <a wire:navigate href="/detailpage">
                 {{-- Image --}}
                 <div class="relative aspect-[4/3] rounded-xl overflow-hidden bg-gray-200">
-                    <img src="https://www.simplyhomy.com/wp-content/uploads/2017/01/bisnis-kos-kosan.jpg"
-                        alt="Guesthouse"
+                    <img src="https://www.simplyhomy.com/wp-content/uploads/2017/01/bisnis-kos-kosan.jpg" alt="Guesthouse"
                         class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" />
 
                     <span
@@ -457,8 +454,7 @@
             <a wire:navigate href="/detailpage" class="group block rounded-lg focus:outline-none">
                 {{-- Image --}}
                 <div class="relative aspect-[4/3] rounded-xl overflow-hidden bg-gray-200">
-                    <img src="https://www.simplyhomy.com/wp-content/uploads/2017/01/bisnis-kos-kosan.jpg"
-                        alt="Guesthouse"
+                    <img src="https://www.simplyhomy.com/wp-content/uploads/2017/01/bisnis-kos-kosan.jpg" alt="Guesthouse"
                         class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" />
 
                     <span
@@ -605,5 +601,5 @@
         </nav>
         <!-- Pagination END -->
 
-    </section>
+    </x-wrapper>
 @endsection
