@@ -20,8 +20,7 @@
         <!-- Filters Modal Overlay END -->
 
 
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 xl:grid-cols-4 gap-4 lg:gap-6">
-
+        <x-grid-listing>
             <!-- Kos Putri -->
             <a wire:navigate href="/detailpage">
                 {{-- Image --}}
@@ -173,7 +172,8 @@
             </a>
             <!-- 🔁 Duplikasikan card ini -->
 
-        </div>
+        </x-grid-listing>
+        
         <!-- Pagination START -->
         <nav class="mt-12 mb-6 flex justify-center" aria-label="Pagination">
             {{-- Desktop Pagination Start --}}

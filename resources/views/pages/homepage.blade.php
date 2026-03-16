@@ -166,11 +166,11 @@
         </div>
 
         <!-- Grid Area List -->
-        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+        <x-grid-listing>
             <x-popular-area-card location="Kampung Dalam" count="24" />
             <x-popular-area-card location="Kampung Rempak" count="18" />
             <x-popular-area-card location="Suak Lanjut" count="32" />
-        </div>
+        </x-grid-listing>
     </x-wrapper>
     {{-- Area Kos Populer di [Lokasi] END --}}
 
