@@ -1,15 +1,7 @@
         <!-- Filters Modal Overlay START -->
-        <div id="filtersModal" class="hidden fixed inset-0 bg-black bg-opacity-50 z-50 transition-opacity duration-300">
+        <div id="filtersModal" class="hidden fixed inset-0 bg-black bg-opacity-50 z-50 flex items-end lg:items-center justify-center">
             <!-- Modal Content -->
-            <div
-                class="absolute bottom-0 left-0 right-0 w-full
-               max-h-[90vh] bg-white shadow-2xl flex flex-col
-               rounded-t-2xl overflow-hidden
-               lg:top-1/2 lg:left-1/2 lg:bottom-auto lg:right-auto
-               lg:-translate-x-1/2 lg:-translate-y-1/2
-               lg:w-full lg:max-w-xl lg:max-h-[85vh]
-               lg:rounded-xl">
-
+            <div class="w-full max-h-[90vh] bg-white shadow-2xl flex flex-col rounded-t-2xl overflow-hidden lg:max-w-xl lg:max-h-[85vh] lg:rounded-xl">
                 <!-- Modal Header START -->
                 <div class="sticky top-0 bg-white border-b border-gray-200 px-6 py-4 flex justify-between items-center">
                     <h2 class="text-lg font-semibold text-primary">Filter Pencarianmu</h2>
@@ -136,8 +128,8 @@
                         <button type="button" onclick="toggleMore('facility-more', this)"
                             class="mt-4 flex items-center gap-2 text-sm font-semibold text-secondary underline">
                             <span>Tampilkan lainnya</span>
-                            <svg class="w-4 h-4 transition-transform" fill="none" stroke="currentColor" stroke-width="2"
-                                viewBox="0 0 24 24">
+                            <svg class="w-4 h-4 transition-transform" fill="none" stroke="currentColor"
+                                stroke-width="2" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
                             </svg>
                         </button>
@@ -237,17 +229,10 @@
                 <!-- Modal Content END -->
 
                 <!-- Modal Footer START -->
-                <div
-                    class="sticky bottom-0 z-20
-           bg-white
-           border-t border-gray-200
-           px-4 sm:px-6 py-3
-           flex items-center gap-4
-           shadow-[0_-8px_24px_rgba(0,0,0,0.12)]">
+                <div class="sticky bottom-0 z-20 bg-white border-t border-gray-200 px-4 sm:px-6 py-3 flex items-center gap-4 shadow-[0_-8px_24px_rgba(0,0,0,0.12)]">
                     <!-- Clear all (Airbnb-style) -->
                     <button id="clearFiltersBtn"
-                        class="text-sm sm:text-base font-semibold text-secondary
-           hover:underline transition">
+                        class="text-sm sm:text-base font-semibold text-secondary hover:underline transition">
                         Hapus Semua
                     </button>
 
