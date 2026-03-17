@@ -12,11 +12,11 @@
         <x-carousel-header title="Ini Rekomendasi untukmu" href="/resultpage" />
         <x-carousel href="/resultpage">
             <!-- CARD -->
-            <a wire:navigate href="/detailpage" class="carousel-card">
+            <x-card.wrapper href="/detailpage" variant="carousel-card">
                 <!-- IMAGE -->
-                <x-card-image src="https://www.simplyhomy.com/wp-content/uploads/2017/01/bisnis-kos-kosan.jpg" />
+                <x-card.image src="https://www.simplyhomy.com/wp-content/uploads/2017/01/bisnis-kos-kosan.jpg" />
                 <!-- CONTENT -->
-                <x-card-content>
+                <x-card.content>
                     <!-- Title + Gender -->
                     <div class="flex justify-between items-start">
                         <h3 class="text-sm font-semibold leading-tight line-clamp-1 text-primary">
@@ -45,8 +45,8 @@
                         <span class="font-semibold text-primary">Rp462.683</span>
                         <span class="text-thirdary text-xs">/bulan</span>
                     </p>
-                </x-card-content>
-            </a>
+                </x-card.content>
+            </x-card.wrapper>
             <!-- Salin card di atas untuk kos lainnya -->
             {{-- View All Component --}}
             <div class="carousel-card">
