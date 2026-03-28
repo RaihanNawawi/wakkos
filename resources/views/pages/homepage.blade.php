@@ -143,8 +143,6 @@
     </x-wrapper>
     {{-- Sesuaikan Budget Kos END --}}
 
-
-
     {{-- Area Kos Populer di [Lokasi] START --}}
     <x-wrapper>
         <!-- Header -->
@@ -175,15 +173,12 @@
                 <div class="relative aspect-[4/3] rounded-2xl overflow-hidden bg-gray-200">
                     <img src="https://www.simplyhomy.com/wp-content/uploads/2017/01/bisnis-kos-kosan.jpg"
                         class="w-full h-full object-cover transition duration-300 group-hover:scale-105" />
-
                     <!-- Badge -->
                     <x-availability-badge />
-
                 </div>
 
                 <!-- CONTENT -->
                 <div class="px-1 mt-2 space-y-1">
-
                     <!-- Title + Gender -->
                     <div class="flex justify-between items-start">
                         <h3 class="text-sm font-semibold leading-tight line-clamp-1 text-primary">
@@ -238,7 +233,6 @@
     <!-- Baru Ditambahkan di [Lokasi] END -->
 
     {{-- Accordion Section START --}}
-    <!-- Container START -->
     <x-wrapper>
         <!-- Header START -->
         <div class="text-center mb-6">
@@ -250,16 +244,14 @@
 
         <!-- Accordion Wrapper START -->
         <x-accordion-wrapper>
-            <!-- Accordion Item 1 START -->
+            <!-- Accordion Item START -->
             <x-accordion-item title="Kenapa WakKos?">
                 <p>WakKos adalah aplikasi mobile dan web terpercaya untuk mencari, menyewa, dan mengelola
                     kos di Indonesia. Dengan teknologi terdepan, kami menghubungkan penyewa dan pemilik kos
                     dalam satu platform yang aman, mudah digunakan, dan transparan. Misi kami adalah membuat
                     pencarian kos menjadi lebih mudah dan efisien bagi semua kalangan.</p>
             </x-accordion-item>
-            <!-- Accordion Item 1 END -->
 
-            <!-- Accordion Item 2 START -->
             <x-accordion-item title="Cara Menyewa Kos">
                 <ol class="list-decimal list-inside space-y-3">
                     <li><strong>Buka Aplikasi WakKos</strong> - Unduh dan buka aplikasi WakKos di smartphone
@@ -275,9 +267,7 @@
                     <li><strong>Selesai</strong> - Terima konfirmasi dan nikmati kos baru Anda</li>
                 </ol>
             </x-accordion-item>
-            <!-- Accordion Item 2 END -->
 
-            <!-- Accordion Item 3 START -->
             <x-accordion-item title="Cara Mendaftarkan Kos">
                 <ol class="list-decimal list-inside space-y-3">
                     <li><strong>Daftar Akun</strong> - Buat akun pemilik kos dengan email atau nomor telepon
@@ -294,10 +284,10 @@
                     </li>
                 </ol>
             </x-accordion-item>
-            <!-- Accordion Item 3 END -->
+            <!-- Accordion Item END -->
 
         </x-accordion-wrapper>
         <!-- Accordion Wrapper END -->
     </x-wrapper>
-    <!-- Container END -->
+    {{-- Accordion Section END --}}
 @endsection
