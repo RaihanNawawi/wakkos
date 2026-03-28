@@ -67,18 +67,6 @@
                 </div>
             </div>
         </div>
-        <style>
-            .hide-scrollbar::-webkit-scrollbar {
-                display: none;
-            }
-
-            .hide-scrollbar {
-                -ms-overflow-style: none;
-                /* IE & Edge */
-                scrollbar-width: none;
-                /* Firefox */
-            }
-        </style>
         <script>
             /* ===============================
                        GLOBAL STATE =============================== */
@@ -538,7 +526,7 @@
 
                         <!-- Nav Tabs -->
                         <!-- Nav Tabs (Compact + Horizontal Scroll) -->
-                        <div class="overflow-x-auto scrollbar-hide">
+                        <div class="overflow-x-auto hide-scrollbar">
                             <div class="flex gap-2 w-max">
 
                                 <button onclick="switchTab(event,'kampus')"
@@ -565,17 +553,6 @@
                             </div>
 
                         </div>
-                        <style>
-                            .scrollbar-hide::-webkit-scrollbar {
-                                display: none;
-                            }
-
-                            .scrollbar-hide {
-                                -ms-overflow-style: none;
-                                scrollbar-width: none;
-                            }
-                        </style>
-
 
                         <!-- TAB CONTENT -->
                         <div class="pt-4">
@@ -640,8 +617,6 @@
                             activeBtn.classList.add("bg-white", "border-gray-900", "text-primary");
                         }
                     </script>
-
-
                 </div>
                 <!-- Lokasi dan Tempat Sekitar END -->
 
@@ -701,7 +676,6 @@
            fixed inset-x-0 bottom-0 z-40 lg:hidden
            border-t border-gray-200
            shadow-[0_-8px_24px_rgba(0,0,0,0.12)]">
-
                 <div class="grid grid-cols-2 gap-3 p-4 items-center">
                     <!-- Price -->
                     <div>

@@ -62,8 +62,7 @@
     }
 }
 
-/* Text Class   */
-
+/* Text Classes */
 .text-primary {
     color: var(--color-text-primary);
 }
@@ -80,6 +79,7 @@
     color: var(--color-brand);
 }
 
+/* Button Classes */
 .btn-primary {
     background-color: var(--color-brand);
 }
@@ -94,4 +94,14 @@
 
 .btn-secondary:hover {
     background-color: var(--color-muted);
+}
+
+/* Hide Scrollbar */
+.hide-scrollbar::-webkit-scrollbar {
+    display: none;
+}
+
+.hide-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
 }
