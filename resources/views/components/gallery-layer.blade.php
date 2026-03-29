@@ -1,7 +1,7 @@
 {{-- Overlay Lihat Semua Foto START --}}
 <div id="galleryModal" class="fixed inset-0 z-50 hidden">
     <!-- Backdrop -->
-    <div class="absolute inset-0 bg-black" onclick="closeGallery()"></div>
+    <div class="absolute inset-0 bg-black" data-gallery-close></div>
 
     <!-- Content -->
     <div class="relative mx-auto max-w-3xl h-full overflow-y-auto px-4 py-6 hide-scrollbar">
@@ -9,7 +9,7 @@
         <!-- Header -->
         <div class="mb-6 flex items-center justify-between text-white">
             <h2 class="text-lg font-semibold">Semua Foto</h2>
-            <button onclick="closeGallery()" class="text-3xl">&times;</button>
+            <button data-gallery-close class="text-3xl">&times;</button>
         </div>
 
         <!-- Gallery Grid -->
@@ -35,58 +35,5 @@
         </div>
     </div>
 </div>
-        <script>
-            /* ===============================
-                                       GLOBAL STATE =============================== */
 
-            let galleryModalEl;
-
-
-            /* ===============================
-               GLOBAL FUNCTIONS
-            =============================== */
-
-            function openGallery() {
-                if (!galleryModalEl) return;
-
-                galleryModalEl.classList.remove('hidden');
-                document.body.classList.add('overflow-hidden');
-            }
-
-            function closeGallery() {
-                if (!galleryModalEl) return;
-
-                galleryModalEl.classList.add('hidden');
-                document.body.classList.remove('overflow-hidden');
-            }
-
-
-            /* ===============================
-               INITIALIZER
-            =============================== */
-
-            function initViewAllGallery() {
-                galleryModalEl = document.getElementById('galleryModal');
-
-                if (!galleryModalEl) return;
-
-                // optional anti-double init
-                if (galleryModalEl.dataset.initialized) return;
-                galleryModalEl.dataset.initialized = "true";
-
-                // jika ingin tambahkan ESC support
-                document.addEventListener('keydown', (e) => {
-                    if (galleryModalEl.classList.contains('hidden')) return;
-                    if (e.key === 'Escape') closeGallery();
-                });
-            }
-
-
-            /* ===============================
-               LIFECYCLE HOOKS
-            =============================== */
-
-            document.addEventListener("DOMContentLoaded", initViewAllGallery);
-            document.addEventListener("livewire:navigated", initViewAllGallery);
-        </script>
 {{-- Overlay Lihat Semua Foto END --}}

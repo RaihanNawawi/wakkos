@@ -26,7 +26,7 @@
 
             </div>
 
-            <button onclick="openGallery()"
+            <button data-gallery-open
                 class="absolute bottom-4 right-4 z-10 flex items-center gap-2 rounded-lg bg-white/90 px-4 py-2 text-sm font-semibold text-primary shadow hover:bg-white">
                 <i class="text-secondary fa-regular fa-images"></i>
                 Lihat semua foto
