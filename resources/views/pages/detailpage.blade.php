@@ -629,28 +629,4 @@
         </div>
     </x-wrapper>
     <!-- Hero Section (Quick Fit Check) END -->
-
-    <script>
-        const closeModalBtn = document.getElementById('closeModalBtn');
-        const modalOverlay = document.getElementById('modalOverlay');
-
-        closeModalBtn.addEventListener('click', () => {
-            modalOverlay.classList.add('hidden');
-            modalOverlay.classList.remove('flex');
-        });
-
-        modalOverlay.addEventListener('click', (e) => {
-            if (e.target === modalOverlay) {
-                modalOverlay.classList.add('hidden');
-                modalOverlay.classList.remove('flex');
-            }
-        });
-
-        document.addEventListener('keydown', (e) => {
-            if (e.key === 'Escape' && !modalOverlay.classList.contains('hidden')) {
-                modalOverlay.classList.add('hidden');
-                modalOverlay.classList.remove('flex');
-            }
-        });
-    </script>
 @endsection

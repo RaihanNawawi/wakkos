@@ -4,41 +4,42 @@ const filtersModal = document.getElementById("filtersModal");
 const applyFiltersBtn = document.getElementById("applyFiltersBtn");
 const clearFiltersBtn = document.getElementById("clearFiltersBtn");
 
-// Open filters modal
-filtersBtn.addEventListener("click", () => {
-    filtersModal.classList.remove("hidden");
-    setTimeout(() => {
-        filtersModal.classList.add("opacity-100");
-    }, 10);
-});
+// ❗ GUARD GLOBAL
+if (!filtersBtn || !filtersModal) {
+    // element tidak ada di halaman → hentikan script
+} else {
 
-// Close filters modal
-function closeModal() {
-    filtersModal.classList.add("hidden");
-}
+    filtersBtn.addEventListener("click", () => {
+        filtersModal.classList.remove("hidden");
+        setTimeout(() => {
+            filtersModal.classList.add("opacity-100");
+        }, 10);
+    });
 
-closeFiltersBtn.addEventListener("click", closeModal);
-
-// Close modal when clicking on overlay
-filtersModal.addEventListener("click", (e) => {
-    if (e.target === filtersModal) {
-        closeModal();
+    function closeModal() {
+        filtersModal.classList.add("hidden");
     }
-});
 
-// Apply filters
-applyFiltersBtn.addEventListener("click", () => {
-    console.log("[v0] Filters applied");
-    closeModal();
-});
+    closeFiltersBtn?.addEventListener("click", closeModal);
 
-// Clear filters
-clearFiltersBtn.addEventListener("click", () => {
-    document
-        .querySelectorAll('input[type="number"], input[type="checkbox"]')
-        .forEach((input) => {
-            if (input.type === "number") input.value = "";
-            if (input.type === "checkbox") input.checked = false;
-        });
-    console.log("[v0] Filters cleared");
-});
+    filtersModal.addEventListener("click", (e) => {
+        if (e.target === filtersModal) {
+            closeModal();
+        }
+    });
+
+    applyFiltersBtn?.addEventListener("click", () => {
+        console.log("[v0] Filters applied");
+        closeModal();
+    });
+
+    clearFiltersBtn?.addEventListener("click", () => {
+        document
+            .querySelectorAll('input[type="number"], input[type="checkbox"]')
+            .forEach((input) => {
+                if (input.type === "number") input.value = "";
+                if (input.type === "checkbox") input.checked = false;
+            });
+        console.log("[v0] Filters cleared");
+    });
+}
