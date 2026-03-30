@@ -32,198 +32,17 @@
                 Lihat semua foto
             </button>
         </div>
-        {{-- Gallery Layer --}}
+        {{-- Gallery --}}
         <x-gallery-layer />
-        {{-- Overlay Lihat Semua Foto END --}}
 
-        {{-- Overlay Lihat Foto Fullsreen START --}}
-        <div id="lightbox" class="fixed inset-0 z-50 hidden bg-black">
-            <div class="relative mx-auto h-full flex flex-col sm:px-4 sm:py-6 sm:max-w-3xl">
-                <!-- Header -->
-                <div class="absolute top-0 inset-x-0 h-14 flex items-center px-4 text-white z-10">
-                    <div class="absolute left-4 text-md md:text-lg font-semibold">Semua Foto</div>
-                    <div id="counter" class="absolute left-1/2 -translate-x-1/2 text-md">1 / 1</div>
-                    <button onclick="closeLightbox()" class="absolute right-4 text-3xl">&times;</button>
-                </div>
-                <!-- Image -->
-                <div class="flex-1 min-h-0 flex items-center justify-center sm:px-12 lg:px-24">
-                    <img id="lightboxImg" class="max-h-full max-w-full object-contain" />
-                </div>
-
-                <!-- Nav -->
-                <button onclick="prevImg()"
-                    class="hidden sm:flex absolute left-10 top-1/2 -translate-y-1/2 h-12 w-12 items-center justify-center rounded-full bg-white text-black shadow-lghover:bg-gray-100 transition focus:outline-none"
-                    aria-label="Previous image">
-                    <span class="text-3xl leading-none block">‹</span>
-                </button>
-
-                <button onclick="nextImg()"
-                    class="hidden sm:flex absolute right-10 top-1/2 -translate-y-1/2 h-12 w-12 items-center justify-center rounded-full bg-white text-black shadow-lg hover:bg-gray-100 transition focus:outline-none"
-                    aria-label="Next image">
-                    <span class="text-3xl leading-none block">›</span>
-                </button>
-
-            </div>
-        </div>
-        <script>
-            /* ===============================
-                                                               GLOBAL STATE =============================== */
-
-            let galleryItems = [];
-            let currentIndex = 0;
-
-            let lightboxEl;
-            let imgEl;
-            let counterEl;
-
-            let startX = 0;
-            let deltaX = 0;
-            let isDragging = false;
-            let isAnimating = false;
-
-
-            /* ===============================
-               GLOBAL FUNCTIONS
-            =============================== */
-
-            function openLightbox(index) {
-                if (!galleryItems.length) return;
-
-                currentIndex = index;
-                renderLightbox();
-                lightboxEl.classList.remove('hidden');
-                document.body.style.overflow = 'hidden';
-            }
-
-            function closeLightbox() {
-                if (!lightboxEl) return;
-
-                lightboxEl.classList.add('hidden');
-                document.body.style.overflow = '';
-            }
-
-            function prevImg() {
-                currentIndex = (currentIndex - 1 + galleryItems.length) % galleryItems.length;
-                renderLightbox();
-            }
-
-            function nextImg() {
-                currentIndex = (currentIndex + 1) % galleryItems.length;
-                renderLightbox();
-            }
-
-            function renderLightbox() {
-                imgEl.src = galleryItems[currentIndex].src;
-                counterEl.textContent = `${currentIndex + 1} / ${galleryItems.length}`;
-            }
-
-            function resetImagePosition() {
-                imgEl.style.transition = 'none';
-                imgEl.style.transform = 'translateX(0)';
-                isAnimating = false;
-            }
-
-
-            /* ===============================
-               INITIALIZER
-            =============================== */
-
-            function initGallery() {
-
-                galleryItems = Array.from(document.querySelectorAll('.gallery-item'));
-                lightboxEl = document.getElementById('lightbox');
-                imgEl = document.getElementById('lightboxImg');
-                counterEl = document.getElementById('counter');
-
-                if (!galleryItems.length || !lightboxEl || !imgEl) return;
-                if (lightboxEl.dataset.initialized) return;
-
-                lightboxEl.dataset.initialized = "true";
-
-                /* CLICK GALLERY */
-                galleryItems.forEach((img, i) => {
-                    img.addEventListener('click', () => openLightbox(i));
-                });
-
-                /* TOUCH START */
-                imgEl.addEventListener('touchstart', (e) => {
-                    if (isAnimating) return;
-
-                    startX = e.touches[0].clientX;
-                    deltaX = 0;
-                    isDragging = true;
-                    imgEl.style.transition = 'none';
-                }, {
-                    passive: true
-                });
-
-                /* TOUCH MOVE */
-                imgEl.addEventListener('touchmove', (e) => {
-                    if (!isDragging || isAnimating) return;
-
-                    const currentX = e.touches[0].clientX;
-                    deltaX = currentX - startX;
-                    imgEl.style.transform = `translateX(${deltaX}px)`;
-                }, {
-                    passive: true
-                });
-
-                /* TOUCH END */
-                imgEl.addEventListener('touchend', () => {
-                    if (!isDragging || isAnimating) return;
-
-                    isDragging = false;
-                    const threshold = 80;
-                    imgEl.style.transition = 'transform 0.3s ease-out';
-
-                    if (deltaX > threshold) {
-                        isAnimating = true;
-                        imgEl.style.transform = 'translateX(100%)';
-                        setTimeout(() => {
-                            prevImg();
-                            resetImagePosition();
-                        }, 300);
-                    } else if (deltaX < -threshold) {
-                        isAnimating = true;
-                        imgEl.style.transform = 'translateX(-100%)';
-                        setTimeout(() => {
-                            nextImg();
-                            resetImagePosition();
-                        }, 300);
-                    } else {
-                        imgEl.style.transform = 'translateX(0)';
-                    }
-                });
-
-                /* KEYBOARD SUPPORT */
-                document.addEventListener('keydown', (e) => {
-                    if (lightboxEl.classList.contains('hidden')) return;
-                    if (isAnimating) return;
-
-                    if (e.key === 'Escape') closeLightbox();
-                    if (e.key === 'ArrowLeft') prevImg();
-                    if (e.key === 'ArrowRight') nextImg();
-                });
-            }
-
-
-            /* ===============================
-               LIFECYCLE HOOKS
-            =============================== */
-
-            document.addEventListener("DOMContentLoaded", initGallery);
-            document.addEventListener("livewire:navigated", initGallery);
-        </script>
-
-        {{-- Overlay Lihat Foto Fullsreen END --}}
-
+        {{-- Gallery Fullscreen --}}
+        <x-fullscreen-layer />
 
         <!-- Main Hero Content -->
         <div class="grid grid-cols-1 lg:grid-cols-[2fr_1.2fr] gap-10 items-start">
             <!-- Left: Identity & Kos Information -->
-            {{-- Identity & Kos Information: Header START --}}
             <div>
-                <!-- Property Title Section START -->
+                <!-- Property Title Section -->
                 <div class="mb-8">
                     <h1 class="text-2xl font-bold text-primary mb-3">Kos Putri Melati</h1>
                     <!-- Property info row: type, location, share button -->
@@ -289,8 +108,7 @@
                     </div>
                     <!-- Ketersediaan Kamar END -->
                 </div>
-                <!-- Property Title Section END -->
-                <!-- Host Information START -->
+                <!-- Host Information -->
                 <div class="bg-white mb-4">
                     <div class="flex items-center gap-4 mb-4">
                         <div
@@ -302,8 +120,9 @@
                         </div>
                     </div>
                 </div>
+
                 <div class="border-b border-gray-200 mt-4"></div>
-                {{-- Identity & Kos Information: Header END --}}
+
                 <!-- Facilities -->
                 <div class="pt-8">
                     <h3 class="text-xl font-semibold text-primary mb-6 flex items-center gap-2">
@@ -352,9 +171,10 @@
                             <span class="text-secondary">Dapur Bersama</span>
                         </div>
                     </div>
-
                 </div>
+
                 <div class="border-b border-gray-200 mt-4"></div>
+
                 <!-- Rules -->
                 <div class="pt-8">
                     <h3 class="text-xl font-semibold text-primary mb-6 flex items-center gap-2">
@@ -370,7 +190,6 @@
                                 <p class="text-sm text-secondary">Pintu utama dikunci setelah jam malam</p>
                             </div>
                         </div>
-
                         <div class="flex items-start gap-3 mb-4">
                             <div class="w-10 h-10 flex items-center justify-center flex-shrink-0">
                                 <i class="text-secondary fa-solid fa-user text-lg"></i>
@@ -380,7 +199,6 @@
                                 <p class="text-sm text-secondary">Tidak diperbolehkan tamu laki-laki masuk kamar</p>
                             </div>
                         </div>
-
                         <div class="flex items-start gap-3 mb-4">
                             <div class="w-10 h-10 flex items-center justify-center flex-shrink-0">
                                 <i class="text-secondary fa-solid fa-ban-smoking text-lg"></i>
@@ -390,7 +208,6 @@
                                 <p class="text-sm text-secondary">Merokok hanya di area yang telah ditentukan</p>
                             </div>
                         </div>
-
                         <div class="flex items-start gap-3 mb-4">
                             <div class="w-10 h-10 flex items-center justify-center flex-shrink-0">
                                 <i class="text-secondary fa-solid fa-file-invoice text-lg"></i>
@@ -400,7 +217,6 @@
                                 <p class="text-sm text-secondary">Maksimal tanggal 5 setiap bulan</p>
                             </div>
                         </div>
-
                         <div class="flex items-start gap-3 mb-4">
                             <div class="w-10 h-10 flex items-center justify-center flex-shrink-0">
                                 <i class="text-secondary fa-solid fa-calendar-check text-lg"></i>
@@ -411,16 +227,14 @@
                             </div>
                         </div>
                     </div>
-
-
                 </div>
+
                 <div class="border-b border-gray-200 mt-4"></div>
 
-                <!-- Lokasi dan Tempat Sekitar START -->
+                <!-- Lokasi dan Tempat Sekitar-->
                 <div class="pt-8 mb-2">
                     <h2 class="text-xl font-semibold text-primary mb-6 flex items-center gap-2">Lokasi & Tempat
                         Sekitar</h2>
-                    <!-- Map Container -->
                     <!-- Map Container -->
                     <div class="mb-4 rounded-lg overflow-hidden border border-gray-200">
                         <div class="relative w-full h-80 bg-gray-100">
@@ -431,42 +245,25 @@
                             </iframe>
                         </div>
                     </div>
-
-
-                    <!-- Location Details -->
                     <!-- Location Details -->
                     <div class="space-y-4 pt-2">
-
                         <!-- Nav Tabs -->
-                        <!-- Nav Tabs (Compact + Horizontal Scroll) -->
                         <div class="overflow-x-auto hide-scrollbar">
                             <div class="flex gap-2 w-max">
-
                                 <button onclick="switchTab(event,'kampus')"
-                                    class="tab-btn px-3 py-1.5 text-sm border rounded-full whitespace-nowrap
-               transition-all duration-200
-               bg-white border-gray-900 text-primary">
+                                    class="tab-btn px-3 py-1.5 text-sm border rounded-full whitespace-nowrap transition-all duration-200 bg-white border-gray-900 text-primary">
                                     Kampus / Sekolah
                                 </button>
-
                                 <button onclick="switchTab(event,'ibadah')"
-                                    class="tab-btn px-3 py-1.5 text-sm border rounded-full whitespace-nowrap
-               transition-all duration-200
-               bg-gray-50 border-gray-300 text-secondary">
+                                    class="tab-btn px-3 py-1.5 text-sm border rounded-full whitespace-nowrap transition-all duration-200 bg-gray-50 border-gray-300 text-secondary">
                                     Tempat Ibadah
                                 </button>
-
                                 <button onclick="switchTab(event,'fasilitas')"
-                                    class="tab-btn px-3 py-1.5 text-sm border rounded-full whitespace-nowrap
-               transition-all duration-200
-               bg-gray-50 border-gray-300 text-secondary">
+                                    class="tab-btn px-3 py-1.5 text-sm border rounded-full whitespace-nowrap transition-all duration-200 bg-gray-50 border-gray-300 text-secondary">
                                     Fasilitas Umum
                                 </button>
-
                             </div>
-
                         </div>
-
                         <!-- TAB CONTENT -->
                         <div class="pt-4">
                             <!-- Kampus -->
@@ -510,7 +307,6 @@
 
                         </div>
                     </div>
-
                     <script>
                         function switchTab(event, tabId) {
 
@@ -531,8 +327,7 @@
                         }
                     </script>
                 </div>
-                <!-- Lokasi dan Tempat Sekitar END -->
-
+                
                 <div class="border-b border-gray-200 mt-4"></div>
                 <!-- Description Section START -->
                 <div class="pt-8 mb-2">
