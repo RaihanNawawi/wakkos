@@ -23,7 +23,6 @@
                             class="gallery-item w-full h-full object-cover" />
                     </div>
                 </div>
-
             </div>
 
             <button data-gallery-open
@@ -46,9 +45,7 @@
                 <div class="mb-8">
                     <h1 class="text-2xl font-bold text-primary mb-3">Kos Putri Melati</h1>
                     <!-- Property info row: type, location, share button -->
-                    <!-- Property info row -->
                     <div class="flex flex-wrap items-center gap-3 mb-6 pb-4 border-b border-gray-200">
-
                         <!-- LEFT GROUP -->
                         <div class="flex flex-wrap items-center gap-3">
                             <span
@@ -56,20 +53,13 @@
                                 <i class="text-secondary fa-solid fa-venus text-xs"></i>
                                 Kos Putri
                             </span>
-
                             <span class="text-secondary">·</span>
-
                             <span class="flex items-center gap-2 text-md text-secondary">
                                 <i class="text-secondary fa-solid fa-location-dot text-secondary text-md shrink-0"></i>
                                 <span>Kecamatan Siak</span>
                             </span>
                         </div>
-
-
-
                     </div>
-
-
                     <!-- Ketersediaan Kamar START -->
                     <div class="flex items-center justify-between">
                         <div class="flex items-center gap-2">
@@ -84,26 +74,6 @@
                                 <i class="text-secondary fa-solid fa-arrow-up-from-bracket text-secondary text-sm"></i>
                                 <span class="hidden md:inline text-secondary">Share</span>
                             </button>
-                            <script>
-                                document.getElementById('shareBtn').addEventListener('click', async () => {
-                                    if (navigator.share) {
-                                        try {
-                                            await navigator.share({
-                                                title: document.title,
-                                                text: 'Lihat kost ini:',
-                                                url: window.location.href
-                                            });
-                                        } catch (err) {
-                                            // user cancel → aman, tidak perlu alert
-                                            console.log('Share cancelled', err);
-                                        }
-                                    } else {
-                                        // fallback minimal
-                                        alert('Fitur share tidak didukung di browser ini.');
-                                    }
-                                });
-                            </script>
-
                         </div>
                     </div>
                     <!-- Ketersediaan Kamar END -->
