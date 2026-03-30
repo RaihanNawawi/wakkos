@@ -1,6 +1,5 @@
 @extends('layouts.app')
 @section('content')
-    <!-- Hero Section (Quick Fit Check) START -->
     <x-wrapper>
         <!-- Photo Gallery -->
         <div class="mb-8 relative">
@@ -236,7 +235,7 @@
                 </div>
 
                 <div class="border-b border-gray-200 mt-4"></div>
-                
+
                 <!-- Property Description -->
                 <div class="pt-8 mb-2">
                     <h2 class="text-xl font-semibold text-primary mb-4">Tentang Kos ini</h2>
@@ -249,86 +248,9 @@
 
             </div>
 
-            <!-- Right: Price & Main CTA (Floating Layer) Desktop START -->
-            <div class="hidden lg:block bg-gray-30 rounded-2xl p-6 border border-gray-200 shadow-lg sticky top-24 z-40">
-
-                <div class="flex flex-col gap-4">
-                    <!-- Price -->
-                    <div>
-                        <p class="text-sm text-secondary mb-1">Mulai dari</p>
-                        <div class="flex items-baseline gap-1">
-                            <span class="text-2xl font-bold text-primary">
-                                Rp 1.500.000
-                            </span>
-                            <span class="text-sm text-secondary">/bulan</span>
-                        </div>
-                    </div>
-
-                    <!-- CTA -->
-                    <div class="pt-4 border-t border-gray-200">
-                        <!-- Microcopy -->
-                        <p class="text-xs text-thirdary mb-3 text-center">
-                            Tanya kos atau ajukan sewa
-                        </p>
-
-                        <!-- CTA Button -->
-                        <a wire:navigate
-                            href="https://wa.me/6281995421795?text=Halo%20WakKos%2C%0A%0ASaya%20tertarik%20dengan%20kos%20ini.%0ABoleh%20dibantu%20untuk%20info%20ketersediaan%2C%20harga%2C%20dan%20fasilitasnya%3F%0A%0ATerima%20kasih."
-                            target="_blank"
-                            class="w-full flex items-center justify-center gap-2 py-3 rounded-xl btn-primary text-white font-semibold transition shadow-md">
-                            <i class="fa-brands fa-whatsapp text-green-400 text-lg"></i>
-                            Chat WakKos
-                        </a>
-                    </div>
-                </div>
-
-            </div>
-
-            <!-- Right: Price & Main CTA (Floating Layer) Desktop END -->
-            <!-- Right: Price & Main CTA (Floating Layer) Mobile START -->
-            <div
-                class="bg-white
-           fixed inset-x-0 bottom-0 z-40 lg:hidden
-           border-t border-gray-200
-           shadow-[0_-8px_24px_rgba(0,0,0,0.12)]">
-                <div class="grid grid-cols-2 gap-3 p-4 items-center">
-                    <!-- Price -->
-                    <div>
-                        <p class="text-[11px] text-secondary leading-none mb-1">
-                            Mulai dari
-                        </p>
-                        <div class="flex items-baseline gap-1">
-                            <span class="text-sm font-bold text-primary">
-                                Rp 1.500.000
-                            </span>
-                            <span class="text-xs text-secondary">
-                                /bulan
-                            </span>
-                        </div>
-                    </div>
-
-                    <!-- CTA -->
-                    <a wire:navigate
-                        href="https://wa.me/6281995421795?text=Halo%20WakKos%2C%0A%0ASaya%20tertarik%20dengan%20kos%20ini.%0ABoleh%20dibantu%20untuk%20info%20ketersediaan%2C%20harga%2C%20dan%20fasilitasnya%3F%0A%0ATerima%20kasih."
-                        target="_blank"
-                        class="w-full
-                   flex items-center justify-center gap-2
-                   py-3 rounded-xl
-                   bg-blue-600
-                   text-white font-semibold text-sm
-                   hover:bg-blue-700
-                   transition
-                   shadow-md
-                   whitespace-nowrap">
-
-                        <i class="fa-brands fa-whatsapp  text-green-400 text-base"></i>
-                        Chat WakKos
-                    </a>
-                </div>
-            </div>
-
-            <!-- Right: Price & Main CTA (Floating Layer) Mobile END -->
+            {{-- Sticky CTA --}}
+            <x-sticky-cta price="Rp 1.500.000" period="/bulan" ctaText="Chat WakKos"
+                microcopy="Tanya kos atau ajukan sewa" ctaLink="https://wa.me/6281995421795?text=Halo..." />
         </div>
     </x-wrapper>
-    <!-- Hero Section (Quick Fit Check) END -->
 @endsection
