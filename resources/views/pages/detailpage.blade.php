@@ -215,91 +215,29 @@
                             </iframe>
                         </div>
                     </div>
-                    <!-- Location Details -->
-                    <div class="space-y-4 pt-2">
-                        <!-- Nav Tabs -->
-                        <div class="overflow-x-auto hide-scrollbar">
-                            <div class="flex gap-2 w-max">
-                                <button onclick="switchTab(event,'kampus')"
-                                    class="tab-btn px-3 py-1.5 text-sm border rounded-full whitespace-nowrap transition-all duration-200 bg-white border-gray-900 text-primary">
-                                    Kampus / Sekolah
-                                </button>
-                                <button onclick="switchTab(event,'ibadah')"
-                                    class="tab-btn px-3 py-1.5 text-sm border rounded-full whitespace-nowrap transition-all duration-200 bg-gray-50 border-gray-300 text-secondary">
-                                    Tempat Ibadah
-                                </button>
-                                <button onclick="switchTab(event,'fasilitas')"
-                                    class="tab-btn px-3 py-1.5 text-sm border rounded-full whitespace-nowrap transition-all duration-200 bg-gray-50 border-gray-300 text-secondary">
-                                    Fasilitas Umum
-                                </button>
-                            </div>
-                        </div>
-                        <!-- TAB CONTENT -->
-                        <div class="pt-4">
-                            <!-- Kampus -->
-                            <div id="kampus" class="tab-content space-y-3">
-                                <div class="flex items-start gap-3">
-                                    <div class="w-10 h-10 flex items-center justify-center flex-shrink-0">
-                                        <i class="text-secondary fa-solid fa-location-dot text-lg"></i>
-                                    </div>
-                                    <div>
-                                        <p class="font-medium text-primary">Universitas Negeri</p>
-                                        <p class="text-sm text-secondary">1.2 Km</p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- Tempat Ibadah -->
-                            <div id="ibadah" class="tab-content space-y-3 hidden">
-                                <div class="flex items-start gap-3">
-                                    <div class="w-10 h-10 flex items-center justify-center flex-shrink-0">
-                                        <i class="text-secondary fa-solid fa-location-dot text-lg"></i>
-                                    </div>
-                                    <div>
-                                        <p class="font-medium text-primary">Masjid Al Fath</p>
-                                        <p class="text-sm text-secondary">0,5 Km</p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- Fasilitas Umum -->
-                            <div id="fasilitas" class="tab-content space-y-3 hidden">
-                                <div class="flex items-start gap-3">
-                                    <div class="w-10 h-10 flex items-center justify-center flex-shrink-0">
-                                        <i class="text-secondary fa-solid fa-location-dot text-lg"></i>
-                                    </div>
-                                    <div>
-                                        <p class="font-medium text-primary">Indomaret</p>
-                                        <p class="text-sm text-secondary">300 m</p>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-                    <script>
-                        function switchTab(event, tabId) {
-
-                            document.querySelectorAll(".tab-content").forEach(el => {
-                                el.classList.add("hidden");
-                            });
-
-                            document.querySelectorAll(".tab-btn").forEach(btn => {
-                                btn.classList.remove("bg-white", "border-gray-900", "text-primary");
-                                btn.classList.add("bg-gray-50", "border-gray-300", "text-secondary");
-                            });
-
-                            document.getElementById(tabId).classList.remove("hidden");
-
-                            const activeBtn = event.currentTarget;
-                            activeBtn.classList.remove("bg-gray-50", "border-gray-300", "text-secondary");
-                            activeBtn.classList.add("bg-white", "border-gray-900", "text-primary");
-                        }
-                    </script>
+                    <!-- Tab Location -->
+                    <x-tab-location :tabs="[
+                        [
+                            'id' => 'kampus',
+                            'label' => 'Kampus / Sekolah',
+                            'items' => [['title' => 'Universitas Negeri', 'distance' => '1.2 Km']],
+                        ],
+                        [
+                            'id' => 'ibadah',
+                            'label' => 'Tempat Ibadah',
+                            'items' => [['title' => 'Masjid Al Fath', 'distance' => '0.5 Km']],
+                        ],
+                        [
+                            'id' => 'fasilitas',
+                            'label' => 'Fasilitas Umum',
+                            'items' => [['title' => 'Indomaret', 'distance' => '300 m']],
+                        ],
+                    ]" />
                 </div>
-                
+
                 <div class="border-b border-gray-200 mt-4"></div>
-                <!-- Description Section START -->
+                
+                <!-- Property Description -->
                 <div class="pt-8 mb-2">
                     <h2 class="text-xl font-semibold text-primary mb-4">Tentang Kos ini</h2>
                     <p class="text-secondary leading-relaxed mb-4">
@@ -308,7 +246,6 @@
                         long-term stays.
                     </p>
                 </div>
-                <!-- Description Section END -->
 
             </div>
 

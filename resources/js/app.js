@@ -6,3 +6,4 @@ import './filter-layer';
 import './gallery-layer';
 import './fullscreen-layer';
 import './share';
+import './tab-location';
