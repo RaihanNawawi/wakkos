@@ -15,21 +15,15 @@
                 class="btn-secondary flex items-center justify-center w-10 h-10 rounded-full transition-colors duration-200 ml-1">
                 <i class="fas fa-bars text-secondary text-base"></i>
             </button>
-            <!-- Hamburger Menu Button END -->
-
         </div>
     </nav>
-
-    {{-- Hamburger Menu UI + backdrop UI + Script START --}}
     <!-- Menu Overlay (Backdrop) START -->
     <div id="menuOverlay" class="hidden fixed inset-0 bg-black/30 z-50 transition-opacity duration-300"
         onclick="closeMenu()"></div>
-    <!-- Menu Overlay (Backdrop) END -->
-
-    <!-- Hamburger Menu Drawer START -->
+    
+    <!-- Hamburger Menu Drawer -->
     <div id="menuDrawer"
         class="hidden fixed top-0 right-0 h-screen w-80 bg-white shadow-2xl z-50 transform translate-x-full transition-transform duration-300 ease-in-out overflow-y-auto">
-
         <!-- Menu Header START -->
         <div class="flex items-center justify-between p-5 border-b border-gray-200">
             <h2 class="text-xl font-semibold text-primary">Menu</h2>
@@ -41,8 +35,7 @@
         </div>
         <!-- Menu Header END -->
 
-        <!-- Menu Items Container START -->
-        <!-- Menu Items Container START -->
+        <!-- Menu Items Container -->
         <div class="flex flex-col divide-y divide-gray-200 text-sm">
 
             <!-- CTA Daftarkan Kos -->
@@ -53,7 +46,6 @@
                 Daftarkan Kos
             </a>
 
-            <!-- Cari Kos -->
             <!-- Cari Kos -->
             <a href="/homepage"
                 class="px-6 py-4 text-primary hover:bg-gray-50 transition flex items-center justify-between w-full">
@@ -69,56 +61,9 @@
             </a>
 
         </div>
-        <!-- Menu Items Container END -->
-
-        <!-- Menu Items Container END -->
-
-        <!-- Menu Footer - Auth Section START -->
         <div class="border-t border-gray-200 mt-auto">
         </div>
-        <!-- Menu Footer - Auth Section END -->
 
     </div>
-    <!-- Hamburger Menu Drawer END -->
-    <script>
-        let menuDrawer;
-        let menuOverlay;
 
-        function closeMenu() {
-            if (!menuDrawer || !menuOverlay) return;
-
-            menuDrawer.classList.add('translate-x-full');
-            menuOverlay.classList.add('hidden');
-            document.body.style.overflow = 'auto';
-        }
-
-        function initHamburgerMenu() {
-            const hamburgerBtn = document.getElementById('hamburgerBtn');
-            menuDrawer = document.getElementById('menuDrawer');
-            menuOverlay = document.getElementById('menuOverlay');
-
-            if (!hamburgerBtn || !menuDrawer || !menuOverlay) return;
-            if (hamburgerBtn.dataset.initialized) return;
-
-            hamburgerBtn.dataset.initialized = "true";
-
-            hamburgerBtn.addEventListener('click', () => {
-                menuDrawer.classList.remove('hidden');
-                menuDrawer.classList.remove('translate-x-full');
-                menuOverlay.classList.remove('hidden');
-                document.body.style.overflow = 'hidden';
-            });
-
-            document.querySelectorAll('#menuDrawer a').forEach(link => {
-                link.addEventListener('click', closeMenu);
-            });
-        }
-
-        document.addEventListener("DOMContentLoaded", initHamburgerMenu);
-        document.addEventListener("livewire:navigated", initHamburgerMenu);
-    </script>
-
-    {{-- Hamburger Menu UI + backdrop UI + Script END --}}
-
-    <!-- Search bar + Hamburger Menu (Mobile) END -->
     <div class="block md:hidden border-b border-gray-100"></div>

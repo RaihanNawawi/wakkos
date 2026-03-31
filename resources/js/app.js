@@ -7,3 +7,4 @@ import './gallery-layer';
 import './fullscreen-layer';
 import './share';
 import './tab-location';
+import './hamburger-menu';
