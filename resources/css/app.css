@@ -105,3 +105,22 @@
     -ms-overflow-style: none;
     scrollbar-width: none;
 }
+
+/* Accordion Styles */
+.accordion-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-in-out;
+}
+
+.accordion-content.active {
+    max-height: 500px;
+}
+
+.accordion-chevron {
+    transition: transform 0.3s ease-in-out;
+}
+
+.accordion-item.active .accordion-chevron {
+    transform: rotate(180deg);
+}
