@@ -53,42 +53,6 @@
         transform: rotate(180deg);
     }
 </style>
-<script>
-    // Search Layer Script START
-    function openSearch() {
-        const layer = document.getElementById('search-layer');
-        const input = document.getElementById('search-input');
-
-        layer.classList.remove('hidden');
-
-        setTimeout(() => {
-            input.focus();
-        }, 50);
-    }
-
-    function closeSearch() {
-        const layer = document.getElementById('search-layer');
-        layer.classList.add('hidden');
-    }
-    // Search Layer Script END
-    // Input Interaction Script START
-    const searchInput = document.getElementById('search-input');
-    const recentSearch = document.getElementById('recent-search');
-    const recommendationSearch = document.getElementById('recommendation-search');
-
-    searchInput.addEventListener('input', () => {
-        const hasValue = searchInput.value.trim().length > 0;
-
-        if (hasValue) {
-            recentSearch.classList.add('hidden');
-            recommendationSearch.classList.remove('hidden');
-        } else {
-            recentSearch.classList.remove('hidden');
-            recommendationSearch.classList.add('hidden');
-        }
-    });
-    // Input Interaction Script END
-</script>
 {{-- Accordion Section END --}}
 
 </html>
