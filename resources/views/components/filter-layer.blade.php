@@ -60,10 +60,8 @@
                     <div class="border-t border-gray-200"></div>
 
                     <!-- Room Facilities Section START -->
-                    <!-- Room Facilities Section START -->
                     <div>
                         <h3 class="text-lg font-bold mb-4">Fasilitas Kamar</h3>
-
                         <!-- List -->
                         <div class="space-y-3" id="facility-list">
                             <!-- Visible by default -->
@@ -102,8 +100,8 @@
                         </div>
 
                         <!-- Toggle Button -->
-                        <button type="button" onclick="toggleMore('facility-more', this)"
-                            class="mt-4 flex items-center gap-2 text-sm font-semibold text-secondary underline">
+                        <button type="button" data-toggle="facility-more"
+                            class="toggle-btn mt-4 flex items-center gap-2 text-sm font-semibold text-secondary underline">
                             <span>Tampilkan lainnya</span>
                             <svg class="w-4 h-4 transition-transform" fill="none" stroke="currentColor"
                                 stroke-width="2" viewBox="0 0 24 24">
@@ -111,8 +109,6 @@
                             </svg>
                         </button>
                     </div>
-                    <!-- Room Facilities Section END -->
-
                     <!-- Room Facilities Section END -->
 
                     <!-- Housing Rules Section START -->
@@ -151,8 +147,8 @@
                         </div>
 
                         <!-- Toggle Button -->
-                        <button type="button" onclick="toggleMore('rules-more', this)"
-                            class="mt-4 flex items-center gap-2 text-sm font-semibold text-secondary underline">
+                        <button type="button" data-toggle="rules-more"
+                            class="toggle-btn mt-4 flex items-center gap-2 text-sm font-semibold text-secondary underline">
                             <span>Tampilkan lainnya</span>
                             <svg class="w-4 h-4 transition-transform" fill="none" stroke="currentColor"
                                 stroke-width="2" viewBox="0 0 24 24">
@@ -160,21 +156,6 @@
                             </svg>
                         </button>
                     </div>
-                    <!-- Housing Rules Section END -->
-                    <script>
-                        function toggleMore(id, button) {
-                            const content = document.getElementById(id)
-                            const text = button.querySelector('span')
-                            const icon = button.querySelector('svg')
-
-                            content.classList.toggle('hidden')
-
-                            const expanded = !content.classList.contains('hidden')
-                            text.textContent = expanded ? 'Sembunyikan' : 'Tampilkan lainnya'
-                            icon.classList.toggle('rotate-180', expanded)
-                        }
-                    </script>
-
                     <!-- Housing Rules Section END -->
 
                     <div class="border-t border-gray-200"></div>

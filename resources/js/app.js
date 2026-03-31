@@ -9,3 +9,4 @@ import './share';
 import './tab-location';
 import './hamburger-menu';
 import './price-format';
+import './toggle-more';
