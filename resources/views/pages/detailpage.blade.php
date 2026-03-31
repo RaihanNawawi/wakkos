@@ -68,8 +68,7 @@
                             </span>
                         </div>
                         <div class="ml-auto relative inline-block">
-                            <button id="shareBtn"
-                                class="border border-gray-200 rounded-xl open-share-btn inline-flex items-center gap-2 bg-white px-3 py-2 text-sm font-medium text-primary">
+                            <button class="shareBtn border border-gray-200 rounded-xl open-share-btn inline-flex items-center gap-2 bg-white px-3 py-2 text-sm font-medium text-primary">
                                 <i class="text-secondary fa-solid fa-arrow-up-from-bracket text-secondary text-sm"></i>
                                 <span class="hidden md:inline text-secondary">Share</span>
                             </button>
