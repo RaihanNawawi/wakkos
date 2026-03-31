@@ -55,29 +55,6 @@
                             </div>
                         </div>
                     </div>
-                    <script>
-                        document.querySelectorAll('.price-input').forEach(input => {
-                            input.addEventListener('input', () => {
-                                // Ambil angka mentah (hapus semua selain digit)
-                                const rawValue = input.value.replace(/\D/g, '');
-
-                                // Simpan nilai mentah (untuk backend / filter)
-                                input.dataset.value = rawValue;
-
-                                // Jika kosong, kosongkan input
-                                if (!rawValue) {
-                                    input.value = '';
-                                    return;
-                                }
-
-                                // Format ke Rupiah
-                                const formatted = new Intl.NumberFormat('id-ID').format(rawValue);
-
-                                input.value = `Rp${formatted}`;
-                            });
-                        });
-                    </script>
-
                     <!-- Price Range Section END -->
 
                     <div class="border-t border-gray-200"></div>
@@ -247,8 +224,6 @@
                     </button>
                 </div>
                 <!-- Modal Footer END -->
-
-
             </div>
         </div>
         <!-- Filters Modal Overlay END -->
