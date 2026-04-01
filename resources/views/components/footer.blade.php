@@ -1,7 +1,7 @@
         <!-- Footer START -->
         <footer class="bg-secondary">
             <div class="wrapper mt-5 py-10 px-4">
-                <div class="grid md:grid-cols-3 gap-8 mb-8">
+                <x-grid-listing>
                     <!-- Navigation Column -->
                     <div>
                         <h4 class="text-primary font-semibold mb-4">Jelajahi WakKos</h4>
@@ -48,7 +48,7 @@
                             </li>
                         </ul>
                     </div>
-                </div>
+                </x-grid-listing>
 
                 <!-- Copyright -->
                 <div class="border-t border-gray-100 pt-8 text-center text-sm text-secondary">
