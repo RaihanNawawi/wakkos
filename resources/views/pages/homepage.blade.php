@@ -9,7 +9,7 @@
             </h2>
         </div>
         <!-- Greeting Section END -->
-        <x-carousel-header title="Ini Rekomendasi untukmu" href="/resultpage" />
+        <x-carousel.header title="Ini Rekomendasi untukmu" href="/resultpage" />
         <x-carousel href="/resultpage">
             <!-- CARD -->
             <x-card.wrapper href="/detailpage" variant="carousel-card">
@@ -72,7 +72,7 @@
 
     {{-- Sesuaikan Budget Kos START --}}
     <x-wrapper>
-        <x-carousel-header title="Sesuaikan Budget Kos-mu di [Lokasi]" href="/resultpage" />
+        <x-carousel.header title="Sesuaikan Budget Kos-mu di [Lokasi]" href="/resultpage" />
         <x-price-filter-tabs />
         <x-carousel href="/resultpage">
             <!-- CARD -->
@@ -165,7 +165,7 @@
 
     <!-- Baru Ditambahkan di [Lokasi]  START -->
     <x-wrapper>
-        <x-carousel-header title="Baru Ditambahkan di [Lokasi]" href="/resultpage" />
+        <x-carousel.header title="Baru Ditambahkan di [Lokasi]" href="/resultpage" />
         <x-carousel href="/resultpage">
             <!-- CARD -->
             <a wire:navigate href="/detailpage" class="carousel-card">
@@ -243,16 +243,16 @@
         <!-- Header END -->
 
         <!-- Accordion Wrapper START -->
-        <x-accordion-wrapper>
+        <x-accordion.wrapper>
             <!-- Accordion Item START -->
-            <x-accordion-item title="Kenapa WakKos?">
+            <x-accordion.item title="Kenapa WakKos?">
                 <p>WakKos adalah aplikasi mobile dan web terpercaya untuk mencari, menyewa, dan mengelola
                     kos di Indonesia. Dengan teknologi terdepan, kami menghubungkan penyewa dan pemilik kos
                     dalam satu platform yang aman, mudah digunakan, dan transparan. Misi kami adalah membuat
                     pencarian kos menjadi lebih mudah dan efisien bagi semua kalangan.</p>
-            </x-accordion-item>
+            </x-accordion.item>
 
-            <x-accordion-item title="Cara Menyewa Kos">
+            <x-accordion.item title="Cara Menyewa Kos">
                 <ol class="list-decimal list-inside space-y-3">
                     <li><strong>Buka Aplikasi WakKos</strong> - Unduh dan buka aplikasi WakKos di smartphone
                         atau akses website</li>
@@ -266,9 +266,9 @@
                     </li>
                     <li><strong>Selesai</strong> - Terima konfirmasi dan nikmati kos baru Anda</li>
                 </ol>
-            </x-accordion-item>
+            </x-accordion.item>
 
-            <x-accordion-item title="Cara Mendaftarkan Kos">
+            <x-accordion.item title="Cara Mendaftarkan Kos">
                 <ol class="list-decimal list-inside space-y-3">
                     <li><strong>Daftar Akun</strong> - Buat akun pemilik kos dengan email atau nomor telepon
                     </li>
@@ -283,10 +283,10 @@
                     <li><strong>Terbitkan</strong> - Publikasikan kos Anda dan mulai terima calon penghuni
                     </li>
                 </ol>
-            </x-accordion-item>
+            </x-accordion.item>
             <!-- Accordion Item END -->
 
-        </x-accordion-wrapper>
+        </x-accordion.wrapper>
         <!-- Accordion Wrapper END -->
     </x-wrapper>
     {{-- Accordion Section END --}}
