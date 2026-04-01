@@ -17,7 +17,7 @@
         <!-- Overlayer Filter -->
         <x-overlayer.filter />
 
-        <x-grid-listing>
+        <div class="grid-listing">
             <!-- Kos Putri -->
             <a wire:navigate href="/detailpage">
                 {{-- Image --}}
@@ -47,17 +47,10 @@
             {{-- Kos Putra --}}
             <a wire:navigate href="/detailpage">
                 {{-- Image --}}
-                <div class="relative aspect-[4/3] rounded-xl overflow-hidden bg-gray-200">
-                    <img src="https://thesmartlocal.com/indonesia/wp-content/uploads/2021/04/ventilation.jpeg"
-                        alt="Guesthouse"
-                        class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" />
-
-                    {{-- Availability Badge --}}
-                    <x-availability-badge />
-                </div>
+                <x-card.image src="https://www.pajak.com/storage/2022/08/indekos-758x490.png" />
                 <!-- Content -->
-                <div class="mt-3 space-y-1">
-                    <div class="flex justify-between items-start gap-2 min-h-[28px] text-primary font-semibold">
+                <x-card.content>
+                    <div class="flex justify-between items-start gap-2 min-h-[28px] text-md font-semibold">
                         <span>Kos Putra Siak</span>
                         {{-- Gender Badge --}}
                         <x-badge.male />
@@ -68,31 +61,23 @@
                     </p>
 
                     <p class="text-xs text-thirdary">
-                        Kamar mandi dalam · Kasur
+                        Kamar mandi dalam · Kasur · AC
                     </p>
 
                     <p class="text-sm">
                         <span class="font-semibold underline">Rp462.683</span>
                         <span class="text-thirdary"> / bulan</span>
                     </p>
-                </div>
-
+                </x-card.content>
             </a>
             {{-- Kos Campur --}}
             <a wire:navigate href="/detailpage">
                 {{-- Image --}}
-                <div class="relative aspect-[4/3] rounded-xl overflow-hidden bg-gray-200">
-                    <img src="https://cdn1-production-images-kly.akamaized.net/fLCXhB2CU-knEOxENiP3Ge2Ie8M=/1280x720/smart/filters:quality(75):strip_icc()/kly-media-production/medias/861628/original/073424800_1429960385-3.JPG"
-                        alt="Guesthouse"
-                        class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" />
-
-                    {{-- Availability Badge --}}
-                    <x-availability-badge />
-                </div>
+                <x-card.image src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQm-vMBacKWxDYJVYAdtUaj4t7V8h54zQ6HSA&s" />
                 <!-- Content -->
-                <div class="mt-3 space-y-1">
+                <x-card.content>
                     <div class="flex justify-between items-start gap-2 min-h-[28px] text-md font-semibold">
-                        <span>Kos Campur</span>
+                        <span>Kos Campur Siak</span>
                         {{-- Gender Badge --}}
                         <x-badge.mix />
                     </div>
@@ -102,22 +87,21 @@
                     </p>
 
                     <p class="text-xs text-thirdary">
-                        Kamar mandi dalam · Kasur
+                        Kamar mandi dalam · Kasur · AC
                     </p>
 
                     <p class="text-sm">
                         <span class="font-semibold underline">Rp462.683</span>
                         <span class="text-thirdary"> / bulan</span>
                     </p>
-                </div>
-
+                </x-card.content>
             </a>
             <!-- 🔁 Duplikasikan card ini -->
-        </x-grid-listing>
+        </div>
 
         <!-- Pagination START -->
         <x-pagination :current="1" :last="15" />
         <!-- Pagination END -->
 
-        </x-structure.wrapper>
-    @endsection
+    </x-structure.wrapper>
+@endsection
