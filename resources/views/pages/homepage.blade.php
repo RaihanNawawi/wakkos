@@ -1,7 +1,7 @@
 @extends('layouts.app')
 @section('content')
     <!-- Rekomendasi Kos START -->
-    <x-wrapper>
+    <x-structure.wrapper>
         <!-- Greeting Section START -->
         <div class="px-1 mb-6">
             <p class="text-sm sm:text-md text-secondary mb-1">Hai.</p>
@@ -51,11 +51,11 @@
             {{-- View All Component --}}
             <x-card.view-all href="/resultpage" />
         </x-carousel>
-    </x-wrapper>
+    </x-structure.wrapper>
     <!-- Rekomendasi Kos END -->
 
     {{-- Sesuaikan Budget Kos START --}}
-    <x-wrapper>
+    <x-structure.wrapper>
         <x-carousel.header title="Sesuaikan Budget Kos-mu di [Lokasi]" href="/resultpage" />
         <x-navtab.price-filter />
         <x-carousel href="/resultpage">
@@ -99,11 +99,11 @@
             {{-- View All Component --}}
             <x-card.view-all href="/resultpage" />
         </x-carousel>
-    </x-wrapper>
+    </x-structure.wrapper>
     {{-- Sesuaikan Budget Kos END --}}
 
     {{-- Area Kos Populer di [Lokasi] START --}}
-    <x-wrapper>
+    <x-structure.wrapper>
         <!-- Header -->
         <div class="flex items-start justify-between mb-4">
             <div class="flex items-center justify-between">
@@ -119,11 +119,11 @@
             <x-card.popular-area location="Kampung Rempak" count="18" />
             <x-card.popular-area location="Suak Lanjut" count="32" />
         </x-grid-listing>
-    </x-wrapper>
+    </x-structure.wrapper>
     {{-- Area Kos Populer di [Lokasi] END --}}
 
     <!-- Baru Ditambahkan di [Lokasi]  START -->
-    <x-wrapper>
+    <x-structure.wrapper>
         <x-carousel.header title="Baru Ditambahkan di [Lokasi]" href="/resultpage" />
         <x-carousel href="/resultpage">
             <!-- CARD -->
@@ -166,11 +166,11 @@
             {{-- View All Component --}}
             <x-card.view-all href="/resultpage" />
         </x-carousel>
-    </x-wrapper>
+    </x-structure.wrapper>
     <!-- Baru Ditambahkan di [Lokasi] END -->
 
     {{-- Accordion Section START --}}
-    <x-wrapper>
+    <x-structure.wrapper>
         <!-- Header START -->
         <div class="text-center mb-6">
             <h2 class="text-xl sm:text-2xl font-bold text-brand mb-2">
@@ -225,6 +225,6 @@
 
         </x-accordion.wrapper>
         <!-- Accordion Wrapper END -->
-    </x-wrapper>
+    </x-structure.wrapper>
     {{-- Accordion Section END --}}
 @endsection

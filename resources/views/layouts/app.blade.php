@@ -23,14 +23,14 @@
 </head>
 
 <body class="bg-base">
-    @include('components.navbar')
+    @include('components.structure.navbar')
     @include('components.overlayer.search')
 
     <main>
         @yield('content')
     </main>
 
-    @include('components.footer')
+    @include('components.structure.footer')
 
     @livewireScripts
 </body>

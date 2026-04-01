@@ -1,6 +1,6 @@
 @extends('layouts.app')
 @section('content')
-    <x-wrapper>
+    <x-structure.wrapper>
         <!-- Photo Gallery -->
         <div class="mb-8 relative">
             <div class="grid grid-cols-1 lg:grid-cols-3 gap-4 aspect-[4/3] lg:aspect-auto lg:h-[420px]">
@@ -251,5 +251,5 @@
             <x-overlayer.sticky-cta price="Rp 1.500.000" period="/bulan" ctaText="Chat WakKos"
                 microcopy="Tanya kos atau ajukan sewa" ctaLink="https://wa.me/6281995421795?text=Halo..." />
         </div>
-    </x-wrapper>
+    </x-structure.wrapper>
 @endsection

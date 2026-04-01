@@ -1,6 +1,6 @@
 @extends('layouts.app')
 @section('content')
-    <x-wrapper>
+    <x-structure.wrapper>
         <!-- Listings Header -->
         <div class="mb-4 flex items-center justify-between">
             <p class="text-sm md:text-base text-secondary">
@@ -168,5 +168,5 @@
         <x-pagination :current="1" :last="15" />
         <!-- Pagination END -->
 
-    </x-wrapper>
+    </x-strucwrapper>
 @endsection
