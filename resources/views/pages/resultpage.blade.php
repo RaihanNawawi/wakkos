@@ -14,10 +14,8 @@
             </button>
         </div>
 
-        <!-- Filters Modal Overlay START -->
-        <x-filter-layer />
-        <!-- Filters Modal Overlay END -->
-
+        <!-- Overlayer Filter -->
+        <x-overlayer.filter />
 
         <x-grid-listing>
             <!-- Kos Putri -->

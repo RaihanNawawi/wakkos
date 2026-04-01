@@ -24,7 +24,7 @@
 
 <body class="bg-base">
     @include('components.navbar')
-    @include('components.search-layer')
+    @include('components.overlayer.search')
 
     <main>
         @yield('content')

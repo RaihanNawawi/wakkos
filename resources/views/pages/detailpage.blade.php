@@ -30,11 +30,11 @@
                 Lihat semua foto
             </button>
         </div>
-        {{-- Gallery --}}
-        <x-gallery-layer />
+        {{-- Gallery Image --}}
+        <x-overlayer.gallery-image />
 
-        {{-- Gallery Fullscreen --}}
-        <x-fullscreen-layer />
+        {{-- Fullscreen Image --}}
+        <x-overlayer.fullscreen-image />
 
         <!-- Main Hero Content -->
         <div class="grid grid-cols-1 lg:grid-cols-[2fr_1.2fr] gap-10 items-start">
