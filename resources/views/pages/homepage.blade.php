@@ -49,23 +49,7 @@
             </x-card.wrapper>
             <!-- Salin card di atas untuk kos lainnya -->
             {{-- View All Component --}}
-            <div class="carousel-card">
-                <a wire:navigate href="/resultpage" class="block p-3 mt-6">
-                    <!-- Preview mini cards (simulasi listing) -->
-                    <div class="relative h-24 mb-2">
-                        <img src="https://awsimages.detik.net.id/visual/2021/09/10/ilustrasi-kos-kosan-cnbc-indonesiamuhammad-sabki-4_169.jpeg?w=650"
-                            class="absolute top-0 left-4 w-16 h-16 object-cover rounded-lg shadow-sm border border-white">
-                        <img src="https://www.pajak.com/storage/2022/08/indekos-758x490.png"
-                            class="absolute top-4 left-10 w-16 h-16 object-cover rounded-lg shadow-sm border border-white">
-                        <img src="https://www.shutterstock.com/image-photo/bogor-indonesia-december-3rd-2023-260nw-2400758873.jpg"
-                            class="absolute top-2 left-20 w-16 h-16 object-cover rounded-lg shadow-sm border border-white">
-                    </div>
-                    <!-- Text -->
-                    <p class="text-primary text-sm font-semibold text-center">
-                        Lihat Semua
-                    </p>
-                </a>
-            </div>
+            <x-card.view-all href="/resultpage" />
         </x-carousel>
     </x-wrapper>
     <!-- Rekomendasi Kos END -->
@@ -76,20 +60,11 @@
         <x-price-filter-tabs />
         <x-carousel href="/resultpage">
             <!-- CARD -->
-            <a wire:navigate href="/detailpage" class="carousel-card">
+            <x-card.wrapper href="/detailpage" variant="carousel-card">
                 <!-- IMAGE -->
-                <div class="relative aspect-[4/3] rounded-2xl overflow-hidden bg-gray-200">
-                    <img src="https://www.simplyhomy.com/wp-content/uploads/2017/01/bisnis-kos-kosan.jpg"
-                        class="w-full h-full object-cover transition duration-300 group-hover:scale-105" />
-
-                    <!-- Badge -->
-                    <x-availability-badge />
-
-                </div>
-
+                <x-card.image src="https://www.simplyhomy.com/wp-content/uploads/2017/01/bisnis-kos-kosan.jpg" />
                 <!-- CONTENT -->
-                <div class="px-1 mt-2 space-y-1">
-
+                <x-card.content>
                     <!-- Title + Gender -->
                     <div class="flex justify-between items-start">
                         <h3 class="text-sm font-semibold leading-tight line-clamp-1 text-primary">
@@ -118,27 +93,11 @@
                         <span class="font-semibold text-primary">Rp462.683</span>
                         <span class="text-thirdary text-xs">/bulan</span>
                     </p>
-                </div>
-            </a>
+                </x-card.content>
+            </x-card.wrapper>
             <!-- Salin card di atas untuk kos lainnya -->
             {{-- View All Component --}}
-            <div class="carousel-card">
-                <a wire:navigate href="/resultpage" class="block p-3 mt-6">
-                    <!-- Preview mini cards (simulasi listing) -->
-                    <div class="relative h-24 mb-2">
-                        <img src="https://awsimages.detik.net.id/visual/2021/09/10/ilustrasi-kos-kosan-cnbc-indonesiamuhammad-sabki-4_169.jpeg?w=650"
-                            class="absolute top-0 left-4 w-16 h-16 object-cover rounded-lg shadow-sm border border-white">
-                        <img src="https://www.pajak.com/storage/2022/08/indekos-758x490.png"
-                            class="absolute top-4 left-10 w-16 h-16 object-cover rounded-lg shadow-sm border border-white">
-                        <img src="https://www.shutterstock.com/image-photo/bogor-indonesia-december-3rd-2023-260nw-2400758873.jpg"
-                            class="absolute top-2 left-20 w-16 h-16 object-cover rounded-lg shadow-sm border border-white">
-                    </div>
-                    <!-- Text -->
-                    <p class="text-primary text-sm font-semibold text-center">
-                        Lihat Semua
-                    </p>
-                </a>
-            </div>
+            <x-card.view-all href="/resultpage" />
         </x-carousel>
     </x-wrapper>
     {{-- Sesuaikan Budget Kos END --}}
@@ -168,17 +127,11 @@
         <x-carousel.header title="Baru Ditambahkan di [Lokasi]" href="/resultpage" />
         <x-carousel href="/resultpage">
             <!-- CARD -->
-            <a wire:navigate href="/detailpage" class="carousel-card">
+            <x-card.wrapper href="/detailpage" variant="carousel-card">
                 <!-- IMAGE -->
-                <div class="relative aspect-[4/3] rounded-2xl overflow-hidden bg-gray-200">
-                    <img src="https://www.simplyhomy.com/wp-content/uploads/2017/01/bisnis-kos-kosan.jpg"
-                        class="w-full h-full object-cover transition duration-300 group-hover:scale-105" />
-                    <!-- Badge -->
-                    <x-availability-badge />
-                </div>
-
+                <x-card.image src="https://www.simplyhomy.com/wp-content/uploads/2017/01/bisnis-kos-kosan.jpg" />
                 <!-- CONTENT -->
-                <div class="px-1 mt-2 space-y-1">
+                <x-card.content>
                     <!-- Title + Gender -->
                     <div class="flex justify-between items-start">
                         <h3 class="text-sm font-semibold leading-tight line-clamp-1 text-primary">
@@ -207,27 +160,11 @@
                         <span class="font-semibold text-primary">Rp462.683</span>
                         <span class="text-thirdary text-xs">/bulan</span>
                     </p>
-                </div>
-            </a>
+                </x-card.content>
+            </x-card.wrapper>
             <!-- Salin card di atas untuk kos lainnya -->
             {{-- View All Component --}}
-            <div class="carousel-card">
-                <a wire:navigate href="/resultpage" class="block p-3 mt-6">
-                    <!-- Preview mini cards (simulasi listing) -->
-                    <div class="relative h-24 mb-2">
-                        <img src="https://awsimages.detik.net.id/visual/2021/09/10/ilustrasi-kos-kosan-cnbc-indonesiamuhammad-sabki-4_169.jpeg?w=650"
-                            class="absolute top-0 left-4 w-16 h-16 object-cover rounded-lg shadow-sm border border-white">
-                        <img src="https://www.pajak.com/storage/2022/08/indekos-758x490.png"
-                            class="absolute top-4 left-10 w-16 h-16 object-cover rounded-lg shadow-sm border border-white">
-                        <img src="https://www.shutterstock.com/image-photo/bogor-indonesia-december-3rd-2023-260nw-2400758873.jpg"
-                            class="absolute top-2 left-20 w-16 h-16 object-cover rounded-lg shadow-sm border border-white">
-                    </div>
-                    <!-- Text -->
-                    <p class="text-primary text-sm font-semibold text-center">
-                        Lihat Semua
-                    </p>
-                </a>
-            </div>
+            <x-card.view-all href="/resultpage" />
         </x-carousel>
     </x-wrapper>
     <!-- Baru Ditambahkan di [Lokasi] END -->
