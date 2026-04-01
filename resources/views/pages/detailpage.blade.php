@@ -248,7 +248,7 @@
             </div>
 
             {{-- Sticky CTA --}}
-            <x-sticky-cta price="Rp 1.500.000" period="/bulan" ctaText="Chat WakKos"
+            <x-overlayer.sticky-cta price="Rp 1.500.000" period="/bulan" ctaText="Chat WakKos"
                 microcopy="Tanya kos atau ajukan sewa" ctaLink="https://wa.me/6281995421795?text=Halo..." />
         </div>
     </x-wrapper>
