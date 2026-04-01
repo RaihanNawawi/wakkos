@@ -57,7 +57,7 @@
     {{-- Sesuaikan Budget Kos START --}}
     <x-wrapper>
         <x-carousel.header title="Sesuaikan Budget Kos-mu di [Lokasi]" href="/resultpage" />
-        <x-price-filter-tabs />
+        <x-navtab.price-filter />
         <x-carousel href="/resultpage">
             <!-- CARD -->
             <x-card.wrapper href="/detailpage" variant="carousel-card">

@@ -214,7 +214,7 @@
                         </div>
                     </div>
                     <!-- Tab Location -->
-                    <x-tab-location :tabs="[
+                    <x-navtab.near-location :tabs="[
                         [
                             'id' => 'kampus',
                             'label' => 'Kampus / Sekolah',
