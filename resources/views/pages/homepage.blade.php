@@ -115,9 +115,9 @@
 
         <!-- Grid Area List -->
         <x-grid-listing>
-            <x-popular-area-card location="Kampung Dalam" count="24" />
-            <x-popular-area-card location="Kampung Rempak" count="18" />
-            <x-popular-area-card location="Suak Lanjut" count="32" />
+            <x-card.popular-area location="Kampung Dalam" count="24" />
+            <x-card.popular-area location="Kampung Rempak" count="18" />
+            <x-card.popular-area location="Suak Lanjut" count="32" />
         </x-grid-listing>
     </x-wrapper>
     {{-- Area Kos Populer di [Lokasi] END --}}
