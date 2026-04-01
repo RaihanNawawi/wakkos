@@ -23,11 +23,8 @@
                             Kos Putri Melati
                         </h3>
 
-                        <span
-                            class="text-xs text-secondary flex items-center gap-1 border border-gray-300 px-2 py-0.5 rounded-md">
-                            <i class="fa-solid fa-venus text-[10px]"></i>
-                            Putri
-                        </span>
+                        <x-badge.female />
+
                     </div>
 
                     <!-- Location -->
@@ -70,12 +67,8 @@
                         <h3 class="text-sm font-semibold leading-tight line-clamp-1 text-primary">
                             Kos Putri Melati
                         </h3>
-
-                        <span
-                            class="text-xs text-secondary flex items-center gap-1 border border-gray-300 px-2 py-0.5 rounded-md">
-                            <i class="fa-solid fa-venus text-[10px]"></i>
-                            Putri
-                        </span>
+                        {{-- Gender Badge --}}
+                        <x-badge.male />
                     </div>
 
                     <!-- Location -->
@@ -138,11 +131,7 @@
                             Kos Putri Melati
                         </h3>
 
-                        <span
-                            class="text-xs text-secondary flex items-center gap-1 border border-gray-300 px-2 py-0.5 rounded-md">
-                            <i class="fa-solid fa-venus text-[10px]"></i>
-                            Putri
-                        </span>
+                        <x-badge.mix />
                     </div>
 
                     <!-- Location -->
