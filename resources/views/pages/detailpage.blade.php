@@ -3,15 +3,16 @@
     <x-structure.wrapper>
         <!-- Photo Gallery -->
         <div class="mb-8 relative">
-            <div class="grid grid-cols-1 lg:grid-cols-3 gap-4 aspect-[4/3] lg:aspect-auto lg:h-[420px]">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4 aspect-[4/3] md:aspect-auto md:h-[420px]">
+
                 <!-- Gambar Besar -->
-                <div class="lg:col-span-2 h-full overflow-hidden rounded-xl sm:rounded-md">
+                <div class="md:col-span-2 h-full overflow-hidden rounded-xl sm:rounded-md">
                     <img src="https://static.mamikos.com/uploads/cache/data/style/2025-11-29/8gvZd7FJ-540x720.jpg"
                         class="gallery-item w-full h-full object-cover" />
                 </div>
 
                 <!-- Gambar Kanan -->
-                <div class="hidden lg:flex flex-col gap-4 h-full">
+                <div class="hidden md:flex flex-col gap-4 h-full">
                     <div class="flex-1 overflow-hidden rounded-xl">
                         <img src="https://static.mamikos.com/uploads/cache/data/style/2025-11-29/W65xQbM5-540x720.jpg"
                             class="gallery-item w-full h-full object-cover" />
@@ -68,7 +69,8 @@
                             </span>
                         </div>
                         <div class="ml-auto relative inline-block">
-                            <button class="shareBtn border border-gray-200 rounded-xl open-share-btn inline-flex items-center gap-2 bg-white px-3 py-2 text-sm font-medium text-primary">
+                            <button
+                                class="shareBtn border border-gray-200 rounded-xl open-share-btn inline-flex items-center gap-2 bg-white px-3 py-2 text-sm font-medium text-primary">
                                 <i class="text-secondary fa-solid fa-arrow-up-from-bracket text-secondary text-sm"></i>
                                 <span class="hidden md:inline text-secondary">Share</span>
                             </button>
