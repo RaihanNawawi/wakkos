@@ -1,7 +1,7 @@
         <!-- Filters Modal Overlay START -->
         <div id="filtersModal" class="hidden fixed inset-0 bg-black bg-opacity-50 z-50 flex items-end lg:items-center justify-center">
             <!-- Modal Content -->
-            <div class="w-full max-h-[90vh] bg-white shadow-2xl flex flex-col rounded-t-2xl overflow-hidden lg:max-w-xl lg:max-h-[85vh] lg:rounded-xl">
+            <div class="w-full max-h-[90vh] bg-white shadow-2xl flex flex-col rounded-t-3xl overflow-hidden lg:max-w-xl lg:max-h-[85vh] lg:rounded-xl">
                 <!-- Modal Header START -->
                 <div class="sticky top-0 bg-white border-b border-gray-200 px-6 py-4 flex justify-between items-center">
                     <h2 class="text-lg font-semibold text-primary">Filter Pencarianmu</h2>
