@@ -5,10 +5,12 @@
         <div class="flex items-center">
 
             <!-- Back Button -->
-            <button onclick="handleBack()" id="backBtn"
-                class="ml-1 flex-shrink-0">
-                <i class="fa-solid fa-arrow-left text-secondary text-xl"></i>
-            </button>
+            @if (!request()->is('/') && !request()->is('homepage'))
+                <button onclick="handleBack()" id="backBtn" class="ml-1 flex-shrink-0">
+                    <i class="fa-solid fa-arrow-left text-secondary text-xl"></i>
+                </button>
+            @endif
+
 
             <!-- Logo (Hidden on Mobile) -->
             <div class="hidden md:flex items-center">
@@ -37,53 +39,52 @@
 
     </div>
 </nav>
-    <!-- Menu Overlay (Backdrop) START -->
-    <div id="menuOverlay" class="hidden fixed inset-0 bg-black/30 z-50 transition-opacity duration-300"
-        onclick="closeMenu()"></div>
-    
-    <!-- Hamburger Menu Drawer -->
-    <div id="menuDrawer"
-        class="hidden fixed top-0 right-0 h-screen w-80 bg-white shadow-2xl z-50 transform translate-x-full transition-transform duration-300 ease-in-out overflow-y-auto">
-        <!-- Menu Header START -->
-        <div class="flex items-center justify-between p-5 border-b border-gray-200">
-            <h2 class="text-xl font-semibold text-primary">Menu</h2>
-            <button id="closeMenuBtn"
-                class="flex items-center justify-center w-8 h-8 rounded-full bg-gray-100 hover:bg-gray-200 transition-colors duration-200"
-                onclick="closeMenu()">
-                <i class="fas fa-times text-secondary"></i>
-            </button>
-        </div>
-        <!-- Menu Header END -->
+<!-- Menu Overlay (Backdrop) START -->
+<div id="menuOverlay" class="hidden fixed inset-0 bg-black/30 z-50 transition-opacity duration-300"
+    onclick="closeMenu()"></div>
 
-        <!-- Menu Items Container -->
-        <div class="flex flex-col divide-y divide-gray-200 text-sm">
+<!-- Hamburger Menu Drawer -->
+<div id="menuDrawer"
+    class="hidden fixed top-0 right-0 h-screen w-80 bg-white shadow-2xl z-50 transform translate-x-full transition-transform duration-300 ease-in-out overflow-y-auto">
+    <!-- Menu Header START -->
+    <div class="flex items-center justify-between p-5 border-b border-gray-200">
+        <h2 class="text-xl font-semibold text-primary">Menu</h2>
+        <button id="closeMenuBtn"
+            class="flex items-center justify-center w-8 h-8 rounded-full bg-gray-100 hover:bg-gray-200 transition-colors duration-200"
+            onclick="closeMenu()">
+            <i class="fas fa-times text-secondary"></i>
+        </button>
+    </div>
+    <!-- Menu Header END -->
 
-            <!-- CTA Daftarkan Kos -->
-            <a href="https://wa.me/6281234567890?text=Halo%20Admin%20WakKos%20%F0%9F%91%8B%0A%0ASaya%20ingin%20mendaftarkan%20kos%20saya%20di%20WakKos.%20Mohon%20informasi%20lebih%20lanjut.%0A%0ATerima%20kasih%20%F0%9F%98%8A"
-                target="_blank"
-                class="px-6 py-4 font-semibold text-primary hover:bg-gray-50 transition flex items-center gap-3">
-                <i class="fab fa-whatsapp text-green-500 text-lg"></i>
-                Daftarkan Kos
-            </a>
+    <!-- Menu Items Container -->
+    <div class="flex flex-col divide-y divide-gray-200 text-sm">
 
-            <!-- Cari Kos -->
-            <a href="/homepage"
-                class="px-6 py-4 text-primary hover:bg-gray-50 transition flex items-center justify-between w-full">
-                <span>Cari Kos</span>
-                <i class="fas fa-chevron-right text-secondary text-xs"></i>
-            </a>
+        <!-- CTA Daftarkan Kos -->
+        <a href="https://wa.me/6281234567890?text=Halo%20Admin%20WakKos%20%F0%9F%91%8B%0A%0ASaya%20ingin%20mendaftarkan%20kos%20saya%20di%20WakKos.%20Mohon%20informasi%20lebih%20lanjut.%0A%0ATerima%20kasih%20%F0%9F%98%8A"
+            target="_blank"
+            class="px-6 py-4 font-semibold text-primary hover:bg-gray-50 transition flex items-center gap-3">
+            <i class="fab fa-whatsapp text-green-500 text-lg"></i>
+            Daftarkan Kos
+        </a>
 
-            <!-- Pusat Bantuan -->
-            <a href="#"
-                class="px-6 py-4 text-primary hover:bg-gray-50 transition flex items-center justify-between">
-                <span>Pusat Bantuan</span>
-                <i class="fas fa-chevron-right text-secondary text-xs"></i>
-            </a>
+        <!-- Cari Kos -->
+        <a href="/homepage"
+            class="px-6 py-4 text-primary hover:bg-gray-50 transition flex items-center justify-between w-full">
+            <span>Cari Kos</span>
+            <i class="fas fa-chevron-right text-secondary text-xs"></i>
+        </a>
 
-        </div>
-        <div class="border-t border-gray-200 mt-auto">
-        </div>
+        <!-- Pusat Bantuan -->
+        <a href="#" class="px-6 py-4 text-primary hover:bg-gray-50 transition flex items-center justify-between">
+            <span>Pusat Bantuan</span>
+            <i class="fas fa-chevron-right text-secondary text-xs"></i>
+        </a>
 
     </div>
+    <div class="border-t border-gray-200 mt-auto">
+    </div>
 
-    <div class="block md:hidden border-b border-gray-100"></div>
+</div>
+
+<div class="block md:hidden border-b border-gray-100"></div>
