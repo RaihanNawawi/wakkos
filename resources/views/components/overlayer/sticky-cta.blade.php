@@ -26,18 +26,18 @@
                 {{ $microcopy }}
             </p>
 
-            <a href="{{ $ctaLink }}" target="_blank"
+            <button data-overlay-target="chat-service"
                 class="w-full flex items-center justify-center gap-2 py-3 rounded-xl btn-primary text-white font-semibold transition shadow-md">
-
                 <i class="fa-brands fa-whatsapp text-green-400 text-lg"></i>
                 {{ $ctaText }}
-            </a>
+            </button>
         </div>
     </div>
 </div>
 
 <!-- MOBILE -->
-<div class="bg-white fixed inset-x-0 bottom-0 z-40 lg:hidden border-t border-gray-200 shadow-[0_-8px_24px_rgba(0,0,0,0.12)]">
+<div
+    class="bg-white fixed inset-x-0 bottom-0 z-40 lg:hidden border-t border-gray-200 shadow-[0_-8px_24px_rgba(0,0,0,0.12)]">
     <div class="grid grid-cols-2 gap-3 p-4 items-center">
         <!-- Price -->
         <div>
@@ -55,12 +55,11 @@
         </div>
 
         <!-- CTA -->
-        <a href="{{ $ctaLink }}" target="_blank"
-            class="w-full flex items-center justify-center gap-2 py-3 rounded-xl bg-blue-600 text-white font-semibold text-sm hover:bg-blue-700 transition shadow-md whitespace-nowrap">
-
+        <button data-overlay-target="chat-service"
+            class="w-full flex items-center justify-center gap-2 py-3 rounded-xl bg-blue-600 text-white font-semibold text-sm">
             <i class="fa-brands fa-whatsapp text-green-400 text-base"></i>
             {{ $ctaText }}
-        </a>
+        </button>
 
     </div>
 </div>

@@ -7,7 +7,7 @@
                 4 kos ditemukan
             </p>
 
-            <button id="filtersBtn"
+            <button data-overlay-target="filter-properties"
                 class="flex items-center gap-2 rounded-lg border border-gray-300 px-4 py-2 text-sm text-primary hover:shadow-sm transition">
                 <i class="fa-solid fa-sliders text-sm text-primary"></i>
                 Filter

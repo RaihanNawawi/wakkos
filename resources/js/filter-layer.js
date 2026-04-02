@@ -1,45 +1,23 @@
-const filtersBtn = document.getElementById("filtersBtn");
-const closeFiltersBtn = document.getElementById("closeFiltersBtn");
-const filtersModal = document.getElementById("filtersModal");
-const applyFiltersBtn = document.getElementById("applyFiltersBtn");
-const clearFiltersBtn = document.getElementById("clearFiltersBtn");
+// 
+document.addEventListener("click", function (e) {
 
-// ❗ GUARD GLOBAL
-if (!filtersBtn || !filtersModal) {
-    // element tidak ada di halaman → hentikan script
-} else {
-
-    filtersBtn.addEventListener("click", () => {
-        filtersModal.classList.remove("hidden");
-        setTimeout(() => {
-            filtersModal.classList.add("opacity-100");
-        }, 10);
-    });
-
-    function closeModal() {
-        filtersModal.classList.add("hidden");
+    // OPEN
+    const openBtn = e.target.closest("[data-overlay-target]");
+    if (openBtn) {
+        const name = openBtn.getAttribute("data-overlay-target");
+        const overlay = document.querySelector(`[data-overlay="${name}"]`);
+        overlay?.classList.remove("hidden");
     }
 
-    closeFiltersBtn?.addEventListener("click", closeModal);
+    // CLOSE BUTTON
+    if (e.target.closest("[data-overlay-close]")) {
+        e.target.closest("[data-overlay]").classList.add("hidden");
+    }
 
-    filtersModal.addEventListener("click", (e) => {
-        if (e.target === filtersModal) {
-            closeModal();
-        }
-    });
+    // CLICK BACKGROUND
+    const overlay = e.target.closest("[data-overlay]");
+    if (overlay && e.target === overlay) {
+        overlay.classList.add("hidden");
+    }
 
-    applyFiltersBtn?.addEventListener("click", () => {
-        console.log("[v0] Filters applied");
-        closeModal();
-    });
-
-    clearFiltersBtn?.addEventListener("click", () => {
-        document
-            .querySelectorAll('input[type="number"], input[type="checkbox"]')
-            .forEach((input) => {
-                if (input.type === "number") input.value = "";
-                if (input.type === "checkbox") input.checked = false;
-            });
-        console.log("[v0] Filters cleared");
-    });
-}
+});

@@ -252,6 +252,8 @@
             {{-- Sticky CTA --}}
             <x-overlayer.sticky-cta price="Rp 1.500.000" period="/bulan" ctaText="Chat WakKos"
                 microcopy="Tanya kos atau ajukan sewa" ctaLink="https://wa.me/6281995421795?text=Halo..." />
+            {{-- Overlay Chat Service --}}
+            <x-overlayer.chat-service name="chat-service" title="Pilih Layanan" />
         </div>
     </x-structure.wrapper>
 @endsection
