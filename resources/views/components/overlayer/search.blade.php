@@ -10,14 +10,14 @@
 
                         <!-- Back Button (OUTSIDE SEARCH BAR) -->
                         <button onclick="closeSearch()"
-                            class="p-2 -ml-1 rounded-md hover:bg-gray-100 transition flex-shrink-0"
+                            class="ml-1 flex-shrink-0"
                             aria-label="Kembali">
                             <i class="fa-solid fa-arrow-left text-secondary text-xl"></i>
                         </button>
 
                         <!-- Search Bar -->
                         <div
-                            class="relative flex-1 flex items-center border border-gray-300 rounded-full px-2 focus-within:ring-2 focus-within:ring-gray-300">
+                            class="ml-1.5 relative flex-1 flex items-center border border-gray-300 rounded-full px-2 focus-within:ring-2 focus-within:ring-gray-300">
                             <input id="search-input" type="text" placeholder="Cari kos di Dayun, Siak"
                                 class="w-full h-11 bg-transparent pl-2 pr-4 text-sm focus:outline-none border-none" />
                         </div>

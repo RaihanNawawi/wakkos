@@ -1,32 +1,42 @@
-    <nav class="wrapper bg-primary sticky top-0 z-50 bg-base pt-3 pb-2">
-        <div class="flex items-center gap-3 px-4 md:justify-between justify-center">
+<nav class="wrapper bg-primary sticky top-0 z-50 bg-base pt-3 pb-2">
+    <div class="flex items-center gap-3 px-4 md:justify-between justify-between">
+
+        <!-- LEFT SECTION -->
+        <div class="flex items-center">
+
+            <!-- Back Button -->
+            <button onclick="handleBack()" id="backBtn"
+                class="ml-1 flex-shrink-0">
+                <i class="fa-solid fa-arrow-left text-secondary text-xl"></i>
+            </button>
+
             <!-- Logo (Hidden on Mobile) -->
             <div class="hidden md:flex items-center">
                 <a href="/homepage">
                     <span class="text-2xl font-bold text-brand">WakKos</span>
                 </a>
             </div>
-
-            <!-- Search Pill -->
-                        <button onclick="openSearch()"
-                class="flex-1 flex items-center gap-2 rounded-full border border-gray-200 bg-white py-3 px-4 shadow-sm active:scale-[0.99] transition sm:ml-0.5 md:mx-6 md:my-2">
-
-                <!-- Search Icon -->
-                <i class="fa-solid fa-magnifying-glass text-secondary"></i>
-
-                <!-- Placeholder Text -->
-                <span class="text-sm font-medium text-secondary truncate">
-                    Cari kos di Dayun, Siak
-                </span>
-            </button>
-
-            <!-- Hamburger Menu Button START -->
-            <button id="hamburgerBtn"
-                class="btn-secondary flex items-center justify-center w-10 h-10 rounded-full transition-colors duration-200 ml-1">
-                <i class="fas fa-bars text-secondary text-base"></i>
-            </button>
         </div>
-    </nav>
+
+        <!-- Search Pill -->
+        <button onclick="openSearch()"
+            class="flex-1 flex items-center gap-2 rounded-full border border-gray-200 bg-white py-3 px-4 shadow-sm active:scale-[0.99] transition ml-1 sm:ml-0.5 md:mx-6 md:my-2">
+
+            <i class="fa-solid fa-magnifying-glass text-secondary"></i>
+
+            <span class="text-sm font-medium text-secondary truncate">
+                Cari kos di Dayun, Siak
+            </span>
+        </button>
+
+        <!-- Hamburger -->
+        <button id="hamburgerBtn"
+            class="flex items-center justify-center w-10 h-10 rounded-full transition-colors duration-200 ml-1">
+            <i class="fas fa-bars text-secondary text-lg"></i>
+        </button>
+
+    </div>
+</nav>
     <!-- Menu Overlay (Backdrop) START -->
     <div id="menuOverlay" class="hidden fixed inset-0 bg-black/30 z-50 transition-opacity duration-300"
         onclick="closeMenu()"></div>

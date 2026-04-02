@@ -10,3 +10,4 @@ import './tab-location';
 import './hamburger-menu';
 import './price-format';
 import './toggle-more';
+import './btn-back';
